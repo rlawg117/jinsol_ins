@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
+<%@page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
@@ -8,12 +8,13 @@
 <link href="/webapp/css/page02.css" rel="stylesheet" type="text/css">
 </head>
 <body>
- <div class="input_area">
+ 
+   <div class="input_area">
         <table class="input_tbl">
             <!-- 보험료 계산 영역 = 생년월일, 성별, 흡연여부 -->
             <colgroup>
                 <col style="width: 150px;">
-                <col style="width:*;"> 
+
             </colgroup>
             <tbody>
                 <tr>
@@ -24,21 +25,22 @@
                         </span>
                         <span>
                             <label>
-                                <input type="radio">
+                                <input type="radio" name="custGnder_MENU3" class="d-radio" value="1" title="남자 선택">
+                                
                                 <span>남자</span>
                             </label>
                             <label>
-                                <input type="radio">
+                                <input type="radio" name="custGnder_MENU3" class="d-radio" value="2" title="여자 선택">
                                 <span>여자</span>
                             </label>
                         </span>
                         <span>
                             <label>
-                                <input type="radio">
+                                <input type="radio" name="smoke_yn" value="1" title="흡연 선택"  class="radio">
                                 <span>흡연</span>
                             </label>
                             <label>
-                                <input type="radio">
+                                <input type="radio" name="smoke_yn" value="2" title="비흡연 선택"  class="radio">
                                 <span>비흡연</span>
                             </label>
                         </span>
@@ -52,7 +54,7 @@
             <table class="tbl">
                 <colgroup>
                     <col style="width: 150px;">
-                    <col style="width:*;"> 
+
                 </colgroup>
                 <tbody>
                     <tr>
@@ -60,25 +62,25 @@
                         <td>
                             <span>
                                 <label>
-                                    <input type="radio">
+                                    <input type="radio" class="d-radio" name="manYear">
                                     <span>10년만기(갱신형)</span>
                                 </label>
                             </span>
                             <span>
                                 <label>
-                                    <input type="radio">
-                                    <span>20년</span>
+                                    <input type="radio" class="d-radio" name="manYear">
+                                    <span>20년</span> 
                                 </label>
                             </span>
                             <span>
                                 <label>
-                                    <input type="radio">
+                                    <input type="radio" class="d-radio" name="manYear">
                                     <span>60세</span>
                                 </label>
                             </span>
                             <span>
                                 <label>
-                                    <input type="radio">
+                                    <input type="radio" class="d-radio" name="manYear">
                                     <span>80세</span>
                                 </label>
                             </span>
@@ -90,7 +92,6 @@
             <table class="tbl">
                 <colgroup>
                     <col style="width: 150px;">
-                    <col style="width:*;"> 
                 </colgroup>
                 <tbody>
                     <th>납입기간</th>
@@ -127,7 +128,6 @@
             <table class="tbl">
                 <colgroup>
                     <col style="width: 150px;">
-                    <col style="width:*;"> 
                 </colgroup>
                 <tbody>
                     <th>재해사망</th>
@@ -145,7 +145,6 @@
             <table class="tbl">
                 <colgroup>
                     <col style="width: 150px;">
-                    <col style="width:*;"> 
                 </colgroup>
                 <tbody>
                     <th>일반사망보험금</th>
@@ -346,7 +345,6 @@
                                 <table>
                                     <colgroup>
                                         <col style="width: 166px;">
-                                        <col style="width: *">
                                         <col style="width: 208px;">
                                     </colgroup>
                                     <thead>

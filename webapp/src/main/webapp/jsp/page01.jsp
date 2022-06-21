@@ -1,21 +1,22 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
+<%@page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
+<link href="/webapp/css/page02.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <div>
-        <div>
+ <div>
+        <div class="setBorder">
             <h3>(무)흥국생명 온라인</h3>
             <h2>정기보험</h2>
             <h4>우리가족의 미래는 정기보험으로 안심!</h4>
         </div>
        
 <!-- 정기 보험 가입하러가기 버튼 -->
-    <div class="example MENU3" style="display:block ;">
+    <div class="example MENU3" style="display:block ;" >
         <form action="/pcw/epd/epdMenu3TAction.do?topMenuId=MENU3" name="form_MENU3" method="post">
 
             <input type="hidden" name="NVKWD" value>
@@ -24,7 +25,7 @@
             <input type="hidden" name="NVADRANK" value>
             <input type="hidden" name="NVADID" value>
 
-            <div class="side02">
+            <div class="side02" class="setBorder">
                 <h4>
                     <b>정기보험</b>
                     "보험료 알아보기"
@@ -113,7 +114,6 @@
 
     </div>
 </div>
-
 
 </body>
 </html>
