@@ -9,10 +9,21 @@
 </head>
 <body>
  <% request.setCharacterEncoding("UTF-8");
- 	String custBirth = request.getParameter("custBirth_MENU3");
+ 	String custBirth_MENU3 = request.getParameter("custBirth_MENU3");
+ 	String gender=null;
  	String custGnder_MENU3 = request.getParameter("custGnder_MENU3");
- 
+ 	if(custGnder_MENU3.equals("1")){
+ 		gender="m";
+ 	}else{
+ 		gender="w";
+ 	}
+ 	String sk=null;
  	String smoke_yn = request.getParameter("smoke_yn");
+ 	if(smoke_yn.equals("1")){
+ 		sk="y";
+ 	}else{
+ 		sk="y";
+ 	}
 
  %>
    <div class="input_area setBorder">
@@ -27,25 +38,36 @@
                    <th> 보험나이 24세 </th> 
                    <td>
                         <span>
-                        	<%=request.getParameter("custBirth_MENU3") %>
+                        	<input name="custBirth" type="text" value="<%=request.getParameter("custBirth_MENU3") %>">
                         </span>
                         <span>
                             <label>
-                                <input type="radio" name="custGnder_MENU3" class="d-radio" value="1" title="남자 선택">
+                                <% if(request.getParameter("custGnder_MENU3").equals("1")) {%>
+                                <input type="radio" name="custGnder_MENU3" class="d-radio" value="1" title="남자 선택" checked="checked">
                                 <span>남자</span>
-                            
                                 <input type="radio" name="custGnder_MENU3" class="d-radio" value="2" title="여자 선택">
                                 <span>여자</span>
+                                <%}else if(request.getParameter("custGnder_MENU3").equals("2")){%>
+                                <input type="radio" name="custGnder_MENU3" class="d-radio" value="1" title="남자 선택">
+                                <span>남자</span>
+                                <input type="radio" name="custGnder_MENU3" class="d-radio" value="2" title="여자 선택" checked="checked">
+                                <span>여자</span>
+                                <%} %>
                             </label>
                         </span>
                         <span>
                             <label>
-                                <input type="radio" name="smoke_yn" value="1" title="흡연 선택"  class="radio">
+                                <% if(request.getParameter("smoke_yn").equals("1")) {%>
+                                <input type="radio" name="smoke_yn" value="1" title="흡연 선택"  class="radio" checked="checked">
                                 <span>흡연</span>
-                            </label>
-                            <label>
                                 <input type="radio" name="smoke_yn" value="2" title="비흡연 선택"  class="radio">
                                 <span>비흡연</span>
+                                <%}else if(request.getParameter("custGnder_MENU3").equals("2")){%>
+                                <input type="radio" name="smoke_yn" value="1" title="흡연 선택"  class="radio">
+                                <span>흡연</span>
+                                <input type="radio" name="smoke_yn" value="2" title="비흡연 선택"  class="radio" checked="checked">
+                                <span>비흡연</span>
+                                <%} %>
                             </label>
                         </span>
                    </td>

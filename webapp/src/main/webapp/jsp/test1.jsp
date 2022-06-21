@@ -11,31 +11,40 @@
 
  <% request.setCharacterEncoding("UTF-8");
  	String custBirth = request.getParameter("custBirth");
- 	out.println("<p>"+custBirth+"</p>");
  	String gender=null;
  	String custGnder = request.getParameter("custGnder_MENU3");
  	if(custGnder.equals("1")){
  		out.println("<b>남자</b><br>");
  		gender="m";
+ 		out.print(gender);
  	}else{
  		out.println("<b>여자</b><br>");
  		gender="w";
+ 		out.print(gender);
  	}
+ 	String sk=null;
  	String smoke = request.getParameter("smoke_yn");
  	if(smoke.equals("1")){
+ 		sk="y";
  		out.println("<b>흡연</b><br>");
+ 		out.print(sk);
  	}else{
+ 		sk="n";
  		out.println("<b>비흡연</b><br>");
+ 		out.print(sk);
  	}
  /* 	c:if smoke_yn="$(!empty param.smoke_yn)"
  			$("[name=smoke_yn]").filter("[value=$(1)]").prop("checked",true); */
  %>
  
 
+
+
 </body>
 
 	<div class="input_area">
  
+ <form action="test2.jsp" method="post">
         <table class="input_tbl">
             <!-- 보험료 계산 영역 = 생년월일, 성별, 흡연여부 -->
             <colgroup>
@@ -44,32 +53,44 @@
             </colgroup>
             <tbody>
                 <tr>
-                   <th> 보험나이 24세 </th> 
+                   <th> 보험나이</th> 
                    <td>
-                        <span>
-                            <%=request.getParameter("custBirth") %>
+                        <span >
+                        <input name="custBirth" type="text" value="<%=request.getParameter("custBirth") %>">
                         </span>
-                        <span>
+                         <span>
                             <label>
-                                <input type="radio" name="custGnder_MENU3" class="d-radio" value="1" title="남자 선택">
-                                
+                                <% if(request.getParameter("custGnder_MENU3").equals("1")) {%>
+                                <input type="radio" name="custGnder_MENU3" class="d-radio" value="1" title="남자 선택" checked="checked">
                                 <span>남자</span>
-                            </label>
-                            <label>
                                 <input type="radio" name="custGnder_MENU3" class="d-radio" value="2" title="여자 선택">
                                 <span>여자</span>
+                                <%}else if(request.getParameter("custGnder_MENU3").equals("2")){%>
+                                <input type="radio" name="custGnder_MENU3" class="d-radio" value="1" title="남자 선택">
+                                <span>남자</span>
+                                <input type="radio" name="custGnder_MENU3" class="d-radio" value="2" title="여자 선택" checked="checked">
+                                <span>여자</span>
+                                <%} %>
                             </label>
                         </span>
-                        <span>
+                        
+                        
+                         <span>
                             <label>
-                                <input type="radio" name="smoke_yn" value="1" title="흡연 선택"  class="radio">
+                                <% if(request.getParameter("custGnder_MENU3").equals("1")) {%>
+                                <input type="radio" name="smoke_yn" value="1" title="흡연 선택"  class="radio" checked="checked">
                                 <span>흡연</span>
-                            </label>
-                            <label>
                                 <input type="radio" name="smoke_yn" value="2" title="비흡연 선택"  class="radio">
                                 <span>비흡연</span>
+                                <%}else if(request.getParameter("custGnder_MENU3").equals("2")){%>
+                                <input type="radio" name="smoke_yn" value="1" title="흡연 선택"  class="radio">
+                                <span>흡연</span>
+                                <input type="radio" name="smoke_yn" value="2" title="비흡연 선택"  class="radio" checked="checked">
+                                <span>비흡연</span>
+                                <%} %>
                             </label>
                         </span>
+                        
                    </td>
                    
                 </tr>
@@ -206,5 +227,21 @@
                                 <span>1억</span>
                             </label>
                         </span>
+                       
+       
+
+       
+        </div>
+        </td>
+        </tbody>
+        </table>
+        </div>
+         <div class="setBorder">
+            <h2>보험료 계산결과</h2>
+            <h3>설계 내역을 선택한 후 [보장내용 비교] 버튼을 클릭 시 보장 내용을 비교하여 확인할 수 있습니다.</h3>
+            <input type="submit" value="보장내용비교">
+            </div>
+            </form>
+        </div>
 
 </html>
