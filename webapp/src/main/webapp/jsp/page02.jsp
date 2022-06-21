@@ -1,3 +1,4 @@
+<%@page import="java.time.LocalDate"%>
 <%@page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -10,32 +11,66 @@
 <body>
  <% request.setCharacterEncoding("UTF-8");
  	String custBirth_MENU3 = request.getParameter("custBirth_MENU3");
- 	String gender=null;
+/*  	String gender=null; */
  	String custGnder_MENU3 = request.getParameter("custGnder_MENU3");
- 	if(custGnder_MENU3.equals("1")){
+/*  	if(custGnder_MENU3.equals("1")){
  		gender="m";
  	}else{
  		gender="w";
- 	}
- 	String sk=null;
+ 	} */
+ /* 	String sk=null; */
  	String smoke_yn = request.getParameter("smoke_yn");
- 	if(smoke_yn.equals("1")){
+ 	/* if(smoke_yn.equals("1")){
  		sk="y";
  	}else{
  		sk="y";
  	}
-
+ */
  %>
    <div class="input_area setBorder">
         <table class="input_tbl">
             <!-- 보험료 계산 영역 = 생년월일, 성별, 흡연여부 -->
             <colgroup>
                 <col style="width: 150px;">
-
+				<col style="width:*;"> 
             </colgroup>
             <tbody>
                 <tr>
-                   <th> 보험나이 24세 </th> 
+                   <th> 보험나이 
+                   <span>
+                   <% 
+                   String age = custBirth_MENU3;
+                   int years = Integer.parseInt(age.substring(0, 2));
+                   int months = Integer.parseInt(age.substring(2, 4));
+                   int days = Integer.parseInt(age.substring(4, 6));
+                   
+                   
+                   LocalDate today = LocalDate.now();
+                   int todayYear = today.getYear();
+                   int todayMonth = today.getMonthValue();
+                   int todayDay= today.getDayOfMonth();
+                   
+                   int manAge = todayYear - years;
+                   
+                   if(months>todayMonth){
+                	   manAge--;
+                   }else if(months == todayMonth){
+                	   if(days > todayDay){
+                		   manAge--;
+                	   }
+                   }
+                   
+                   if(manAge>2000){
+                	   manAge-=2000;
+                   }else if(manAge<2000){
+                	   manAge-=1900;
+                   }
+                   out.print(manAge);
+                   %>세
+                   </span>
+                   </th> 
+                   
+                   
                    <td>
                         <span>
                         	<input name="custBirth" type="text" value="<%=request.getParameter("custBirth_MENU3") %>">
@@ -238,7 +273,7 @@
         <div class="setBorder">
             <h2>보험료 계산결과</h2>
             <h3>설계 내역을 선택한 후 [보장내용 비교] 버튼을 클릭 시 보장 내용을 비교하여 확인할 수 있습니다.</h3>
-            <a href="./page03.jsp">보장내용 비교</a>
+            <a href="page03.jsp">보장내용 비교</a>
 
         </div>
 
@@ -354,9 +389,9 @@
             <div>
                 <p> 10년 만기(갱신형) / 10년납 / 재해사망 추가보장 / 비흡연 / 24세 / 여자 </p>
                 <span>
-                    <a href="">수정</a>
+                    <a>수정</a>
                     <a href="../text/(무)흥국생명 온라인정기보험_인쇄용약관(202107)_공시용.pdf" download>가입제안서</a>
-                    <a href="">메일발송</a>
+                    <a href="page04.jsp">메일발송</a>
                 </span>
             </div>
 

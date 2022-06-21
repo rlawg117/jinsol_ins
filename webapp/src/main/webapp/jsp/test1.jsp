@@ -1,3 +1,4 @@
+<%@page import="java.time.LocalDate"%>
 <%@page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>	
@@ -54,6 +55,38 @@
             <tbody>
                 <tr>
                    <th> 보험나이</th> 
+                   <span>
+                   <% 
+                   String age = request.getParameter("custBirth");
+                   int year = Integer.parseInt(age.substring(0, 2));
+                   int month = Integer.parseInt(age.substring(2, 4));
+                   int day = Integer.parseInt(age.substring(4, 6));
+                   
+                   
+                   LocalDate today = LocalDate.now();
+                   int todayYear = today.getYear();
+                   int todayMonth = today.getMonthValue();
+                   int todayDay= today.getDayOfMonth();
+                   
+                   int manAge = todayYear - year;
+                   
+                   if(month>todayMonth){
+                	   manAge--;
+                   }else if(month == todayMonth){
+                	   if(day > todayDay){
+                		   manAge--;
+                	   }
+                   }
+                   
+                   if(manAge>2000){
+                	   manAge-=2000;
+                   }else if(manAge<2000){
+                	   manAge-=1900;
+                   }
+                   out.print(manAge);
+                   %>세
+                   </span>
+                   
                    <td>
                         <span >
                         <input name="custBirth" type="text" value="<%=request.getParameter("custBirth") %>">
