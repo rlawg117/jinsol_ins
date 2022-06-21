@@ -1,5 +1,12 @@
 @charset "EUC-KR";
 
+body{
+	width:90%;
+	margin : 0 auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
 .box{
     display: flex;
     flex-direction: row;
@@ -7,5 +14,38 @@
 }
 
 .setBorder{
-	border: black solid 0.5px;
+	border: 0.5px solid black;
+}
+
+#page3, #page4{
+	width: 50%;
+	margin : 0 auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+   
+}
+
+.compare{
+	position: relative;
+    width: 810px;
+    padding-left: 160px;
+    box-sizing: border-box
+}
+
+tbody{
+	display: table-row-group;
+    vertical-align: middle;
+}
+thead{
+	display: table-header-group;
+    vertical-align: middle;
+}
+
+table{
+	width:95%;
+	display: table;
+	box-sizing: border-box;
+	text-indent: inherit;
+	text-align : center;
+	
 }

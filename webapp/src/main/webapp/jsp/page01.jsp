@@ -1,11 +1,12 @@
 <%@page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
-<link href="/webapp/css/page02.css" rel="stylesheet" type="text/css">
+<title>첫페이지</title>
+<link href="../css/page02.css" rel="stylesheet" type="text/css">
 </head>
 <body>
  <div>
@@ -17,20 +18,16 @@
        
 <!-- 정기 보험 가입하러가기 버튼 -->
     <div class="example MENU3" style="display:block ;" >
-        <form action="/pcw/epd/epdMenu3TAction.do?topMenuId=MENU3" name="form_MENU3" method="post">
+        
 
-            <input type="hidden" name="NVKWD" value>
-            <input type="hidden" name="NVADKWD" value>
-            <input type="hidden" name="NVAR" value>
-            <input type="hidden" name="NVADRANK" value>
-            <input type="hidden" name="NVADID" value>
-
-            <div class="side02" class="setBorder">
+            <div class="setBorder">
                 <h4>
                     <b>정기보험</b>
                     "보험료 알아보기"
                 </h4>
                 <div class="input_field">
+                
+                <form action="page02.jsp" method="post">
                     <table width="100%" summary=""정기보험 보험료 계산을 위해 정보입력>
                         <!-- 정기보험 -->
                         <colgroup>
@@ -88,9 +85,9 @@
                         </tbody>
                     </table>
                 </div>
-            <a href="./page02.html" onclick=" validate(form_MENU3) && l_fn_nextCheck('MENU3') && l_fn_MovePremCalc('MENU3')  && sendTM4marketings('MENU3','calc');" class="btn_insurance">
-                <span>보험료 계산</span>
+           	<input type="submit" value="보험료계산">
             </a>
+            </form>
             </div>
 
             <input type="hidden" name="custBirth">
@@ -108,8 +105,7 @@
 
 
 
-    </form>
-
+ 
 
 
     </div>

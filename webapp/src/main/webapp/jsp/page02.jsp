@@ -4,12 +4,18 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
-<link href="/webapp/css/page02.css" rel="stylesheet" type="text/css">
+<title>보험계산</title>
+<link href="../css/page02.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+ <% request.setCharacterEncoding("UTF-8");
+ 	String custBirth = request.getParameter("custBirth_MENU3");
+ 	String custGnder_MENU3 = request.getParameter("custGnder_MENU3");
  
-   <div class="input_area">
+ 	String smoke_yn = request.getParameter("smoke_yn");
+
+ %>
+   <div class="input_area setBorder">
         <table class="input_tbl">
             <!-- 보험료 계산 영역 = 생년월일, 성별, 흡연여부 -->
             <colgroup>
@@ -21,15 +27,13 @@
                    <th> 보험나이 24세 </th> 
                    <td>
                         <span>
-                            <input type="text" id="custBirth" name="custBirth" maxlength="6" class="input number" placeholder="예시)720322" title="생년월일 입력">
+                        	<%=request.getParameter("custBirth_MENU3") %>
                         </span>
                         <span>
                             <label>
                                 <input type="radio" name="custGnder_MENU3" class="d-radio" value="1" title="남자 선택">
-                                
                                 <span>남자</span>
-                            </label>
-                            <label>
+                            
                                 <input type="radio" name="custGnder_MENU3" class="d-radio" value="2" title="여자 선택">
                                 <span>여자</span>
                             </label>
@@ -209,16 +213,16 @@
     </div>
 
     <div>
-        <div>
+        <div class="setBorder">
             <h2>보험료 계산결과</h2>
             <h3>설계 내역을 선택한 후 [보장내용 비교] 버튼을 클릭 시 보장 내용을 비교하여 확인할 수 있습니다.</h3>
-            <a href="">보장내용 비교</a>
+            <a href="./page03.jsp">보장내용 비교</a>
 
         </div>
 
-        <div class="clickBox">
+        <div class="clickBox setBorder">
             <ul class="box">
-                <li class="contentBox">
+                <li class="contentBox setBorder">
                     <div>
                         <span>나의 설계</span>
                         <span>
@@ -240,11 +244,11 @@
                                 <span>1억원</span>
                             </li>
                         </ul>
-                        <a href="./page03.html">가입하기</a>
+                        <a href="page05.jsp">가입하기</a>
                     </div>
                 </li>
 
-                <li class="contentBox">
+                <li class="contentBox setBorder">
                     <div>
                         <span>최대보장</span>
                         <span>
@@ -266,11 +270,11 @@
                                 <span>2억원</span>
                             </li>
                         </ul>
-                        <a href="./page03.html">가입하기</a>
+                        <a href="page05.jsp">가입하기</a>
                     </div>
                 </li>
 
-                <li class="contentBox">
+                <li class="contentBox setBorder">
                     <div>
                         <span>일반보장</span>
                         <span>
@@ -292,11 +296,11 @@
                                 <span>1억원</span>
                             </li>
                         </ul>
-                        <a href="./page03.html">가입하기</a>
+                        <a href="page05.jsp">가입하기</a>
                     </div>
                 </li>
 
-                <li class="contentBox">
+                <li class="contentBox setBorder">
                     <div>
                         <span>최저가격</span>
                         <span>
@@ -318,23 +322,23 @@
                                 <span>1억원</span>
                             </li>
                         </ul>
-                        <a href="./page03.html">가입하기</a>
+                        <a href="page05.jsp">가입하기</a>
                     </div>
                 </li>
             </ul>
         </div>
 
-        <div>
+        <div class="setBorder">
             <div>
                 <p> 10년 만기(갱신형) / 10년납 / 재해사망 추가보장 / 비흡연 / 24세 / 여자 </p>
                 <span>
                     <a href="">수정</a>
-                    <a href="">가입제안서</a>
+                    <a href="../text/(무)흥국생명 온라인정기보험_인쇄용약관(202107)_공시용.pdf" download>가입제안서</a>
                     <a href="">메일발송</a>
                 </span>
             </div>
 
-            <div>
+            <div class="setBorder">
                 <dl>
                     <dt>
                         <a href=""> 보장내용 </a>
@@ -342,7 +346,7 @@
                     <dd>
                         <a href="">
                             <div>
-                                <table>
+                                <table class="setBorder">
                                     <colgroup>
                                         <col style="width: 166px;">
                                         <col style="width: 208px;">
@@ -376,7 +380,7 @@
                 </dl>
             </div>
 
-            <div>
+            <div class="setBorder">
                 <dl>
                     <dt>
                         <a href=""> 해지환급금 예시표(단위 : 원,%) </a>
@@ -384,7 +388,7 @@
                     <dd>
                         <a href="">
                             <div>
-                                <table>
+                                <table class="setBorder">
                                     <colgroup>
                                         <col style="width: 166px;">
                                         <col style="width: 166px;">
