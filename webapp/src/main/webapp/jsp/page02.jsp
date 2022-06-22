@@ -1,11 +1,11 @@
 <%@page import="java.time.LocalDate"%>
 <%@page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>º¸Çè°è»ê</title>
+<meta charset="UTF-8">
+<title>ë³´í—˜ê³„ì‚°</title>
 <link href="../css/page02.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -29,14 +29,14 @@
  %>
    <div class="input_area setBorder">
         <table class="input_tbl">
-            <!-- º¸Çè·á °è»ê ¿µ¿ª = »ý³â¿ùÀÏ, ¼ºº°, Èí¿¬¿©ºÎ -->
+            <!-- ë³´í—˜ë£Œ ê³„ì‚° ì˜ì—­ = ìƒë…„ì›”ì¼, ì„±ë³„, í¡ì—°ì—¬ë¶€ -->
             <colgroup>
                 <col style="width: 150px;">
 				<col style="width:*;"> 
             </colgroup>
             <tbody>
                 <tr>
-                   <th> º¸Çè³ªÀÌ 
+                   <th> ë³´í—˜ë‚˜ì´ 
                    <span>
                    <% 
                    String age = custBirth_MENU3;
@@ -66,7 +66,7 @@
                 	   manAge-=1900;
                    }
                    out.print(manAge);
-                   %>¼¼
+                   %>ì„¸
                    </span>
                    </th> 
                    
@@ -78,30 +78,30 @@
                         <span>
                             <label>
                                 <% if(request.getParameter("custGnder_MENU3").equals("1")) {%>
-                                <input type="radio" name="custGnder_MENU3" class="d-radio" value="1" title="³²ÀÚ ¼±ÅÃ" checked="checked">
-                                <span>³²ÀÚ</span>
-                                <input type="radio" name="custGnder_MENU3" class="d-radio" value="2" title="¿©ÀÚ ¼±ÅÃ">
-                                <span>¿©ÀÚ</span>
+                                <input type="radio" name="custGnder_MENU3" class="d-radio" value="1" title="ë‚¨ìž ì„ íƒ" checked="checked">
+                                <span>ë‚¨ìž</span>
+                                <input type="radio" name="custGnder_MENU3" class="d-radio" value="2" title="ì—¬ìž ì„ íƒ">
+                                <span>ì—¬ìž</span>
                                 <%}else if(request.getParameter("custGnder_MENU3").equals("2")){%>
-                                <input type="radio" name="custGnder_MENU3" class="d-radio" value="1" title="³²ÀÚ ¼±ÅÃ">
-                                <span>³²ÀÚ</span>
-                                <input type="radio" name="custGnder_MENU3" class="d-radio" value="2" title="¿©ÀÚ ¼±ÅÃ" checked="checked">
-                                <span>¿©ÀÚ</span>
+                                <input type="radio" name="custGnder_MENU3" class="d-radio" value="1" title="ë‚¨ìž ì„ íƒ">
+                                <span>ë‚¨ìž</span>
+                                <input type="radio" name="custGnder_MENU3" class="d-radio" value="2" title="ì—¬ìž ì„ íƒ" checked="checked">
+                                <span>ì—¬ìž</span>
                                 <%} %>
                             </label>
                         </span>
                         <span>
                             <label>
                                 <% if(request.getParameter("smoke_yn").equals("1")) {%>
-                                <input type="radio" name="smoke_yn" value="1" title="Èí¿¬ ¼±ÅÃ"  class="radio" checked="checked">
-                                <span>Èí¿¬</span>
-                                <input type="radio" name="smoke_yn" value="2" title="ºñÈí¿¬ ¼±ÅÃ"  class="radio">
-                                <span>ºñÈí¿¬</span>
+                                <input type="radio" name="smoke_yn" value="1" title="í¡ì—° ì„ íƒ"  class="radio" checked="checked">
+                                <span>í¡ì—°</span>
+                                <input type="radio" name="smoke_yn" value="2" title="ë¹„í¡ì—° ì„ íƒ"  class="radio">
+                                <span>ë¹„í¡ì—°</span>
                                 <%}else if(request.getParameter("custGnder_MENU3").equals("2")){%>
-                                <input type="radio" name="smoke_yn" value="1" title="Èí¿¬ ¼±ÅÃ"  class="radio">
-                                <span>Èí¿¬</span>
-                                <input type="radio" name="smoke_yn" value="2" title="ºñÈí¿¬ ¼±ÅÃ"  class="radio" checked="checked">
-                                <span>ºñÈí¿¬</span>
+                                <input type="radio" name="smoke_yn" value="1" title="í¡ì—° ì„ íƒ"  class="radio">
+                                <span>í¡ì—°</span>
+                                <input type="radio" name="smoke_yn" value="2" title="ë¹„í¡ì—° ì„ íƒ"  class="radio" checked="checked">
+                                <span>ë¹„í¡ì—°</span>
                                 <%} %>
                             </label>
                         </span>
@@ -119,30 +119,30 @@
                 </colgroup>
                 <tbody>
                     <tr>
-                        <th> º¸Çè±â°£ </th>
+                        <th> ë³´í—˜ê¸°ê°„ </th>
                         <td>
                             <span>
                                 <label>
                                     <input type="radio" class="d-radio" name="manYear">
-                                    <span>10³â¸¸±â(°»½ÅÇü)</span>
+                                    <span>10ë…„ë§Œê¸°(ê°±ì‹ í˜•)</span>
                                 </label>
                             </span>
                             <span>
                                 <label>
                                     <input type="radio" class="d-radio" name="manYear">
-                                    <span>20³â</span> 
+                                    <span>20ë…„</span> 
                                 </label>
                             </span>
                             <span>
                                 <label>
                                     <input type="radio" class="d-radio" name="manYear">
-                                    <span>60¼¼</span>
+                                    <span>60ì„¸</span>
                                 </label>
                             </span>
                             <span>
                                 <label>
                                     <input type="radio" class="d-radio" name="manYear">
-                                    <span>80¼¼</span>
+                                    <span>80ì„¸</span>
                                 </label>
                             </span>
                         </td>
@@ -155,30 +155,30 @@
                     <col style="width: 150px;">
                 </colgroup>
                 <tbody>
-                    <th>³³ÀÔ±â°£</th>
+                    <th>ë‚©ìž…ê¸°ê°„</th>
                     <td>
                         <span>
                             <label>
                                 <input type="radio">
-                                <span>10³â³³</span>
+                                <span>10ë…„ë‚©</span>
                             </label>
                         </span>
                         <span>
                             <label>
                                 <input type="radio">
-                                <span>20³â³³</span>
+                                <span>20ë…„ë‚©</span>
                             </label>
                         </span>
                         <span>
                             <label>
                                 <input type="radio">
-                                <span>60¼¼³³</span>
+                                <span>60ì„¸ë‚©</span>
                             </label>
                         </span>
                         <span>
                             <label>
                                 <input type="radio">
-                                <span>80¼¼³³</span>
+                                <span>80ì„¸ë‚©</span>
                             </label>
                         </span>
 
@@ -191,12 +191,12 @@
                     <col style="width: 150px;">
                 </colgroup>
                 <tbody>
-                    <th>ÀçÇØ»ç¸Á</th>
+                    <th>ìž¬í•´ì‚¬ë§</th>
                     <td>
                         <span>
                             <label>
                                 <input type="radio">
-                                <span>¿¹</span>
+                                <span>ì˜ˆ</span>
                             </label>
                         </span>
                     </td>
@@ -208,40 +208,40 @@
                     <col style="width: 150px;">
                 </colgroup>
                 <tbody>
-                    <th>ÀÏ¹Ý»ç¸Áº¸Çè±Ý</th>
+                    <th>ì¼ë°˜ì‚¬ë§ë³´í—˜ê¸ˆ</th>
                     <td>
                         <div>
-                            <input type="text" title="º¸Çè°¡ÀÔ±Ý¾×ÀÔ·Â"value="10,000">
-                            <span>¸¸¿ø</span>
+                            <input type="text" title="ë³´í—˜ê°€ìž…ê¸ˆì•¡ìž…ë ¥"value="10,000">
+                            <span>ë§Œì›</span>
                             <a href="#n" class="btn btn-plus">
-                                <span>1000¸¸ ´ÜÀ§ Áõ°¨</span>
+                                <span>1000ë§Œ ë‹¨ìœ„ ì¦ê°</span>
                             </a>
                             <a href="#n" class="btn btn-minus">
-                                <span>1000¸¸ ´ÜÀ§ °¨¼Ò</span>
+                                <span>1000ë§Œ ë‹¨ìœ„ ê°ì†Œ</span>
                             </a>
                         </div>
                         <span>
                             <label>
                                 <input type="radio">
-                                <span>2¾ï</span>
+                                <span>2ì–µ</span>
                             </label>
                         </span>
                         <span>
                             <label>
                                 <input type="radio">
-                                <span>1¾ï5Ãµ¸¸</span>
+                                <span>1ì–µ5ì²œë§Œ</span>
                             </label>
                         </span>
                         <span>
                             <label>
                                 <input type="radio">
-                                <span>1¾ï</span>
+                                <span>1ì–µ</span>
                             </label>
                         </span>
                         <span>
                             <label>
                                 <input type="radio">
-                                <span>5Ãµ¸¸</span>
+                                <span>5ì²œë§Œ</span>
                             </label>
                         </span>
                     </td>
@@ -254,13 +254,13 @@
                     <label>
                         <input type="checkbox">
                         <span>
-                            °¡Àå ¸¹ÀÌ °¡ÀÔÇÏ´Â ¼³°è
+                            ê°€ìž¥ ë§Žì´ ê°€ìž…í•˜ëŠ” ì„¤ê³„
                         </span>
                     </label>
                 </span>
-                <a href="">
+                <a>
                     <span>
-                        º¸Çè·á°è»ê
+                        ë³´í—˜ë£Œê³„ì‚°
                     </span>
                 </a>
             </div>
@@ -271,9 +271,9 @@
 
     <div>
         <div class="setBorder">
-            <h2>º¸Çè·á °è»ê°á°ú</h2>
-            <h3>¼³°è ³»¿ªÀ» ¼±ÅÃÇÑ ÈÄ [º¸Àå³»¿ë ºñ±³] ¹öÆ°À» Å¬¸¯ ½Ã º¸Àå ³»¿ëÀ» ºñ±³ÇÏ¿© È®ÀÎÇÒ ¼ö ÀÖ½À´Ï´Ù.</h3>
-            <a href="page03.jsp">º¸Àå³»¿ë ºñ±³</a>
+            <h2>ë³´í—˜ë£Œ ê³„ì‚°ê²°ê³¼</h2>
+            <h3>ì„¤ê³„ ë‚´ì—­ì„ ì„ íƒí•œ í›„ [ë³´ìž¥ë‚´ìš© ë¹„êµ] ë²„íŠ¼ì„ í´ë¦­ ì‹œ ë³´ìž¥ ë‚´ìš©ì„ ë¹„êµí•˜ì—¬ í™•ì¸í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.</h3>
+            <a href="page03.jsp">ë³´ìž¥ë‚´ìš© ë¹„êµ</a>
 
         </div>
 
@@ -281,105 +281,105 @@
             <ul class="box">
                 <li class="contentBox setBorder">
                     <div>
-                        <span>³ªÀÇ ¼³°è</span>
+                        <span>ë‚˜ì˜ ì„¤ê³„</span>
                         <span>
-                            <input type="checkbox" title="³ªÀÇ ¼³°è">
+                            <input type="checkbox" title="ë‚˜ì˜ ì„¤ê³„">
                         </span>
                     </div>
                     <div>
                         <ul>
                             <li>
-                                <span>¿ù º¸Çè·á</span>
-                                <span>3,000¿ø</span>
+                                <span>ì›” ë³´í—˜ë£Œ</span>
+                                <span>3,000ì›</span>
                             </li>
                             <li>
-                                <span>ÀçÇØ»ç¸Áº¸Çè±Ý</span>
-                                <span>2¾ï¿ø</span>
+                                <span>ìž¬í•´ì‚¬ë§ë³´í—˜ê¸ˆ</span>
+                                <span>2ì–µì›</span>
                             </li>
                             <li>
-                                <span>ÀÏ¹Ý»ç¸Áº¸Çè±Ý</span>
-                                <span>1¾ï¿ø</span>
+                                <span>ì¼ë°˜ì‚¬ë§ë³´í—˜ê¸ˆ</span>
+                                <span>1ì–µì›</span>
                             </li>
                         </ul>
-                        <a href="page05.jsp">°¡ÀÔÇÏ±â</a>
+                        <a href="page05.jsp">ê°€ìž…í•˜ê¸°</a>
                     </div>
                 </li>
 
                 <li class="contentBox setBorder">
                     <div>
-                        <span>ÃÖ´ëº¸Àå</span>
+                        <span>ìµœëŒ€ë³´ìž¥</span>
                         <span>
-                            <input type="checkbox" title="ÃÖ´ëº¸Àå">
+                            <input type="checkbox" title="ìµœëŒ€ë³´ìž¥">
                         </span>
                     </div>
                     <div>
                         <ul>
                             <li>
-                                <span>¿ù º¸Çè·á</span>
-                                <span>84,000¿ø</span>
+                                <span>ì›” ë³´í—˜ë£Œ</span>
+                                <span>84,000ì›</span>
                             </li>
                             <li>
-                                <span>ÀçÇØ»ç¸Áº¸Çè±Ý</span>
-                                <span>4¾ï¿ø</span>
+                                <span>ìž¬í•´ì‚¬ë§ë³´í—˜ê¸ˆ</span>
+                                <span>4ì–µì›</span>
                             </li>
                             <li>
-                                <span>ÀÏ¹Ý»ç¸Áº¸Çè±Ý</span>
-                                <span>2¾ï¿ø</span>
+                                <span>ì¼ë°˜ì‚¬ë§ë³´í—˜ê¸ˆ</span>
+                                <span>2ì–µì›</span>
                             </li>
                         </ul>
-                        <a href="page05.jsp">°¡ÀÔÇÏ±â</a>
+                        <a href="page05.jsp">ê°€ìž…í•˜ê¸°</a>
                     </div>
                 </li>
 
                 <li class="contentBox setBorder">
                     <div>
-                        <span>ÀÏ¹Ýº¸Àå</span>
+                        <span>ì¼ë°˜ë³´ìž¥</span>
                         <span>
-                            <input type="checkbox" title="ÀÏ¹Ýº¸Àå">
+                            <input type="checkbox" title="ì¼ë°˜ë³´ìž¥">
                         </span>
                     </div>
                     <div>
                         <ul>
                             <li>
-                                <span>¿ù º¸Çè·á</span>
-                                <span>20,00¿ø</span>
+                                <span>ì›” ë³´í—˜ë£Œ</span>
+                                <span>20,00ì›</span>
                             </li>
                             <li>
-                                <span>ÀçÇØ»ç¸Áº¸Çè±Ý</span>
-                                <span>2¾ï¿ø</span>
+                                <span>ìž¬í•´ì‚¬ë§ë³´í—˜ê¸ˆ</span>
+                                <span>2ì–µì›</span>
                             </li>
                             <li>
-                                <span>ÀÏ¹Ý»ç¸Áº¸Çè±Ý</span>
-                                <span>1¾ï¿ø</span>
+                                <span>ì¼ë°˜ì‚¬ë§ë³´í—˜ê¸ˆ</span>
+                                <span>1ì–µì›</span>
                             </li>
                         </ul>
-                        <a href="page05.jsp">°¡ÀÔÇÏ±â</a>
+                        <a href="page05.jsp">ê°€ìž…í•˜ê¸°</a>
                     </div>
                 </li>
 
                 <li class="contentBox setBorder">
                     <div>
-                        <span>ÃÖÀú°¡°Ý</span>
+                        <span>ìµœì €ê°€ê²©</span>
                         <span>
-                            <input type="checkbox" title="ÃÖÀú°¡°Ý">
+                            <input type="checkbox" title="ìµœì €ê°€ê²©">
                         </span>
                     </div>
                     <div>
                         <ul>
                             <li>
-                                <span>¿ù º¸Çè·á</span>
-                                <span>3,000¿ø</span>
+                                <span>ì›” ë³´í—˜ë£Œ</span>
+                                <span>3,000ì›</span>
                             </li>
                             <li>
-                                <span>ÀçÇØ»ç¸Áº¸Çè±Ý</span>
-                                <span>2¾ï¿ø</span>
+                                <span>ìž¬í•´ì‚¬ë§ë³´í—˜ê¸ˆ</span>
+                                <span>2ì–µì›</span>
                             </li>
                             <li>
-                                <span>ÀÏ¹Ý»ç¸Áº¸Çè±Ý</span>
-                                <span>1¾ï¿ø</span>
+                                <span>ì¼ë°˜ì‚¬ë§ë³´í—˜ê¸ˆ</span>
+                                <span>1ì–µì›</span>
                             </li>
                         </ul>
-                        <a href="page05.jsp">°¡ÀÔÇÏ±â</a>
+                        <a href="page05.jsp">ê°€ìž…í•˜ê¸°</a>
                     </div>
                 </li>
             </ul>
@@ -387,18 +387,18 @@
 
         <div class="setBorder">
             <div>
-                <p> 10³â ¸¸±â(°»½ÅÇü) / 10³â³³ / ÀçÇØ»ç¸Á Ãß°¡º¸Àå / ºñÈí¿¬ / 24¼¼ / ¿©ÀÚ </p>
+                <p> 10ë…„ ë§Œê¸°(ê°±ì‹ í˜•) / 10ë…„ë‚© / ìž¬í•´ì‚¬ë§ ì¶”ê°€ë³´ìž¥ / ë¹„í¡ì—° / 24ì„¸ / ì—¬ìž </p>
                 <span>
-                    <a>¼öÁ¤</a>
-                    <a href="../text/(¹«)Èï±¹»ý¸í ¿Â¶óÀÎÁ¤±âº¸Çè_ÀÎ¼â¿ë¾à°ü(202107)_°ø½Ã¿ë.pdf" download>°¡ÀÔÁ¦¾È¼­</a>
-                    <a href="page04.jsp">¸ÞÀÏ¹ß¼Û</a>
+                    <a>ìˆ˜ì •</a>
+                    <a href="../text/(ë¬´)í¥êµ­ìƒëª… ì˜¨ë¼ì¸ì •ê¸°ë³´í—˜_ì¸ì‡„ìš©ì•½ê´€(202107)_ê³µì‹œìš©.pdf" download>ê°€ìž…ì œì•ˆì„œ</a>
+                    <a href="page04.jsp">ë©”ì¼ë°œì†¡</a>
                 </span>
             </div>
 
             <div class="setBorder">
                 <dl>
                     <dt>
-                        <a href=""> º¸Àå³»¿ë </a>
+                        <a href=""> ë³´ìž¥ë‚´ìš© </a>
                     </dt>
                     <dd>
                         <a href="">
@@ -410,26 +410,26 @@
                                     </colgroup>
                                     <thead>
                                         <tr>
-                                            <th>º¸Àå³»¿ë</th>
-                                            <th>Áö±Þ»çÀ¯</th>
-                                            <th>º¸Àå±Ý¾×</th>
+                                            <th>ë³´ìž¥ë‚´ìš©</th>
+                                            <th>ì§€ê¸‰ì‚¬ìœ </th>
+                                            <th>ë³´ìž¥ê¸ˆì•¡</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <th>ÀçÇØ»ç¸Áº¸Çè±Ý</th>
-                                            <th>ÀçÇØ¸¦ ¿øÀÎÀ¸·Î »ç¸Á½Ã</th>
-                                            <th>2¾ï</th>
+                                            <th>ìž¬í•´ì‚¬ë§ë³´í—˜ê¸ˆ</th>
+                                            <th>ìž¬í•´ë¥¼ ì›ì¸ìœ¼ë¡œ ì‚¬ë§ì‹œ</th>
+                                            <th>2ì–µ</th>
                                         </tr>
                                         <tr>
-                                            <th>ÀÏ¹Ý»ç¸Áº¸Çè±Ý</th>
-                                            <th>ÀçÇØÀÌ¿ÜÀÇ ¿øÀÎÀ¸·Î »ç¸Á½Ã</th>
-                                            <th>1¾ï</th>
+                                            <th>ì¼ë°˜ì‚¬ë§ë³´í—˜ê¸ˆ</th>
+                                            <th>ìž¬í•´ì´ì™¸ì˜ ì›ì¸ìœ¼ë¡œ ì‚¬ë§ì‹œ</th>
+                                            <th>1ì–µ</th>
                                         </tr>
                                     </tbody>
                                 </table>
                                 <ul>
-                                    <li> *´Ü, '°íÀÇÀû »ç°í ¹× 2³â ÀÌ³» ÀÚ»ì'ÀÇ °æ¿ì¿¡ »ç¸Áº¸Çè±Ý Áö±ÞÀÌ Á¦ÇÑµË´Ï´Ù.</li>
+                                    <li> *ë‹¨, 'ê³ ì˜ì  ì‚¬ê³  ë° 2ë…„ ì´ë‚´ ìžì‚´'ì˜ ê²½ìš°ì— ì‚¬ë§ë³´í—˜ê¸ˆ ì§€ê¸‰ì´ ì œí•œë©ë‹ˆë‹¤.</li>
                                 </ul>
                             </div>
                         </a>
@@ -440,7 +440,7 @@
             <div class="setBorder">
                 <dl>
                     <dt>
-                        <a href=""> ÇØÁöÈ¯±Þ±Ý ¿¹½ÃÇ¥(´ÜÀ§ : ¿ø,%) </a>
+                        <a href=""> í•´ì§€í™˜ê¸‰ê¸ˆ ì˜ˆì‹œí‘œ(ë‹¨ìœ„ : ì›,%) </a>
                     </dt>
                     <dd>
                         <a href="">
@@ -455,101 +455,101 @@
                                     </colgroup>
                                     <thead>
                                         <tr>
-                                            <th>°æ°ú½Ã°£</th>
-                                            <th>µµ´Þ³ªÀÌ</th>
-                                            <th>³³ÀÔº¸Çè·á ´©°è</th>
-                                            <th>ÇØÁöÈ¯±Þ±Ý</th>
-                                            <th>È¯±Þ·ü</th>
+                                            <th>ê²½ê³¼ì‹œê°„</th>
+                                            <th>ë„ë‹¬ë‚˜ì´</th>
+                                            <th>ë‚©ìž…ë³´í—˜ë£Œ ëˆ„ê³„</th>
+                                            <th>í•´ì§€í™˜ê¸‰ê¸ˆ</th>
+                                            <th>í™˜ê¸‰ë¥ </th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <th>3°³¿ù</th>
-                                            <th>24¼¼</th>
+                                            <th>3ê°œì›”</th>
+                                            <th>24ì„¸</th>
                                             <th>9,000</th>
                                             <th>0</th>
                                             <th>0.0</th>
                                         </tr>
                                         <tr>
-                                            <th>6°³¿ù</th>
-                                            <th>24¼¼</th>
+                                            <th>6ê°œì›”</th>
+                                            <th>24ì„¸</th>
                                             <th>18,000</th>
                                             <th>0</th>
                                             <th>0.0</th>
                                         </tr>
                                         <tr>
-                                            <th>9°³¿ù</th>
-                                            <th>24¼¼</th>
+                                            <th>9ê°œì›”</th>
+                                            <th>24ì„¸</th>
                                             <th>27,000</th>
                                             <th>0</th>
                                             <th>0.0</th>
                                         </tr>
                                         <tr>
-                                            <th>1³â</th>
-                                            <th>25¼¼</th>
+                                            <th>1ë…„</th>
+                                            <th>25ì„¸</th>
                                             <th>36,000</th>
                                             <th>0</th>
                                             <th>0.0</th>
                                         </tr>
                                         <tr>
-                                            <th>2³â</th>
-                                            <th>26¼¼</th>
+                                            <th>2ë…„</th>
+                                            <th>26ì„¸</th>
                                             <th>72,000</th>
                                             <th>0</th>
                                             <th>0.0</th>
                                         </tr>
                                         <tr>
-                                            <th>3³â</th>
-                                            <th>27¼¼</th>
+                                            <th>3ë…„</th>
+                                            <th>27ì„¸</th>
                                             <th>108,000</th>
                                             <th>1,446</th>
                                             <th>1.3</th>
                                         </tr>
                                         <tr>
-                                            <th>4³â</th>
-                                            <th>28¼¼</th>
+                                            <th>4ë…„</th>
+                                            <th>28ì„¸</th>
                                             <th>144,000</th>
                                             <th>6,084</th>
                                             <th>4.2</th>
                                         </tr>
                                         <tr>
-                                            <th>5³â</th>
-                                            <th>29¼¼</th>
+                                            <th>5ë…„</th>
+                                            <th>29ì„¸</th>
                                             <th>180,000</th>
                                             <th>10,723</th>
                                             <th>5.9</th>
                                         </tr>
                                         <tr>
-                                            <th>6³â</th>
-                                            <th>30¼¼</th>
+                                            <th>6ë…„</th>
+                                            <th>30ì„¸</th>
                                             <th>216,000</th>
                                             <th>12,361</th>
                                             <th>5.7</th>
                                         </tr>
                                         <tr>
-                                            <th>7³â</th>
-                                            <th>31¼¼</th>
+                                            <th>7ë…„</th>
+                                            <th>31ì„¸</th>
                                             <th>252,000</th>
                                             <th>15,000</th>
                                             <th>5.9</th>
                                         </tr>
                                         <tr>
-                                            <th>8³â</th>
-                                            <th>32¼¼</th>
+                                            <th>8ë…„</th>
+                                            <th>32ì„¸</th>
                                             <th>288,000</th>
                                             <th>11,000</th>
                                             <th>3.8</th>
                                         </tr>
                                         <tr>
-                                            <th>9³â</th>
-                                            <th>33¼¼</th>
+                                            <th>9ë…„</th>
+                                            <th>33ì„¸</th>
                                             <th>324,000</th>
                                             <th>7,000</th>
                                             <th>2.1</th>
                                         </tr>
                                         <tr>
-                                            <th>10³â</th>
-                                            <th>34¼¼</th>
+                                            <th>10ë…„</th>
+                                            <th>34ì„¸</th>
                                             <th>360,000</th>
                                             <th>0</th>
                                             <th>0.0</th>
@@ -558,10 +558,10 @@
                                     </tbody>
                                 </table>
                                 <ul>
-                                    <li> *ÃÖÃÊ °è¾àº¸Çè±â°£ µ¿¾ÈÀÇ ³³ÀÔº¸Çè·á ¹× ÇØÁöÈ¯±Þ±Ý¸¸ ¹Ý¿µµÈ ±Ý¾×ÀÌ¸ç, ÇâÈÄ °»½Å¿©ºÎ µî¿¡ µû¶ó ´Þ¶óÁú ¼ö ÀÖ½À´Ï´Ù.</li>
-                                    <li> ÀÌ º¸Çè²²¾àÀ» ÁßµµÇØÁö ÇÒ °æ¿ì ÇØÁöÈ¯±Þ±ÝÀº ³³ÀÔÇÑ º¸Çè·á¿¡¼­ °æ°úµÈ ±â°£ÀÇ À§Çèº¸Çè·á, »ç¾÷ºñ(ÇØÁ¦°øÁ¦¾× Æ÷ÇÔ)µîÀÌ Â÷°¨µÇ¹Ç·Î ³³ÀÔº¸Çè·áº¸´Ù Àû°Å³ª ¾øÀ» ¼öµµ ÀÖ½À´Ï´Ù.</li>
-                                    <li>¸¸±â½Ã ¸¸±âÈ¯±Þ±ÝÀÌ ¾ø´Â ¼ø¼öº¸ÀåÇü »óÇ°ÀÔ´Ï´Ù.</li>
-                                    <li>»ó±â ¿¹½Ã±Ý¾×Àº ¼¼Àü±Ý¾× ±âÁØÀÔ´Ï´Ù.</li>
+                                    <li> *ìµœì´ˆ ê³„ì•½ë³´í—˜ê¸°ê°„ ë™ì•ˆì˜ ë‚©ìž…ë³´í—˜ë£Œ ë° í•´ì§€í™˜ê¸‰ê¸ˆë§Œ ë°˜ì˜ëœ ê¸ˆì•¡ì´ë©°, í–¥í›„ ê°±ì‹ ì—¬ë¶€ ë“±ì— ë”°ë¼ ë‹¬ë¼ì§ˆ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.</li>
+                                    <li> ì´ ë³´í—˜ê»˜ì•½ì„ ì¤‘ë„í•´ì§€ í•  ê²½ìš° í•´ì§€í™˜ê¸‰ê¸ˆì€ ë‚©ìž…í•œ ë³´í—˜ë£Œì—ì„œ ê²½ê³¼ëœ ê¸°ê°„ì˜ ìœ„í—˜ë³´í—˜ë£Œ, ì‚¬ì—…ë¹„(í•´ì œê³µì œì•¡ í¬í•¨)ë“±ì´ ì°¨ê°ë˜ë¯€ë¡œ ë‚©ìž…ë³´í—˜ë£Œë³´ë‹¤ ì ê±°ë‚˜ ì—†ì„ ìˆ˜ë„ ìžˆìŠµë‹ˆë‹¤.</li>
+                                    <li>ë§Œê¸°ì‹œ ë§Œê¸°í™˜ê¸‰ê¸ˆì´ ì—†ëŠ” ìˆœìˆ˜ë³´ìž¥í˜• ìƒí’ˆìž…ë‹ˆë‹¤.</li>
+                                    <li>ìƒê¸° ì˜ˆì‹œê¸ˆì•¡ì€ ì„¸ì „ê¸ˆì•¡ ê¸°ì¤€ìž…ë‹ˆë‹¤.</li>
                                 </ul>
                             </div>
                         </a>

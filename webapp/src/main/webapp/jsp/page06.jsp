@@ -1,403 +1,406 @@
 <%@page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
+<meta charset="UTF-8">
+<title>Í∞úÏù∏Ï†ïÎ≥¥ÏûÖÎ†• ÌéòÏù¥ÏßÄ</title>
+<link href="../css/page02.css" rel="stylesheet" type="text/css">
 </head>
 <body>
  <div class="subscription_wrap">
         <div class="top">
             <div class="top">
                 <h1>
-                    <b>(π´)»Ô±πª˝∏Ìø¬∂Û¿Œ 
-                        <span>¡§±‚∫∏«Ë</span>
-                    </b> ∞°¿‘«œ±‚
+                    <b>(Î¨¥)Ìù•Íµ≠ÏÉùÎ™ÖÏò®ÎùºÏù∏ 
+                        <span>Ï†ïÍ∏∞Î≥¥Ìóò</span>
+                    </b> Í∞ÄÏûÖÌïòÍ∏∞
                 </h1>
                 
-                <div class="plan_data">
+                <div class="plan_data box setBorder" >
                     <dl class="type">
-                        <dt>±∏∫–</dt>
-                        <dd id="p_item_cont1"><b>(»Ìø¨)2¡æ(∞ªΩ≈«¸)</b></dd>
+                        <dt>Íµ¨Î∂Ñ</dt>
+                        <dd id="p_item_cont1"><b>(Ìù°Ïó∞)2Ï¢Ö(Í∞±Ïã†Ìòï)</b></dd>
                     </dl>
                     <dl class="period1">
-                        <dt>∫∏«Ë±‚∞£</dt>
-                        <dd id="p_item_cont2"><b><b>10</b>≥‚</b></dd>
+                        <dt>Î≥¥ÌóòÍ∏∞Í∞Ñ</dt>
+                        <dd id="p_item_cont2"><b><b>10</b>ÎÖÑ</b></dd>
                     </dl>
                     <dl class="period2">
-                        <dt>≥≥¿‘±‚∞£</dt>
-                        <dd id="p_item_cont3"><b><b>¿¸±‚≥≥</b></b></dd>
+                        <dt>ÎÇ©ÏûÖÍ∏∞Í∞Ñ</dt>
+                        <dd id="p_item_cont3"><b><b>Ï†ÑÍ∏∞ÎÇ©</b></b></dd>
                     </dl>
                     <dl class="money1">
-                        <dt>∞°¿‘±›æ◊</dt>
-                        <dd id="p_item_cont6"><b>     100,000,000ø¯</b></dd>
+                        <dt>Í∞ÄÏûÖÍ∏àÏï°</dt>
+                        <dd id="p_item_cont6"><b>     100,000,000Ïõê</b></dd>
                     </dl>
                     <dl>
-                        <dt>ø˘ ∫∏«Ë∑·</dt>
-                        <dd id="p_item_cont5"><b>          20,000ø¯</b></dd>
+                        <dt>Ïõî Î≥¥ÌóòÎ£å</dt>
+                        <dd id="p_item_cont5"><b>          20,000Ïõê</b></dd>
                     </dl>
                 </div>
                 <div class="subscription_cont">
 
-                    <!-- √ªæ‡ 1¥‹∞Ë -->
+                    <!-- Ï≤≠ÏïΩ 1Îã®Í≥Ñ -->
                     <div class="subscription_01">
             
-                        <div class="box_guide">
-                            <b class="fs16 c333">∞≥¿Œ¡§∫∏∏¶ ¿‘∑¬«œ¥¬ ¥‹∞Ë¿‘¥œ¥Ÿ.</b> 
-                            ∞Ëæ‡¿⁄¥‘¿« ¡§∫∏∏¶ ¿‘∑¬«œ∞Ì, ¡§∫∏√≥∏Æø° µø¿««œ¥¬ ¥‹∞Ë¿‘¥œ¥Ÿ.
+                        <div class="box_guide setBorder">
+                            <b class="fs16 c333">Í∞úÏù∏Ï†ïÎ≥¥Î•º ÏûÖÎ†•ÌïòÎäî Îã®Í≥ÑÏûÖÎãàÎã§.</b> 
+                            Í≥ÑÏïΩÏûêÎãòÏùò Ï†ïÎ≥¥Î•º ÏûÖÎ†•ÌïòÍ≥†, Ï†ïÎ≥¥Ï≤òÎ¶¨Ïóê ÎèôÏùòÌïòÎäî Îã®Í≥ÑÏûÖÎãàÎã§.
                         </div>
-                        <!-- ∞≥¿Œ¡§∫∏ -->
-                        <dl class="subscription_box mt20">
+                        <!-- Í∞úÏù∏Ï†ïÎ≥¥ -->
+                        <dl class="subscription_box mt20 setBorder">
             
-                            <dt class="person">∞≥¿Œ¡§∫∏</dt>
+                           <!--  <dt class="person">Í∞úÏù∏Ï†ïÎ≥¥</dt> -->
             
             
                             <dd class="step1">
                                 <table class="input_field">
-                                    <caption>∞≥¿Œ¡§∫∏</caption>
+                                    <caption>Í∞úÏù∏Ï†ïÎ≥¥</caption>
                                     <colgroup>
                                         <col width="153">
                                         <col width="*">
                                     </colgroup>
                                     <tbody>
                                         <tr>
-                                            <th>º∫∏Ì</th>
-                                            <td style="border-right: none;">
-                                                <input type="text" class="input" style="width:239px" id="CUST_NM" name="CUST_NM" title="¿Ã∏ß ¿‘∑¬" alt="¿Ã∏ß¿ª ¿‘∑¬«œººø‰." maxlength="50" hname="¿Ã∏ß" required="required" npkencrypt="off">
-                                                <label class="foreign_check ml10"><input type="checkbox" class="checkbox" title="ø‹±π¿Œ ø©∫Œ º±≈√" name="FORN_YN" id="FORN_YN"> <span class="fs12">ø‹±π¿Œ¿œ ∞ÊøÏ √º≈©«ÿ ¡÷ººø‰.</span></label>
+                                            <th>ÏÑ±Î™Ö</th>
+                                            <td class="tdright">
+                                                <input type="text" class="input" style="width:239px" id="CUST_NM" name="CUST_NM" title="Ïù¥Î¶Ñ ÏûÖÎ†•" alt="Ïù¥Î¶ÑÏùÑ ÏûÖÎ†•ÌïòÏÑ∏Ïöî." maxlength="50" hname="Ïù¥Î¶Ñ" required="required" npkencrypt="off">
+                                                <label class="foreign_check ml10"><input type="checkbox" class="checkbox" title="Ïô∏Íµ≠Ïù∏ Ïó¨Î∂Ä ÏÑ†ÌÉù" name="FORN_YN" id="FORN_YN"> 
+                                                <span class="fs12">Ïô∏Íµ≠Ïù∏Ïùº Í≤ΩÏö∞ Ï≤¥ÌÅ¨Ìï¥ Ï£ºÏÑ∏Ïöî.</span>
+                                                </label>
                                                 
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th id="juminno_text">¡÷πŒπ¯»£</th>
-                                            <td>
-                                                <input type="password" id="PSNL_ID" name="PSNL_ID" required="required" class="input" maxlength="7" hname="¡÷πŒπ¯»£µﬁ¿⁄∏Æ" title="¡÷πŒπ¯»£ µﬁ¿⁄∏Æ ∂«¥¬ ø‹±π¿Œ¿Œ ∞ÊøÏ ø‹±π¿ŒµÓ∑œπ¯»£ µﬁ¿⁄∏Æ ¿‘∑¬">
+                                            <th id="juminno_text">Ï£ºÎØºÎ≤àÌò∏</th>
+                                            <td class="tdright">
+                                                <input type="password" id="PSNL_ID" name="PSNL_ID" required="required" class="input" maxlength="7" hname="Ï£ºÎØºÎ≤àÌò∏Îí∑ÏûêÎ¶¨" title="Ï£ºÎØºÎ≤àÌò∏ Îí∑ÏûêÎ¶¨ ÎòêÎäî Ïô∏Íµ≠Ïù∏Ïù∏ Í≤ΩÏö∞ Ïô∏Íµ≠Ïù∏Îì±Î°ùÎ≤àÌò∏ Îí∑ÏûêÎ¶¨ ÏûÖÎ†•">
                                                 <span class="rdo_type01 ">
                                                     <label class="drvtype">
-                                                        <input type="checkbox" id="ess_text_psnl_id" name="ess_text_psnl_id" value="Y" class="d-radio" style="">∏∂øÏΩ∫ ¿‘∑¬</label>
+                                                        <input type="checkbox" id="ess_text_psnl_id" name="ess_text_psnl_id" value="Y" class="d-radio" style="">ÎßàÏö∞Ïä§ ÏûÖÎ†•</label>
                                                 </span>
                                             </td>
                                         </tr>
                                         <tr class="color id-card-title">
-                                            <th>Ω≈∫–¡ı »Æ¿Œ</th>
-                                            <td>
+                                            <th>Ïã†Î∂ÑÏ¶ù ÌôïÏù∏</th>
+                                            <td class="tdright">
                                                 <div class="rdo_type01">
-                                                    <label><input type="radio" class="d-radio" name="ID_GB" value="1" hname="Ω≈∫–¡ı »Æ¿Œ πÊπ˝" title="¡÷πŒµÓ∑œ¡ı º±≈√" id="juminclick">
-                                                        <span>¡÷πŒµÓ∑œ¡ı</span>
+                                                    <label><input type="radio" class="d-radio" name="ID_GB" value="1" hname="Ïã†Î∂ÑÏ¶ù ÌôïÏù∏ Î∞©Î≤ï" title="Ï£ºÎØºÎì±Î°ùÏ¶ù ÏÑ†ÌÉù" id="juminclick">
+                                                        <span>Ï£ºÎØºÎì±Î°ùÏ¶ù</span>
                                                     </label>
-                                                    <label><input type="radio" class="d-radio" name="ID_GB" value="2" hname="Ω≈∫–¡ı »Æ¿Œ πÊπ˝" title="øÓ¿¸∏È«„¡ı º±≈√" id="licenceclick">
-                                                        <span>øÓ¿¸∏È«„¡ı</span>
+                                                    <label><input type="radio" class="d-radio" name="ID_GB" value="2" hname="Ïã†Î∂ÑÏ¶ù ÌôïÏù∏ Î∞©Î≤ï" title="Ïö¥Ï†ÑÎ©¥ÌóàÏ¶ù ÏÑ†ÌÉù" id="licenceclick">
+                                                        <span>Ïö¥Ï†ÑÎ©¥ÌóàÏ¶ù</span>
                                                     </label>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr class="color id-card-wrap id-input">
                                             <th></th>
-                                            <td>
+                                            <td class="tdright">
                                                 <div class="inputs-psnl">
                                                     <div style="margin-top:10px;">
                                                         <span>
-                                                            <b>πﬂ±ﬁ¿œ¿⁄</b>
+                                                            <b>Î∞úÍ∏âÏùºÏûê</b>
                                                         </span> 
-                                                        <input type="text" name="ISUE_YMD" id="ISUE_YMD" maxlength="8" class="i-text" title="πﬂ±ﬁ¿œ¿⁄ ¿‘∑¬" hname="πﬂ±ﬁ¿œ¿⁄" pattern="[0-9]*">
-                                                        <img alt="¥ﬁ∑¬" title="¥ﬁ∑¬"> 
+                                                        <input type="text" name="ISUE_YMD" id="ISUE_YMD" maxlength="8" class="i-text" title="Î∞úÍ∏âÏùºÏûê ÏûÖÎ†•" hname="Î∞úÍ∏âÏùºÏûê" pattern="[0-9]*">
+                                                        <img alt="Îã¨Î†•" title="Îã¨Î†•"> 
                                                     </div>
                                                     <div>
                                                         <span>
-                                                            <b>πﬂ±ﬁ±‚∞¸</b>
+                                                            <b>Î∞úÍ∏âÍ∏∞Í¥Ä</b>
                                                         </span> 
-                                                        <select class="sbox" title="¡ˆø™º±≈√" id="ISUE_IN_CD1" name="ISUE_IN_CD1" hname="πﬂ±ﬁ¡ˆø™">
-                                                            <option value="">¡ˆø™ º±≈√</option>
-                                                            <option value="11">º≠øÔ∆Ø∫∞Ω√</option>
-                                                            <option value="12">¿Œ√µ±§ø™Ω√</option>
-                                                            <option value="13">∫ŒªÍ±§ø™Ω√</option>
-                                                            <option value="14">¥Î±∏±§ø™Ω√</option>
-                                                            <option value="15">øÔªÍ±§ø™Ω√</option>
-                                                            <option value="16">¥Î¿¸±§ø™Ω√</option>
-                                                            <option value="17">±§¡÷±§ø™Ω√</option>
-                                                            <option value="18">∞Ê±‚µµ</option>
-                                                            <option value="19">∞≠ø¯µµ</option>
-                                                            <option value="20">√Ê√ª∫œµµ</option>
-                                                            <option value="21">√Ê√ª≥≤µµ</option>
-                                                            <option value="22">∞ÊªÛ∫œµµ</option>
-                                                            <option value="23">∞ÊªÛ≥≤µµ</option>
-                                                            <option value="24">¿¸∂Û∫œµµ</option>
-                                                            <option value="25">¿¸∂Û≥≤µµ</option>
-                                                            <option value="26">¡¶¡÷∆Ø∫∞¿⁄ƒ°µµ</option>
-                                                            <option value="27">ºº¡æ∆Ø∫∞¿⁄ƒ°Ω√</option>
+                                                        <select class="sbox" title="ÏßÄÏó≠ÏÑ†ÌÉù" id="ISUE_IN_CD1" name="ISUE_IN_CD1" hname="Î∞úÍ∏âÏßÄÏó≠">
+                                                            <option value="">ÏßÄÏó≠ ÏÑ†ÌÉù</option>
+                                                            <option value="11">ÏÑúÏö∏ÌäπÎ≥ÑÏãú</option>
+                                                            <option value="12">Ïù∏Ï≤úÍ¥ëÏó≠Ïãú</option>
+                                                            <option value="13">Î∂ÄÏÇ∞Í¥ëÏó≠Ïãú</option>
+                                                            <option value="14">ÎåÄÍµ¨Í¥ëÏó≠Ïãú</option>
+                                                            <option value="15">Ïö∏ÏÇ∞Í¥ëÏó≠Ïãú</option>
+                                                            <option value="16">ÎåÄÏ†ÑÍ¥ëÏó≠Ïãú</option>
+                                                            <option value="17">Í¥ëÏ£ºÍ¥ëÏó≠Ïãú</option>
+                                                            <option value="18">Í≤ΩÍ∏∞ÎèÑ</option>
+                                                            <option value="19">Í∞ïÏõêÎèÑ</option>
+                                                            <option value="20">Ï∂©Ï≤≠Î∂ÅÎèÑ</option>
+                                                            <option value="21">Ï∂©Ï≤≠ÎÇ®ÎèÑ</option>
+                                                            <option value="22">Í≤ΩÏÉÅÎ∂ÅÎèÑ</option>
+                                                            <option value="23">Í≤ΩÏÉÅÎÇ®ÎèÑ</option>
+                                                            <option value="24">Ï†ÑÎùºÎ∂ÅÎèÑ</option>
+                                                            <option value="25">Ï†ÑÎùºÎÇ®ÎèÑ</option>
+                                                            <option value="26">Ï†úÏ£ºÌäπÎ≥ÑÏûêÏπòÎèÑ</option>
+                                                            <option value="27">ÏÑ∏Ï¢ÖÌäπÎ≥ÑÏûêÏπòÏãú</option>
                                                         </select>
-                                                        <select class="sbox" title="±‚∞¸º±≈√" id="ISUE_IN_DTL1" name="ISUE_IN_DTL1" hname="πﬂ±ﬁ±‚∞¸">
-                                                            <option>±‚∞¸ º±≈√</option>
+                                                        <select class="sbox" title="Í∏∞Í¥ÄÏÑ†ÌÉù" id="ISUE_IN_DTL1" name="ISUE_IN_DTL1" hname="Î∞úÍ∏âÍ∏∞Í¥Ä">
+                                                            <option>Í∏∞Í¥Ä ÏÑ†ÌÉù</option>
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <!-- //¡÷πŒµÓ∑œ¡ı -->
+                                                <!-- //Ï£ºÎØºÎì±Î°ùÏ¶ù -->
             
-                                                <!-- øÓ¿¸∏È«„¡ı -->
+                                                <!-- Ïö¥Ï†ÑÎ©¥ÌóàÏ¶ù -->
                                                 <div class="inputs-drv-license">
                                                         <div>
                                                         <span>
-                                                            <b>∏È«„π¯»£</b>
+                                                            <b>Î©¥ÌóàÎ≤àÌò∏</b>
                                                         </span>
                 
-                                                        <select class="select" id="DRV_AREA" name="DRV_AREA" title="øÓ¿¸ ∏È«„¡ı ¡ˆø™ º±≈√" hname="øÓ¿¸ ∏È«„¡ı πﬂ±ﬁ ¡ˆø™">
-                                                            <option value="">º±≈√«œººø‰</option>
-                                                            <option value="º≠øÔ">º≠øÔ</option>
+                                                        <select class="select" id="DRV_AREA" name="DRV_AREA" title="Ïö¥Ï†Ñ Î©¥ÌóàÏ¶ù ÏßÄÏó≠ ÏÑ†ÌÉù" hname="Ïö¥Ï†Ñ Î©¥ÌóàÏ¶ù Î∞úÍ∏â ÏßÄÏó≠">
+                                                            <option value="">ÏÑ†ÌÉùÌïòÏÑ∏Ïöî</option>
+                                                            <option value="ÏÑúÏö∏">ÏÑúÏö∏</option>
                                                             <option value="11">11</option>
-                                                            <option value="∫ŒªÍ">∫ŒªÍ</option>
+                                                            <option value="Î∂ÄÏÇ∞">Î∂ÄÏÇ∞</option>
                                                             <option value="12">12</option>
-                                                            <option value="∞Ê±‚">∞Ê±‚</option>
+                                                            <option value="Í≤ΩÍ∏∞">Í≤ΩÍ∏∞</option>
                                                             <option value="13">13</option>
-                                                            <option value="∞≠ø¯">∞≠ø¯</option>
+                                                            <option value="Í∞ïÏõê">Í∞ïÏõê</option>
                                                             <option value="14">14</option>
-                                                            <option value="√Ê∫œ">√Ê∫œ</option>
+                                                            <option value="Ï∂©Î∂Å">Ï∂©Î∂Å</option>
                                                             <option value="15">15</option>
-                                                            <option value="√Ê≥≤">√Ê≥≤</option>
+                                                            <option value="Ï∂©ÎÇ®">Ï∂©ÎÇ®</option>
                                                             <option value="16">16</option>
-                                                            <option value="¿¸∫œ">¿¸∫œ</option>
+                                                            <option value="Ï†ÑÎ∂Å">Ï†ÑÎ∂Å</option>
                                                             <option value="17">17</option>
-                                                            <option value="¿¸≥≤">¿¸≥≤</option>
+                                                            <option value="Ï†ÑÎÇ®">Ï†ÑÎÇ®</option>
                                                             <option value="18">18</option>
-                                                            <option value="∞Ê∫œ">∞Ê∫œ</option>
+                                                            <option value="Í≤ΩÎ∂Å">Í≤ΩÎ∂Å</option>
                                                             <option value="19">19</option>
-                                                            <option value="∞Ê≥≤">∞Ê≥≤</option>
+                                                            <option value="Í≤ΩÎÇ®">Í≤ΩÎÇ®</option>
                                                             <option value="20">20</option>
-                                                            <option value="¡¶¡÷">¡¶¡÷</option>
+                                                            <option value="Ï†úÏ£º">Ï†úÏ£º</option>
                                                             <option value="21">21</option>
-                                                            <option value="¿Œ√µ">¿Œ√µ</option>
+                                                            <option value="Ïù∏Ï≤ú">Ïù∏Ï≤ú</option>
                                                             <option value="23">23</option>
-                                                            <option value="¥Î±∏">¥Î±∏</option>
+                                                            <option value="ÎåÄÍµ¨">ÎåÄÍµ¨</option>
                                                             <option value="22">22</option>
-                                                            <option value="±§¡÷">±§¡÷</option>
-                                                            <option value="¥Î¿¸">¥Î¿¸</option>
+                                                            <option value="Í¥ëÏ£º">Í¥ëÏ£º</option>
+                                                            <option value="ÎåÄÏ†Ñ">ÎåÄÏ†Ñ</option>
                                                             <option value="25">25</option>
-                                                            <option value="øÔªÍ">øÔªÍ</option>
+                                                            <option value="Ïö∏ÏÇ∞">Ïö∏ÏÇ∞</option>
                                                             <option value="26">26</option>
                                                             <option value="28">28</option>
                                                         </select>
                                                             
-                                                        <input type="text" name="DRV_NO1" id="DRV_NO1" maxlength="2" class="i-text number tl" title="øÓ¿¸∏È«„ √ππ¯¬∞ ¿⁄∏Æ π¯»£ ¿‘∑¬" hname="øÓ¿¸∏È«„¡ı ¿œ∑√π¯»£ √ππ¯¬∞ ¿⁄∏Æ" style="width: 50px; text-align: right;" npkencrypt="off" pattern="[0-9]*"> 
-                                                        <input type="text" name="DRV_NO2" id="DRV_NO2" maxlength="6" class="i-text number tl" title="øÓ¿¸∏È«„ µŒπ¯¬∞ ¿⁄∏Æ π¯»£ ¿‘∑¬" hname="øÓ¿¸∏È«„¡ı ¿œ∑√π¯»£ µŒπ¯¬∞ ¿⁄∏Æ" style="width: 100px; text-align: right;" npkencrypt="off" pattern="[0-9]*"> 
-                                                        <input type="text" name="DRV_NO3" id="DRV_NO3" maxlength="2" class="i-text number tl" title="øÓ¿¸∏È«„ ººπ¯¬∞ ¿⁄∏Æ π¯»£ ¿‘∑¬" hname="øÓ¿¸∏È«„¡ı ¿œ∑√π¯»£ ººπ¯¬∞ ¿⁄∏Æ" style="width: 50px; text-align: right;" npkencrypt="off" pattern="[0-9]*">
+                                                        <input type="text" name="DRV_NO1" id="DRV_NO1" maxlength="2" class="i-text number tl" title="Ïö¥Ï†ÑÎ©¥Ìóà Ï≤´Î≤àÏß∏ ÏûêÎ¶¨ Î≤àÌò∏ ÏûÖÎ†•" hname="Ïö¥Ï†ÑÎ©¥ÌóàÏ¶ù ÏùºÎ†®Î≤àÌò∏ Ï≤´Î≤àÏß∏ ÏûêÎ¶¨" style="width: 50px; text-align: right;" npkencrypt="off" pattern="[0-9]*"> 
+                                                        <input type="text" name="DRV_NO2" id="DRV_NO2" maxlength="6" class="i-text number tl" title="Ïö¥Ï†ÑÎ©¥Ìóà ÎëêÎ≤àÏß∏ ÏûêÎ¶¨ Î≤àÌò∏ ÏûÖÎ†•" hname="Ïö¥Ï†ÑÎ©¥ÌóàÏ¶ù ÏùºÎ†®Î≤àÌò∏ ÎëêÎ≤àÏß∏ ÏûêÎ¶¨" style="width: 100px; text-align: right;" npkencrypt="off" pattern="[0-9]*"> 
+                                                        <input type="text" name="DRV_NO3" id="DRV_NO3" maxlength="2" class="i-text number tl" title="Ïö¥Ï†ÑÎ©¥Ìóà ÏÑ∏Î≤àÏß∏ ÏûêÎ¶¨ Î≤àÌò∏ ÏûÖÎ†•" hname="Ïö¥Ï†ÑÎ©¥ÌóàÏ¶ù ÏùºÎ†®Î≤àÌò∏ ÏÑ∏Î≤àÏß∏ ÏûêÎ¶¨" style="width: 50px; text-align: right;" npkencrypt="off" pattern="[0-9]*">
                                                         
                                                     </div>		 
                                                     <!--
                                                     <div>
                                                     <span>
-                                                        <b>¿œ∑√π¯»£</b>
+                                                        <b>ÏùºÎ†®Î≤àÌò∏</b>
                                                     </span> 
-                                                    <input type="password" name="DRV_SEQ"  id="DRV_SEQ" maxlength="6" class="i-text" title="øÓ¿¸∏È«„¡ı ¿œ∑√π¯»£ ¿‘∑¬"/>
+                                                    <input type="password" name="DRV_SEQ"  id="DRV_SEQ" maxlength="6" class="i-text" title="Ïö¥Ï†ÑÎ©¥ÌóàÏ¶ù ÏùºÎ†®Î≤àÌò∏ ÏûÖÎ†•"/>
                                                     
                                                        
                                                     </div> -->
                                                     <!-- 
-                                                    <p>πﬂ±ﬁ¿œ¿⁄
+                                                    <p>Î∞úÍ∏âÏùºÏûê
 
                                                     </span> 
-                                                        <input type="i-text number" name="DRV_ISUE_YMD"  id="DRV_ISUE_YMD" maxlength="8" class="i-text" title="øÓ¿¸∏È«„¡ı  πﬂ±ﬁ¿œ¿⁄" />
+                                                        <input type="i-text number" name="DRV_ISUE_YMD"  id="DRV_ISUE_YMD" maxlength="8" class="i-text" title="Ïö¥Ï†ÑÎ©¥ÌóàÏ¶ù  Î∞úÍ∏âÏùºÏûê" />
                                                     </p>
                                                      -->
                                                 
                                                 </div>
-                                                <!-- //øÓ¿¸∏È«„¡ı -->
+                                                <!-- //Ïö¥Ï†ÑÎ©¥ÌóàÏ¶ù -->
                                             </td>
                                         </tr>							
-                                        <!-- ø‹±π¿Œ¿œ ∞ÊøÏ ≥Î√‚øµø™ -->
-                                        <tr class="foreigner_input" style="display:none;">
-                                            <th class="vt">Ω≈∫–¡ıªÁ∫ª</th>
-                                            <td style="border-right: none;">
+                                        <!-- Ïô∏Íµ≠Ïù∏Ïùº Í≤ΩÏö∞ ÎÖ∏Ï∂úÏòÅÏó≠ -->
+                                        <!-- <tr class="foreigner_input" style="display:none;">
+                                            <th class="vt">Ïã†Î∂ÑÏ¶ùÏÇ¨Î≥∏</th>
+                                            <td class="tdright">
                                                 <span class="input_file" id="cont_send_fileName_text">
                                                     <input type="file" id="cont_send_fileName" name="cont_send_fileName" onchange="">
                                                     <em id="cont_send_fileName_em">
                                                     </em>
                                                 </span>
-                                                <a href="" class="btn02 middle border ml5" name="main_file_upload" onclick="">∆ƒ¿œ√£±‚</a>
-                                                <a href="" class="btn02 middle border ml5" name="main_file_upload" onclick="">∆ƒ¿œµÓ∑œ</a>
-                                                <p class="fs12 mt5">Ω≈∫–¡ı ªÁ¡¯ ∂«¥¬ Ω∫ƒµ«œø© µÓ∑œ(3MB ¿Ã«œ, tif / jpg / gif / bmp µÓ)</p>
+                                                <a href="" class="btn02 middle border ml5" name="main_file_upload" onclick="">ÌååÏùºÏ∞æÍ∏∞</a>
+                                                <a href="" class="btn02 middle border ml5" name="main_file_upload" onclick="">ÌååÏùºÎì±Î°ù</a>
+                                                <p class="fs12 mt5">Ïã†Î∂ÑÏ¶ù ÏÇ¨ÏßÑ ÎòêÎäî Ïä§Ï∫îÌïòÏó¨ Îì±Î°ù(3MB Ïù¥Ìïò, tif / jpg / gif / bmp Îì±)</p>
                                             </td>
                                         </tr>
                                         <tr class="foreigner_input">
-                                            <th class="vt">±π¿˚</th>
-                                            <td class="nation_search">
+                                            <th class="vt">Íµ≠Ï†Å</th>
+                                            <td class="nation_search tdright">
                                                 <div class="rdo_type01 custom-label" id="nf-nations-favoirte-table">
             
                                                 <label class="w65">
-                                                    <input type="radio" class="d-radio" name="nationItem" title="¡ﬂ±π º±≈√" value="003">
-                                                    <span class="bg_white">¡ﬂ±π</span>
+                                                    <input type="radio" class="d-radio" name="nationItem" title="Ï§ëÍµ≠ ÏÑ†ÌÉù" value="003">
+                                                    <span class="bg_white">Ï§ëÍµ≠</span>
                                                 </label>
                                                 <label class="w65">
-                                                    <input type="radio" class="d-radio" name="nationItem" title="∫£∆Æ≥≤ º±≈√" value="009">
-                                                    <span class="bg_white">∫£∆Æ≥≤</span>
+                                                    <input type="radio" class="d-radio" name="nationItem" title="Î≤†Ìä∏ÎÇ® ÏÑ†ÌÉù" value="009">
+                                                    <span class="bg_white">Î≤†Ìä∏ÎÇ®</span>
                                                 </label>
                                                 <label class="w65">
-                                                    <input type="radio" class="d-radio" name="nationItem" title="πÃ±π º±≈√" value="001">
-                                                    <span class="bg_white">πÃ±π</span>
+                                                    <input type="radio" class="d-radio" name="nationItem" title="ÎØ∏Íµ≠ ÏÑ†ÌÉù" value="001">
+                                                    <span class="bg_white">ÎØ∏Íµ≠</span>
                                                 </label>
                                                 <label class="w65">
-                                                    <input type="radio" class="d-radio" name="nationItem" title="« ∏Æ«… º±≈√" value="018">
-                                                    <span class="bg_white">« ∏Æ«…</span>
+                                                    <input type="radio" class="d-radio" name="nationItem" title="ÌïÑÎ¶¨ÌïÄ ÏÑ†ÌÉù" value="018">
+                                                    <span class="bg_white">ÌïÑÎ¶¨ÌïÄ</span>
                                                 </label>
                                                 <label class="w65">
-                                                    <input type="radio" class="d-radio" name="nationItem" title="¿Œµµ≥◊Ω√æ∆ º±≈√" value="180">
-                                                    <span class="bg_white">¿Œµµ≥◊Ω√æ∆</span>
+                                                    <input type="radio" class="d-radio" name="nationItem" title="Ïù∏ÎèÑÎÑ§ÏãúÏïÑ ÏÑ†ÌÉù" value="180">
+                                                    <span class="bg_white">Ïù∏ÎèÑÎÑ§ÏãúÏïÑ</span>
                                                 </label>
                                                 <label class="w65">
-                                                    <input type="radio" class="d-radio" name="nationItem" title="¿œ∫ª º±≈√" value="002">
-                                                    <span class="bg_white">¿œ∫ª</span>
+                                                    <input type="radio" class="d-radio" name="nationItem" title="ÏùºÎ≥∏ ÏÑ†ÌÉù" value="002">
+                                                    <span class="bg_white">ÏùºÎ≥∏</span>
                                                 </label>
                                                 <label class="w65">
-                                                    <input type="radio" class="d-radio" name="nationItem" title="≈¬±π º±≈√" value="213">
-                                                    <span class="bg_white">≈¬±π</span>
+                                                    <input type="radio" class="d-radio" name="nationItem" title="ÌÉúÍµ≠ ÏÑ†ÌÉù" value="213">
+                                                    <span class="bg_white">ÌÉúÍµ≠</span>
                                                 </label>
                                                 <label class="w65">
-                                                    <input type="radio" class="d-radio" name="nationItem" title="∏˘∞Ò º±≈√" value="084">
-                                                    <span class="bg_white">∏˘∞Ò</span>
+                                                    <input type="radio" class="d-radio" name="nationItem" title="Î™ΩÍ≥® ÏÑ†ÌÉù" value="084">
+                                                    <span class="bg_white">Î™ΩÍ≥®</span>
                                                 </label>
                                             </div>
 
                                                 <p class="mt5 mb5">
-                                                    <input type="text" class="input" title="±π∞°∏Ì¿ª ¿‘∑¬«œººø‰" placeholder="±π∞°∏Ì √£±‚" id="nf-keyword">
-                                                    <a href="" class="btn02 middle border ml5" onclick="">±π∞°∏Ì√£±‚</a>
+                                                    <input type="text" class="input" title="Íµ≠Í∞ÄÎ™ÖÏùÑ ÏûÖÎ†•ÌïòÏÑ∏Ïöî" placeholder="Íµ≠Í∞ÄÎ™Ö Ï∞æÍ∏∞" id="nf-keyword">
+                                                    <a href="" class="btn02 middle border ml5" onclick="">Íµ≠Í∞ÄÎ™ÖÏ∞æÍ∏∞</a>
                                                 </p>
             
-                                                <!-- ±π∞°∏Ì ∞Àªˆ∞·∞˙ -->
+                                                Íµ≠Í∞ÄÎ™Ö Í≤ÄÏÉâÍ≤∞Í≥º
                                                 <span class="rdo_type01" id="nf-nations-table">
                                                 </span>
-                                                <!-- //±π∞°∏Ì ∞Àªˆ∞·∞˙ -->
+                                                //Íµ≠Í∞ÄÎ™Ö Í≤ÄÏÉâÍ≤∞Í≥º
             
                                             </td>
                                         </tr>
                                         
                                         <tr class="foreigner_input" style="display:none;">
-                                            <th>øµπÆº∫∏Ì</th>
-                                            <td style="border-right: none;">
-                                                <input type="text" class="input" name="CUST_ENG_NM1" id="CUST_ENG_NM1" title="First Name ¿‘∑¬" maxlength="15" placeholder="First Name">
-                                                <input type="text" class="input" name="CUST_ENG_NM2" id="CUST_ENG_NM2" title="Family Name ¿‘∑¬" maxlength="15" placeholder="Family Name">
-                                                <input type="text" class="input" name="CUST_ENG_NM3" id="CUST_ENG_NM3" title="Maiden Name ¿‘∑¬" maxlength="15" placeholder="Maiden Name">
+                                            <th>ÏòÅÎ¨∏ÏÑ±Î™Ö</th>
+                                            <td class="tdright">
+                                                <input type="text" class="input" name="CUST_ENG_NM1" id="CUST_ENG_NM1" title="First Name ÏûÖÎ†•" maxlength="15" placeholder="First Name">
+                                                <input type="text" class="input" name="CUST_ENG_NM2" id="CUST_ENG_NM2" title="Family Name ÏûÖÎ†•" maxlength="15" placeholder="Family Name">
+                                                <input type="text" class="input" name="CUST_ENG_NM3" id="CUST_ENG_NM3" title="Maiden Name ÏûÖÎ†•" maxlength="15" placeholder="Maiden Name">
                                             </td>
                                         </tr>
                                         <tr class="foreigner_input">
-                                            <th>∫Ò¿⁄µÓ±ﬁ</th>
-                                            <td>
-                                                <select class="sbox" title="∫Ò¿⁄µÓ±ﬁ º±≈√" name="VISA_KND">
-                                                    <option value="">º±≈√«œººø‰</option>
-                                                    <option value="A-1">ø‹±≥</option>
-                                                    <option value="A-2">∞¯π´</option>
-                                                    <option value="A-3">«˘¡§</option>
-                                                    <option value="B-1">ªÁ¡ı∏È¡¶</option>
-                                                    <option value="B-2">∞¸±§≈Î∞˙</option>
-                                                    <option value="C-1">¿œΩ√√Î¿Á</option>
-                                                    <option value="C-2">¥‹±‚ªÛøÎ</option>
-                                                    <option value="C-3">¥‹±‚¡æ«’</option>
-                                                    <option value="C-4">¥‹±‚√Îæ˜</option>
-                                                    <option value="D-1">πÆ»≠øπº˙</option>
-                                                    <option value="D-10">±∏¡˜</option>
-                                                    <option value="D-2">¿Ø«–</option>
-                                                    <option value="D-3">ªÍæ˜ø¨ºˆ</option>
-                                                    <option value="D-4">¿œπ›ø¨ºˆ</option>
-                                                    <option value="D-5">√Î¿Á</option>
-                                                    <option value="D-6">¡æ±≥</option>
-                                                    <option value="D-7">¡÷¿Á</option>
-                                                    <option value="D-8">±‚æ˜≈ı¿⁄</option>
-                                                    <option value="D-9">π´ø™∞Êøµ</option>
-                                                    <option value="E-1">±≥ºˆ</option>
-                                                    <option value="E-10">º±ø¯√Îæ˜</option>
-                                                    <option value="E-2">»∏»≠¡ˆµµ</option>
-                                                    <option value="E-3">ø¨±∏</option>
-                                                    <option value="E-4">±‚º˙¡ˆµµ</option>
-                                                    <option value="E-5">¿¸πÆ¡˜æ˜</option>
-                                                    <option value="E-6">øπº˙»Ô«‡</option>
-                                                    <option value="E-7">∆Ø¡§»∞µø</option>
-                                                    <option value="E-9">∫Ò¿¸πÆ√Îæ˜</option>
-                                                    <option value="F-1">πÊπÆµø∞≈</option>
-                                                    <option value="F-2">∞≈¡÷</option>
-                                                    <option value="F-3">µøπ›</option>
-                                                    <option value="F-4">¿Áø‹µø∆˜</option>
-                                                    <option value="F-5">øµ¡÷</option>
-                                                    <option value="F-6">∞·»•¿ÃπŒ</option>
-                                                    <option value="G-1">±‚≈∏</option>
-                                                    <option value="H-1">∞¸±§√Îæ˜</option>
-                                                    <option value="H-2">πÊπÆ√Îæ˜</option>
+                                            <th>ÎπÑÏûêÎì±Í∏â</th>
+                                            <td class="tdright">
+                                                <select class="sbox" title="ÎπÑÏûêÎì±Í∏â ÏÑ†ÌÉù" name="VISA_KND">
+                                                    <option value="">ÏÑ†ÌÉùÌïòÏÑ∏Ïöî</option>
+                                                    <option value="A-1">Ïô∏Íµê</option>
+                                                    <option value="A-2">Í≥µÎ¨¥</option>
+                                                    <option value="A-3">ÌòëÏ†ï</option>
+                                                    <option value="B-1">ÏÇ¨Ï¶ùÎ©¥Ï†ú</option>
+                                                    <option value="B-2">Í¥ÄÍ¥ëÌÜµÍ≥º</option>
+                                                    <option value="C-1">ÏùºÏãúÏ∑®Ïû¨</option>
+                                                    <option value="C-2">Îã®Í∏∞ÏÉÅÏö©</option>
+                                                    <option value="C-3">Îã®Í∏∞Ï¢ÖÌï©</option>
+                                                    <option value="C-4">Îã®Í∏∞Ï∑®ÏóÖ</option>
+                                                    <option value="D-1">Î¨∏ÌôîÏòàÏà†</option>
+                                                    <option value="D-10">Íµ¨ÏßÅ</option>
+                                                    <option value="D-2">Ïú†Ìïô</option>
+                                                    <option value="D-3">ÏÇ∞ÏóÖÏó∞Ïàò</option>
+                                                    <option value="D-4">ÏùºÎ∞òÏó∞Ïàò</option>
+                                                    <option value="D-5">Ï∑®Ïû¨</option>
+                                                    <option value="D-6">Ï¢ÖÍµê</option>
+                                                    <option value="D-7">Ï£ºÏû¨</option>
+                                                    <option value="D-8">Í∏∞ÏóÖÌà¨Ïûê</option>
+                                                    <option value="D-9">Î¨¥Ïó≠Í≤ΩÏòÅ</option>
+                                                    <option value="E-1">ÍµêÏàò</option>
+                                                    <option value="E-10">ÏÑ†ÏõêÏ∑®ÏóÖ</option>
+                                                    <option value="E-2">ÌöåÌôîÏßÄÎèÑ</option>
+                                                    <option value="E-3">Ïó∞Íµ¨</option>
+                                                    <option value="E-4">Í∏∞Ïà†ÏßÄÎèÑ</option>
+                                                    <option value="E-5">Ï†ÑÎ¨∏ÏßÅÏóÖ</option>
+                                                    <option value="E-6">ÏòàÏà†Ìù•Ìñâ</option>
+                                                    <option value="E-7">ÌäπÏ†ïÌôúÎèô</option>
+                                                    <option value="E-9">ÎπÑÏ†ÑÎ¨∏Ï∑®ÏóÖ</option>
+                                                    <option value="F-1">Î∞©Î¨∏ÎèôÍ±∞</option>
+                                                    <option value="F-2">Í±∞Ï£º</option>
+                                                    <option value="F-3">ÎèôÎ∞ò</option>
+                                                    <option value="F-4">Ïû¨Ïô∏ÎèôÌè¨</option>
+                                                    <option value="F-5">ÏòÅÏ£º</option>
+                                                    <option value="F-6">Í≤∞ÌòºÏù¥ÎØº</option>
+                                                    <option value="G-1">Í∏∞ÌÉÄ</option>
+                                                    <option value="H-1">Í¥ÄÍ¥ëÏ∑®ÏóÖ</option>
+                                                    <option value="H-2">Î∞©Î¨∏Ï∑®ÏóÖ</option>
                                                 </select>
                                             </td>
-                                        </tr>
-                                        <!-- //ø‹±π¿Œ¿œ ∞ÊøÏ ≥Î√‚øµø™ -->
+                                        </tr> -->
+                                        <!-- //Ïô∏Íµ≠Ïù∏Ïùº Í≤ΩÏö∞ ÎÖ∏Ï∂úÏòÅÏó≠ -->
             
                                         <tr>
-                                            <th class="vt">Ω«º“¿Ø»Æ¿Œ</th>
-                                            <td>
-                                                ∞Ì∞¥¥‘≤≤º≠ ¿Ã ±›¿∂∞≈∑°¿« Ω« º“¿Ø¡÷¿ÃΩ≈∞°ø‰?
+                                            <th class="vt">Ïã§ÏÜåÏú†ÌôïÏù∏</th>
+                                            <td class="tdright">
+                                                Í≥†Í∞ùÎãòÍªòÏÑú Ïù¥ Í∏àÏúµÍ±∞ÎûòÏùò Ïã§ ÏÜåÏú†Ï£ºÏù¥Ïã†Í∞ÄÏöî?
                                                 <span class="rdo_type01 custom-label ml10 realOwn-Yn">
                                                     <label>
-                                                        <input type="radio" class="d-radio" name="REAL_OWN_YN" value="Y" title="øπ º±≈√" hname="Ω«º“¿Øø©∫Œ" required="required">
-                                                        <span class="bg_white">øπ</span>
+                                                        <input type="radio" class="d-radio" name="REAL_OWN_YN" value="Y" title="Ïòà ÏÑ†ÌÉù" hname="Ïã§ÏÜåÏú†Ïó¨Î∂Ä" required="required">
+                                                        <span class="bg_white">Ïòà</span>
                                                     </label>
                                                     <label>
-                                                        <input type="radio" class="d-radio" name="REAL_OWN_YN" value="N" title="æ∆¥œø¿ º±≈√" hname="Ω«º“¿Øø©∫Œ" required="required">
-                                                        <span class="bg_white">æ∆¥œø¿</span>
+                                                        <input type="radio" class="d-radio" name="REAL_OWN_YN" value="N" title="ÏïÑÎãàÏò§ ÏÑ†ÌÉù" hname="Ïã§ÏÜåÏú†Ïó¨Î∂Ä" required="required">
+                                                        <span class="bg_white">ÏïÑÎãàÏò§</span>
                                                     </label>
                                                 </span>
                                             </td>
                                         </tr>
                                         <tr class="low_item first">
-                                            <th>¿Ã∏ß</th>
-                                            <td>
-                                                <input type="text" class="input" title="¿Ã∏ß ¿‘∑¬" id="REAL_OWN_NM" name="REAL_OWN_NM" maxlength="50">
+                                            <th>Ïù¥Î¶Ñ</th>
+                                            <td class="tdright">
+                                                <input type="text" class="input" title="Ïù¥Î¶Ñ ÏûÖÎ†•" id="REAL_OWN_NM" name="REAL_OWN_NM" maxlength="50">
                                             </td>
                                         </tr>
                                         <tr class="low_item">
-                                            <th>¡÷πŒπ¯»£</th>
-                                            <td>
-                                                <input type="text" class="input number tl" hname="Ω«º“¿Ø¡÷¿« ¡÷πŒπ¯»£ æ’ 6¿⁄∏Æ" title="Ω«º“¿Ø¡÷¿« ¡÷πŒπ¯»£ æ’ 6¿⁄∏Æ ¿‘∑¬" name="REAL_OWN_SSN1" maxlength="6"pattern="[0-9]*"> -
-                                                <input type="password" id="REAL_OWN_SSN2" name="REAL_OWN_SSN2"class="input nppfs-npk nppfs-npv" maxlength="7" hname="Ω«º“¿Ø¡÷¿« ¡÷πŒπ¯»£µﬁ¿⁄∏Æ" title="Ω«º“¿Ø¡÷¿« ¡÷πŒπ¯»£ µﬁ¿⁄∏Æ ¿‘∑¬">
+                                            <th>Ï£ºÎØºÎ≤àÌò∏</th>
+                                            <td class="tdright">
+                                                <input type="text" class="input number tl" hname="Ïã§ÏÜåÏú†Ï£ºÏùò Ï£ºÎØºÎ≤àÌò∏ Ïïû 6ÏûêÎ¶¨" title="Ïã§ÏÜåÏú†Ï£ºÏùò Ï£ºÎØºÎ≤àÌò∏ Ïïû 6ÏûêÎ¶¨ ÏûÖÎ†•" name="REAL_OWN_SSN1" maxlength="6"pattern="[0-9]*"> -
+                                                <input type="password" id="REAL_OWN_SSN2" name="REAL_OWN_SSN2"class="input nppfs-npk nppfs-npv" maxlength="7" hname="Ïã§ÏÜåÏú†Ï£ºÏùò Ï£ºÎØºÎ≤àÌò∏Îí∑ÏûêÎ¶¨" title="Ïã§ÏÜåÏú†Ï£ºÏùò Ï£ºÎØºÎ≤àÌò∏ Îí∑ÏûêÎ¶¨ ÏûÖÎ†•">
                                                 <span class="rdo_type01 ">
                                                     <label class="drvtype">
                                                         <input type="checkbox" id="ess_text_real_own_ssn2" name="ess_text_real_own_ssn2" value="Y" class="d-radio">
-                                                        ∏∂øÏΩ∫ ¿‘∑¬
+                                                        ÎßàÏö∞Ïä§ ÏûÖÎ†•
                                                     </label>
                                                 </span>
                                             </td>
                                         </tr>
 
-                                        <tr class="low_item last">
-                                            <th>±π¿˚</th>
-                                            <td style="border-right: none;">
+                                        <!-- <tr class="low_item last">
+                                            <th>Íµ≠Ï†Å</th>
+                                            <td class="tdright">
                                                 <p class="mt5 mb5">
-                                                    <input type="text" class="input" title="±π∞°∏Ì¿ª ¿‘∑¬«œººø‰" placeholder="±π∞°∏Ì √£±‚" id="nf-keyword-real">
-                                                    <a class="btn02 middle border ml5">±π∞°∏Ì√£±‚</a>
+                                                    <input type="text" class="input" title="Íµ≠Í∞ÄÎ™ÖÏùÑ ÏûÖÎ†•ÌïòÏÑ∏Ïöî" placeholder="Íµ≠Í∞ÄÎ™Ö Ï∞æÍ∏∞" id="nf-keyword-real">
+                                                    <a class="btn02 middle border ml5">Íµ≠Í∞ÄÎ™ÖÏ∞æÍ∏∞</a>
                                                 </p>							
             
-                                                <!-- ±π∞°∏Ì ∞Àªˆ∞·∞˙ -->
+                                                Íµ≠Í∞ÄÎ™Ö Í≤ÄÏÉâÍ≤∞Í≥º
                                                 <span class="rdo_type01 custom-label auto_label line_label" id="nf-nations-table-real">
                                                 </span>
                                              </td>
                                         </tr>
             
-            
+             -->
                                         <tr>
-                                            <th class="vt">¿Ã∏ﬁ¿œ</th>
-                                            <td style="border-right: none;">
-                                                <input type="text" class="input" id="MAIL_ID" name="MAIL_ID" hname="¿Ã∏ﬁ¿œæ∆¿Ãµ" title="¿Ã∏ﬁ¿œ æ∆¿Ãµ ¿‘∑¬" maxlength="30" > @ 
-                                                <input type="text" class="input" id="MAIL_POTAL_NAME" name="MAIL_POTAL_NAME" hname="¿Ã∏ﬁ¿œ∆˜≈ª¡÷º“" title="µµ∏ﬁ¿Œ ¡˜¡¢¿‘∑¬" maxlength="30">
-                                                <select class="sbox" title="¿Ã∏ﬁ¿œ º±≈√"  name="SetMailGubun">
-                                                    <option value="">¡˜¡¢¿‘∑¬</option>
-                                                    <option value="naver.com">≥◊¿Ãπˆ</option>
-                                                    <option value="daum.net">¥Ÿ¿Ω</option>
-                                                    <option value="hanmail.net">«—∏ﬁ¿œ</option>
-                                                    <option value="nate.com">≥◊¿Ã∆Æ</option>
-                                                    <option value="gmail.com">¡ˆ∏ﬁ¿œ</option>
-                                                    <option value="hotmail.com">«÷∏ﬁ¿œ</option>
+                                            <th class="vt">Ïù¥Î©îÏùº</th>
+                                            <td class="tdright">
+                                                <input type="text" class="input" id="MAIL_ID" name="MAIL_ID" hname="Ïù¥Î©îÏùºÏïÑÏù¥Îîî" title="Ïù¥Î©îÏùº ÏïÑÏù¥Îîî ÏûÖÎ†•" maxlength="30" > @ 
+                                                <input type="text" class="input" id="MAIL_POTAL_NAME" name="MAIL_POTAL_NAME" hname="Ïù¥Î©îÏùºÌè¨ÌÉàÏ£ºÏÜå" title="ÎèÑÎ©îÏù∏ ÏßÅÏ†ëÏûÖÎ†•" maxlength="30">
+                                                <select class="sbox" title="Ïù¥Î©îÏùº ÏÑ†ÌÉù"  name="SetMailGubun">
+                                                    <option value="">ÏßÅÏ†ëÏûÖÎ†•</option>
+                                                    <option value="naver.com">ÎÑ§Ïù¥Î≤Ñ</option>
+                                                    <option value="daum.net">Îã§Ïùå</option>
+                                                    <option value="hanmail.net">ÌïúÎ©îÏùº</option>
+                                                    <option value="nate.com">ÎÑ§Ïù¥Ìä∏</option>
+                                                    <option value="gmail.com">ÏßÄÎ©îÏùº</option>
+                                                    <option value="hotmail.com">Ìï´Î©îÏùº</option>
             
                                                 </select>
-                                                <p class="fs12 mt5">¿‘∑¬«œΩ≈ ¿Ã∏ﬁ¿œ∑Œ √ªæ‡ ∞¸∑√ º≠∑˘∏¶ ∫∏≥ªµÂ∏Æ¥œ ≤¿~«—π¯ ¥ı »Æ¿Œ«ÿ¡÷ººø‰.</p>
+                                                <p class="fs12 mt5">ÏûÖÎ†•ÌïòÏã† Ïù¥Î©îÏùºÎ°ú Ï≤≠ÏïΩ Í¥ÄÎ†® ÏÑúÎ•òÎ•º Î≥¥ÎÇ¥ÎìúÎ¶¨Îãà Íº≠~ÌïúÎ≤à Îçî ÌôïÏù∏Ìï¥Ï£ºÏÑ∏Ïöî.</p>
                                                 <input type="hidden" id="E_CMMU_VAL" name="E_CMMU_VAL" value="">
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>»ﬁ¥Î∆˘π¯»£</th>
-                                            <td style="border-right: none;">
-                                                <select class="sbox" title="»ﬁ¥Î∆˘π¯»£ æ’¿⁄∏Æ º±≈√"id="T_CMMU_VAL_DDD" name="T_CMMU_VAL_DDD">
+                                            <th>Ìú¥ÎåÄÌè∞Î≤àÌò∏</th>
+                                            <td  class="tdright">
+                                                <select class="sbox" title="Ìú¥ÎåÄÌè∞Î≤àÌò∏ ÏïûÏûêÎ¶¨ ÏÑ†ÌÉù"id="T_CMMU_VAL_DDD" name="T_CMMU_VAL_DDD">
                                                     <option value="010">010</option>
                                                     <option value="011">011</option>
                                                     <option value="016">016</option>
@@ -405,129 +408,118 @@
                                                     <option value="019">019</option>
                                                 </select>
                                                 -
-                                                <input type="text" class="input number tl" title="»ﬁ¥Î∆˘π¯»£ ≥™∏”¡ˆ ¿⁄∏Æ ¿‘∑¬" placeholder="-æ¯¿Ã ¿‘∑¬" id="T_CMMU_VAL" name="T_CMMU_VAL" required="required" maxlength="8" hname="»ﬁ¥Î∆˘π¯»£" pattern="[0-9]*">
+                                                <input type="text" class="input number tl" title="Ìú¥ÎåÄÌè∞Î≤àÌò∏ ÎÇòÎ®∏ÏßÄ ÏûêÎ¶¨ ÏûÖÎ†•" placeholder="-ÏóÜÏù¥ ÏûÖÎ†•" id="T_CMMU_VAL" name="T_CMMU_VAL" required="required" maxlength="8" hname="Ìú¥ÎåÄÌè∞Î≤àÌò∏" pattern="[0-9]*">
                                                 <input type="hidden" name="T_CMMU_VAL_GUK" id="T_CMMU_VAL_GUK">
                                                 <input type="hidden" name="T_CMMU_VAL_NO" id="T_CMMU_VAL_NO">
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th class="vt">øÏ∆Ìπ∞ºˆ∑…¡ˆ</th>
-                                            <td style="border-right: none;">
+                                            <th class="vt">Ïö∞Ìé∏Î¨ºÏàòÎ†πÏßÄ</th>
+                                            <td  class="tdright">
                                                 <span class="rdo_type01 custom-label">
                                                     <label class="address1">
-                                                        <input type="radio" class="d-radio" name="P_PST_RCVA" value="10" title="¿⁄≈√¡÷º“ ¿‘∑¬ ∆Àæ˜√¢¿Ã πŸ∑Œ ø≠∏≥¥œ¥Ÿ.">
-                                                        <span class="vt">¿⁄≈√</span>
+                                                        <input type="radio" class="d-radio" name="P_PST_RCVA" value="10" title="ÏûêÌÉùÏ£ºÏÜå ÏûÖÎ†• ÌåùÏóÖÏ∞ΩÏù¥ Î∞îÎ°ú Ïó¥Î¶ΩÎãàÎã§.">
+                                                        <span class="vt">ÏûêÌÉù</span>
                                                     </label>
                                                     <label class="address2">
-                                                        <input type="radio" class="d-radio" name="P_PST_RCVA" value="20" title="¡˜¿Â¡÷º“ ¿‘∑¬ ∆Àæ˜√¢¿Ã πŸ∑Œ ø≠∏≥¥œ¥Ÿ.">
-                                                        <span class="vt">¡˜¿Â</span>
+                                                        <input type="radio" class="d-radio" name="P_PST_RCVA" value="20" title="ÏßÅÏû•Ï£ºÏÜå ÏûÖÎ†• ÌåùÏóÖÏ∞ΩÏù¥ Î∞îÎ°ú Ïó¥Î¶ΩÎãàÎã§.">
+                                                        <span class="vt">ÏßÅÏû•</span>
                                                     </label>
-                                                    <a class="btn02 middle border ml5" name="postNoFind" title="øÏ∆Ìπ¯»£ √£±‚ »≠∏È¿Ã ∆Àæ˜ µÀ¥œ¥Ÿ.">¡÷º“√£±‚</a>
+                                                    <a class="btn02 middle border ml5" name="postNoFind" title="Ïö∞Ìé∏Î≤àÌò∏ Ï∞æÍ∏∞ ÌôîÎ©¥Ïù¥ ÌåùÏóÖ Îê©ÎãàÎã§.">Ï£ºÏÜåÏ∞æÍ∏∞</a>
                                                 </span>
-                                                <input type="text" class="input mt5 nppfs-npk" id="POST_ADDR_TEXT" name="POST_ADDR_TEXT" title="øÏ∆Ìπ∞ºˆ∑…¡ˆ ¡÷º“ ¿‘∑¬" >
-                                                <input type="hidden" class="input fs12 mt5 w100" id="POST_ADDR" name="POST_ADDR" title="øÏ∆Ìπ∞ºˆ∑…¡ˆ ¡÷º“ ¿‘∑¬">
-                                                <input type="hidden" id="POST_NO" name="POST_NO" class="input" hname="øÏ∆Ìπ¯»£" title="øÏ∆Ìπ¯»£ ¿‘∑¬" >
-                                                <input type="hidden" id="ADDR_DTL" name="ADDR_DTL" class="input" hname="ªÛºº¡÷º“" title="ªÛºº¡÷º“" >
-                                                <input type="hidden" id="ETC_ADDR" name="ETC_ADDR" class="input" hname="ªÛºº¡÷º“2" title="ªÛºº¡÷º“2">
+                                                <input type="text" class="input mt5 nppfs-npk" id="POST_ADDR_TEXT" name="POST_ADDR_TEXT" title="Ïö∞Ìé∏Î¨ºÏàòÎ†πÏßÄ Ï£ºÏÜå ÏûÖÎ†•" >
+                                                <input type="hidden" class="input fs12 mt5 w100" id="POST_ADDR" name="POST_ADDR" title="Ïö∞Ìé∏Î¨ºÏàòÎ†πÏßÄ Ï£ºÏÜå ÏûÖÎ†•">
+                                                <input type="hidden" id="POST_NO" name="POST_NO" class="input" hname="Ïö∞Ìé∏Î≤àÌò∏" title="Ïö∞Ìé∏Î≤àÌò∏ ÏûÖÎ†•" >
+                                                <input type="hidden" id="ADDR_DTL" name="ADDR_DTL" class="input" hname="ÏÉÅÏÑ∏Ï£ºÏÜå" title="ÏÉÅÏÑ∏Ï£ºÏÜå" >
+                                                <input type="hidden" id="ETC_ADDR" name="ETC_ADDR" class="input" hname="ÏÉÅÏÑ∏Ï£ºÏÜå2" title="ÏÉÅÏÑ∏Ï£ºÏÜå2">
                                                 <input type="hidden" id="BLDG_MGNT_NO" name="BLDG_MGNT_NO">
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th class="vt">¡ı±« ºˆ∑…πÊπ˝
+                                            <th class="vt">Ï¶ùÍ∂å ÏàòÎ†πÎ∞©Î≤ï
                                                 							
                                             </th>
-                                            <td style="border-right: none;">
+                                            <td class="tdright">
                                                 <span class="rdo_type01 custom-label">
                                                     <label class="mail01">
-                                                        <input type="radio" class="d-radio" name="PLCY_CVY_MTH" value="2" required="required" hname="¡ı±«ºˆ∑…πÊπ˝" title="øÏ∆Ì º±≈√">
-                                                        <span class="vt">øÏ∆Ì</span>
+                                                        <input type="radio" class="d-radio" name="PLCY_CVY_MTH" value="2" required="required" hname="Ï¶ùÍ∂åÏàòÎ†πÎ∞©Î≤ï" title="Ïö∞Ìé∏ ÏÑ†ÌÉù">
+                                                        <span class="vt">Ïö∞Ìé∏</span>
                                                     </label>
                                                     <label class="mobile01">
-                                                        <input type="radio" class="d-radio" name="PLCY_CVY_MTH" value="A" required="required" hname="¡ı±«ºˆ∑…πÊπ˝" title="∏πŸ¿œ º±≈√">
-                                                        <span class="vt">∏πŸ¿œ</span>
+                                                        <input type="radio" class="d-radio" name="PLCY_CVY_MTH" value="A" required="required" hname="Ï¶ùÍ∂åÏàòÎ†πÎ∞©Î≤ï" title="Î™®Î∞îÏùº ÏÑ†ÌÉù">
+                                                        <span class="vt">Î™®Î∞îÏùº</span>
                                                     </label>
                                                 </span>		
-                                                <p class="fs12 mt5">∏πŸ¿œ º±≈√Ω√ ¡¯«‡«œΩ≈ ¥ŸøÓ∑ŒµÂ ¿Ã∑¬¿ª »Æ¿Œ«œ∏Á, ¥ŸøÓ∑ŒµÂ πÃ¡¯«‡Ω√ øÏ∆Ì¿∏∑Œ πﬂº€µÀ¥œ¥Ÿ.</p>							
+                                                <p class="fs12 mt5">Î™®Î∞îÏùº ÏÑ†ÌÉùÏãú ÏßÑÌñâÌïòÏã† Îã§Ïö¥Î°úÎìú Ïù¥Î†•ÏùÑ ÌôïÏù∏ÌïòÎ©∞, Îã§Ïö¥Î°úÎìú ÎØ∏ÏßÑÌñâÏãú Ïö∞Ìé∏ÏúºÎ°ú Î∞úÏÜ°Îê©ÎãàÎã§.</p>							
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th class="vt">æ»≥ª¿Â ºˆ∑…πÊπ˝
+                                            <th class="vt">ÏïàÎÇ¥Ïû• ÏàòÎ†πÎ∞©Î≤ï
                                                 
                                             </th>
-                                            <td style="border-right: none;">
+                                            <td class="tdright">
                                                 <span class="rdo_type01 custom-label">
                                                     <label class="mail01">
-                                                        <input type="radio" class="d-radio" name="DOC_CVY_MTH" value="1" hname="æ»≥ª¿Â ºˆ∑…πÊπ˝" title="øÏ∆Ì º±≈√">
-                                                        <span class="vt">øÏ∆Ì</span>
+                                                        <input type="radio" class="d-radio" name="DOC_CVY_MTH" value="1" hname="ÏïàÎÇ¥Ïû• ÏàòÎ†πÎ∞©Î≤ï" title="Ïö∞Ìé∏ ÏÑ†ÌÉù">
+                                                        <span class="vt">Ïö∞Ìé∏</span>
                                                     </label>
-                                                    <label><input type="radio" class="d-radio" name="DOC_CVY_MTH" value="2" hname="æ»≥ª¿Â ºˆ∑…πÊπ˝" title="¿Ã∏ﬁ¿œ º±≈√">
+                                                    <label><input type="radio" class="d-radio" name="DOC_CVY_MTH" value="2" hname="ÏïàÎÇ¥Ïû• ÏàòÎ†πÎ∞©Î≤ï" title="Ïù¥Î©îÏùº ÏÑ†ÌÉù">
                                                         <span class="bg_white">
                                                             <em class="fs16">@</em> 
-                                                            ¿Ã∏ﬁ¿œ
+                                                            Ïù¥Î©îÏùº
                                                         </span>
                                                         </label>
                                                 </span>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th class="vt">√ªæ‡º≠ π◊ æ‡∞¸ ∏πŸ¿œ ¿¸¥ﬁ º≠∫ÒΩ∫ Ω≈√ª</th>
-                                            <td style="border-right: none;">
+                                            <th class="vt">Ï≤≠ÏïΩÏÑú Î∞è ÏïΩÍ¥Ä Î™®Î∞îÏùº Ï†ÑÎã¨ ÏÑúÎπÑÏä§ Ïã†Ï≤≠</th>
+                                            <td class="tdright">
                                                 <span class="rdo_type01 custom-label">
                                                     <label>
-                                                        <input type="radio" class="d-radio" name="MOB_CVY_YN" value="Y" required="required" hname="∏πŸ¿œ¿¸¥ﬁº≠∫ÒΩ∫" title="Ω≈√ª">
-                                                        <span class="bg_white">Ω≈√ª</span>
+                                                        <input type="radio" class="d-radio" name="MOB_CVY_YN" value="Y" required="required" hname="Î™®Î∞îÏùºÏ†ÑÎã¨ÏÑúÎπÑÏä§" title="Ïã†Ï≤≠">
+                                                        <span class="bg_white">Ïã†Ï≤≠</span>
                                                     </label>
                                                     <label>
-                                                        <input type="radio" class="d-radio" name="MOB_CVY_YN" value="N" required="required" hname="∏πŸ¿œ¿¸¥ﬁº≠∫ÒΩ∫" title="πÃΩ≈√ª">
-                                                        <span class="bg_white">πÃΩ≈√ª</span>
+                                                        <input type="radio" class="d-radio" name="MOB_CVY_YN" value="N" required="required" hname="Î™®Î∞îÏùºÏ†ÑÎã¨ÏÑúÎπÑÏä§" title="ÎØ∏Ïã†Ï≤≠">
+                                                        <span class="bg_white">ÎØ∏Ïã†Ï≤≠</span>
                                                     </label>
                                                 </span>
-                                                <p class="fs12 mt5">Ω≈√ªΩ√ ∏πŸ¿œø°º≠ ¡¯«‡«œΩ≈ ¥ŸøÓ∑ŒµÂ ¿Ã∑¬¿ª »Æ¿Œ«’¥œ¥Ÿ.</p>
+                                                <p class="fs12 mt5">Ïã†Ï≤≠Ïãú Î™®Î∞îÏùºÏóêÏÑú ÏßÑÌñâÌïòÏã† Îã§Ïö¥Î°úÎìú Ïù¥Î†•ÏùÑ ÌôïÏù∏Ìï©ÎãàÎã§.</p>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th class="vt">¡˜æ˜</th>
-                                            <td>
+                                            <th class="vt">ÏßÅÏóÖ</th>
+                                            <td class="tdright">
                                                 <span class="rdo_type01 custom-label jobbtn">
             
                 
                 
                                                     <label class="job01">
-                                                        <input type="radio" class="d-radio" name="job_dummy"  ><span class="vt">ªÁπ´¡˜</span>
+                                                        <input type="radio" class="d-radio" name="job_dummy"  ><span class="vt">ÏÇ¨Î¨¥ÏßÅ</span>
                                                     </label>
                                                     <label class="job02">
-                                                        <input type="radio" class="d-radio" name="job_dummy"><span class="vt">¿⁄øµæ˜</span>
+                                                        <input type="radio" class="d-radio" name="job_dummy"><span class="vt">ÏûêÏòÅÏóÖ</span>
                                                     </label>
                                                     <label class="job03">
-                                                        <input type="radio" class="d-radio" name="job_dummy" ><span class="vt">¡÷∫Œ</span>
+                                                        <input type="radio" class="d-radio" name="job_dummy" ><span class="vt">Ï£ºÎ∂Ä</span>
                                                     </label>
                                                     <label class="job04">
-                                                        <input type="radio" class="d-radio" name="job_dummy"><span class="vt">±‚≈∏</span>
+                                                        <input type="radio" class="d-radio" name="job_dummy"><span class="vt">Í∏∞ÌÉÄ</span>
                                                     </label>
-                
-                
-                
-            
                                                 </span>
-            
-                    
                                             </td>
                                         </tr>
-            
-            
-
-
                                         <tr>
                                                 <th>
-                                                    ¿¸πÆ±›¿∂º“∫Ò¿⁄ ø©∫Œ
-                                                    								
+                                                    Ï†ÑÎ¨∏Í∏àÏúµÏÜåÎπÑÏûê Ïó¨Î∂Ä
                                                 </th>
-                                                <td>
+                                                <td class="tdright">
                                                         <span class="rdo_type01 custom-label">
                                                             <label class="on"><input type="radio" class="d-radio" id="FINANCE" name="FINANCE" value="02" checked="checked" >
-                                                                <span class="bg_white" id="finance2">¿œπ›±›¿∂º“∫Ò¿⁄</span></label>
+                                                                <span class="bg_white" id="finance2">ÏùºÎ∞òÍ∏àÏúµÏÜåÎπÑÏûê</span></label>
                                                             <label><input type="radio" class="d-radio" id="FINANCE" name="FINANCE" value="01">
-                                                                <span class="bg_white" id="finance1">¿¸πÆ±›¿∂º“∫Ò¿⁄</span>
+                                                                <span class="bg_white" id="finance1">Ï†ÑÎ¨∏Í∏àÏúµÏÜåÎπÑÏûê</span>
                                                             </label>
                                                         </span>	
                                                 </td>
@@ -537,110 +529,110 @@
                                             
                                                     									
                                                 </th>
-                                                <td style="border-right: none;">
+                                                <td class="tdright">
                                                     <span class="rdo_type01 custom-label">
                                                         <label>
                                                             <input type="radio" class="d-radio" id="CHANGE_YN" name="CHANGE_YN" value="Y" disabled="disabled">
-                                                            <span class="bg_gray" id="changeYn1">øπ</span>
+                                                            <span class="bg_gray" id="changeYn1">Ïòà</span>
                                                         </label>
                                                         <label class="on"><input type="radio" class="d-radio" id="CHANGE_YN" name="CHANGE_YN" value="N" checked="checked">
-                                                            <span class="bg_gray" id="changeYn2">æ∆¥œø‰</span>
+                                                            <span class="bg_gray" id="changeYn2">ÏïÑÎãàÏöî</span>
                                                         </label>
                                                     </span>					
                                                 </td>
                                             </tr>
             
                                         <tr class="ssDrvtr">
-                                            <th class="vt">øÓ¿¸ø©∫Œ</th>
-                                            <td>
+                                            <th class="vt">Ïö¥Ï†ÑÏó¨Î∂Ä</th>
+                                            <td class="tdright">
                                                 <span class="rdo_type01 custom-label radio-driverYn">
                                                     <label class="">
-                                                        <input type="radio" class="d-radio" name="DRY_YN" value="N" hname="øÓ¿¸ø©∫Œ" title="øÓ¿¸æ»«‘ º±≈√">
-                                                        <span class="bg_white">øÓ¿¸æ»«‘</span>
+                                                        <input type="radio" class="d-radio" name="DRY_YN" value="N" hname="Ïö¥Ï†ÑÏó¨Î∂Ä" title="Ïö¥Ï†ÑÏïàÌï® ÏÑ†ÌÉù">
+                                                        <span class="bg_white">Ïö¥Ï†ÑÏïàÌï®</span>
                                                     </label>
                                                     <label class="">
-                                                        <input type="radio" class="d-radio" name="DRY_YN" value="Y" hname="øÓ¿¸ø©∫Œ" title="øÓ¿¸«‘ º±≈√">
-                                                        <span class="bg_white">øÓ¿¸«‘</span>
+                                                        <input type="radio" class="d-radio" name="DRY_YN" value="Y" hname="Ïö¥Ï†ÑÏó¨Î∂Ä" title="Ïö¥Ï†ÑÌï® ÏÑ†ÌÉù">
+                                                        <span class="bg_white">Ïö¥Ï†ÑÌï®</span>
                                                     </label>
                                                     
                                                 </span>
-                                                <span class="fs12 vm">øÓ¿¸«œ¥¬ ¬˜∑Æ¿ª ∏µŒ º±≈√«ÿ ¡÷ººø‰.</span>
+                                              <!--   <span class="fs12 vm">Ïö¥Ï†ÑÌïòÎäî Ï∞®ÎüâÏùÑ Î™®Îëê ÏÑ†ÌÉùÌï¥ Ï£ºÏÑ∏Ïöî.</span>
             
-                                                <div class="box_car" name="radio_driverY">
+                                                <div class="box_car box" name="radio_driverY">
                                                     <dl>
-                                                        <dt><b>Ω¬øÎ¬˜</b></dt>
+                                                        <dt><b>ÏäπÏö©Ï∞®</b></dt>
                                                         <dd>
                                                             <span class="rdo_type01">
                                                                 <label class="drvtype">
-                                                                    <input type="checkbox" class="d-radio" name="DRV_CARS" value="2014" title="Ω¬øÎ¬˜(¿⁄∞°øÎ) º±≈√">¿⁄∞°øÎ</label>
+                                                                    <input type="checkbox" class="d-radio" name="DRV_CARS" value="2014" title="ÏäπÏö©Ï∞®(ÏûêÍ∞ÄÏö©) ÏÑ†ÌÉù">ÏûêÍ∞ÄÏö©</label>
                                                                     <br>
                                                                 <label class="drvtype">
-                                                                    <input type="checkbox" class="d-radio" name="DRV_CARS" value="1315" title="Ω¬øÎ¬˜(øµæ˜øÎ) º±≈√">øµæ˜øÎ</label>
+                                                                    <input type="checkbox" class="d-radio" name="DRV_CARS" value="1315" title="ÏäπÏö©Ï∞®(ÏòÅÏóÖÏö©) ÏÑ†ÌÉù">ÏòÅÏóÖÏö©</label>
                                                             </span>
                                                         </dd>
                                                     </dl>
             
                                                     <dl>
-                                                        <dt><b>Ω¬«’¬˜</b></dt>
+                                                        <dt><b>ÏäπÌï©Ï∞®</b></dt>
                                                         <dd>
                                                             <span class="rdo_type01">
-                                                                <label class="drvtype"><input type="checkbox" class="d-radio" name="DRV_CARS" value="1924" title="Ω¬«’¬˜(¿⁄∞°øÎ) º±≈√">¿⁄∞°øÎ</label><br>
-                                                                <label class="drvtype"><input type="checkbox" class="d-radio" name="DRV_CARS" value="1825" title="Ω¬«’¬˜(øµæ˜øÎ) º±≈√">øµæ˜øÎ</label>
+                                                                <label class="drvtype"><input type="checkbox" class="d-radio" name="DRV_CARS" value="1924" title="ÏäπÌï©Ï∞®(ÏûêÍ∞ÄÏö©) ÏÑ†ÌÉù">ÏûêÍ∞ÄÏö©</label><br>
+                                                                <label class="drvtype"><input type="checkbox" class="d-radio" name="DRV_CARS" value="1825" title="ÏäπÌï©Ï∞®(ÏòÅÏóÖÏö©) ÏÑ†ÌÉù">ÏòÅÏóÖÏö©</label>
                                                             </span>
                                                         </dd>
                                                     </dl>
             
                                                     <dl>
-                                                        <dt><b>»≠π∞¬˜</b></dt>
+                                                        <dt><b>ÌôîÎ¨ºÏ∞®</b></dt>
                                                         <dd>
                                                             <span class="rdo_type01">
-                                                                <label class="drvtype"><input type="checkbox" class="d-radio" name="DRV_CARS" value="1744" title="»≠π∞¬˜(¿⁄∞°øÎ) º±≈√">¿⁄∞°øÎ</label><br>
-                                                                <label class="drvtype"><input type="checkbox" class="d-radio" name="DRV_CARS" value="1645" title="»≠π∞¬˜(øµæ˜øÎ) º±≈√">øµæ˜øÎ</label>
+                                                                <label class="drvtype"><input type="checkbox" class="d-radio" name="DRV_CARS" value="1744" title="ÌôîÎ¨ºÏ∞®(ÏûêÍ∞ÄÏö©) ÏÑ†ÌÉù">ÏûêÍ∞ÄÏö©</label><br>
+                                                                <label class="drvtype"><input type="checkbox" class="d-radio" name="DRV_CARS" value="1645" title="ÌôîÎ¨ºÏ∞®(ÏòÅÏóÖÏö©) ÏÑ†ÌÉù">ÏòÅÏóÖÏö©</label>
                                                             </span>
                                                         </dd>
                                                     </dl>
             
                                                     <dl>
-                                                        <dt class="line2"><b>ø¿≈‰πŸ¿Ã</b><br><span class="fs12">(500ccπÃ∏∏∆˜«‘)</span></dt>
+                                                        <dt class="line2"><b>Ïò§ÌÜ†Î∞îÏù¥</b><br><span class="fs12">(500ccÎØ∏ÎßåÌè¨Ìï®)</span></dt>
                                                         <dd>
                                                             <span class="rdo_type01">
-                                                                <label class="drvtype"><input type="checkbox" class="d-radio" name="DRV_CARS" value="1264" title="ø¿≈‰πŸ¿Ã(50cc πÃ∏∏ ∆˜«‘)(¿⁄∞°øÎ) º±≈√">¿⁄∞°øÎ</label><br>
-                                                                <label class="drvtype"><input type="checkbox" class="d-radio" name="DRV_CARS" value="1165" title="ø¿≈‰πŸ¿Ã(50cc πÃ∏∏ ∆˜«‘)(øµæ˜øÎ) º±≈√">øµæ˜øÎ</label>
+                                                                <label class="drvtype"><input type="checkbox" class="d-radio" name="DRV_CARS" value="1264" title="Ïò§ÌÜ†Î∞îÏù¥(50cc ÎØ∏Îßå Ìè¨Ìï®)(ÏûêÍ∞ÄÏö©) ÏÑ†ÌÉù">ÏûêÍ∞ÄÏö©</label><br>
+                                                                <label class="drvtype"><input type="checkbox" class="d-radio" name="DRV_CARS" value="1165" title="Ïò§ÌÜ†Î∞îÏù¥(50cc ÎØ∏Îßå Ìè¨Ìï®)(ÏòÅÏóÖÏö©) ÏÑ†ÌÉù">ÏòÅÏóÖÏö©</label>
                                                             </span>
                                                         </dd>
                                                     </dl>
             
                                                     <dl>
-                                                        <dt><b>±‚≈∏</b></dt>
+                                                        <dt><b>Í∏∞ÌÉÄ</b></dt>
                                                         <dd>
                                                             <span class="rdo_type01">
-                                                                <label class="drvtype"><input type="checkbox" class="d-radio" name="DRV_CARS" value="1584" title="≥Û±‚∞Ë∑˘ º±≈√">≥Û±‚∞Ë∑˘</label><br>
-                                                                <label class="drvtype"><input type="checkbox" class="d-radio" name="DRV_CARS" value="1494" title="∞«º≥±‚∞Ë∑˘ º±≈√">∞«º≥±‚∞Ë∑˘</label>
+                                                                <label class="drvtype"><input type="checkbox" class="d-radio" name="DRV_CARS" value="1584" title="ÎÜçÍ∏∞Í≥ÑÎ•ò ÏÑ†ÌÉù">ÎÜçÍ∏∞Í≥ÑÎ•ò</label><br>
+                                                                <label class="drvtype"><input type="checkbox" class="d-radio" name="DRV_CARS" value="1494" title="Í±¥ÏÑ§Í∏∞Í≥ÑÎ•ò ÏÑ†ÌÉù">Í±¥ÏÑ§Í∏∞Í≥ÑÎ•ò</label>
                                                             </span>
                                                         </dd>
                                                     </dl>
                                                     
                                                     
-                                                </div>
+                                                </div> -->
 
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th class="vt">¿Ã∑˚¿⁄µø¬˜ ∂«¥¬ <br>ø¯µø±‚¿Âƒ° ¿⁄¿¸∞≈ <br>ªÁøÎø©∫Œ</th>
-                                            <td style="border-right: none;">
+                                            <th class="vt">Ïù¥Î•úÏûêÎèôÏ∞® ÎòêÎäî <br>ÏõêÎèôÍ∏∞Ïû•Ïπò ÏûêÏ†ÑÍ±∞ <br>ÏÇ¨Ïö©Ïó¨Î∂Ä</th>
+                                            <td class="tdright">
                                                 <span class="rdo_type01 custom-label">
                                                     <label>
-                                                        <input type="radio" class="d-radio" id="MOTOCYLE_YN" name="MOTOCYLE_YN" value="Y" required="required" hname="¿Ã∑˚¿⁄µø¬˜ ∂«¥¬ ø¯µø±‚¿Âƒ° ¿⁄¿¸∞≈ ªÁøÎø©∫Œ" title="øπ">
-                                                        <span class="bg_white">øπ</span>
+                                                        <input type="radio" class="d-radio" id="MOTOCYLE_YN" name="MOTOCYLE_YN" value="Y" required="required" hname="Ïù¥Î•úÏûêÎèôÏ∞® ÎòêÎäî ÏõêÎèôÍ∏∞Ïû•Ïπò ÏûêÏ†ÑÍ±∞ ÏÇ¨Ïö©Ïó¨Î∂Ä" title="Ïòà">
+                                                        <span class="bg_white">Ïòà</span>
                                                     </label>
                                                     <label>
-                                                        <input type="radio" class="d-radio" id="MOTOCYLE_YN" name="MOTOCYLE_YN" value="N" required="required" hname="¿Ã∑˚¿⁄µø¬˜ ∂«¥¬ ø¯µø±‚¿Âƒ° ¿⁄¿¸∞≈ ªÁøÎø©∫Œ" title="æ∆¥œø‰">
-                                                        <span class="bg_white">æ∆¥œø‰</span>
+                                                        <input type="radio" class="d-radio" id="MOTOCYLE_YN" name="MOTOCYLE_YN" value="N" required="required" hname="Ïù¥Î•úÏûêÎèôÏ∞® ÎòêÎäî ÏõêÎèôÍ∏∞Ïû•Ïπò ÏûêÏ†ÑÍ±∞ ÏÇ¨Ïö©Ïó¨Î∂Ä" title="ÏïÑÎãàÏöî">
+                                                        <span class="bg_white">ÏïÑÎãàÏöî</span>
                                                     </label>
                                                 </span>
-                                                <p class="fs12 mt5"><b>¿Ã∑˚¿⁄µø¬˜∂ı?</b> ¿⁄µø¬˜∞¸∏Æπ˝ªÛ ¿Ã∑˚¬˜∑Œ ∫–∑˘µ«¥¬ ªÔ∑˚ ∂«¥¬ ªÁ∑˚¿« ¿⁄µø¬˜∏¶ ∆˜«‘</p>
-                                                <p class="fs12 mt5"><b>ø¯µø±‚¿Âƒ° ¿⁄¿¸∞≈∂ı?</b> ¿¸µø≈±∫∏µÂ, ¿¸µø¿Ã∑˚∆Ú«‡¬˜, ¿¸µø±‚¿« µø∑¬∏∏¿∏∑Œ øÚ¡˜¿œ ºˆ ¿÷¥¬ ¿⁄¿¸∞≈ µÓ ∞≥¿Œ«¸ ¿Ãµø¿Âƒ°∏¶ ∆˜«‘(¥Ÿ∏∏, ¿¸µø»Ÿ√ºæÓ, ¿«∑·øÎ Ω∫ƒÌ≈Õ µÓ ∫∏«‡∫∏¡∂øÎ ¿«¿⁄¬˜¥¬ ¡¶ø‹.)</p>
-                                                <p class="fs12 mt5">* ∞Ëº”¿˚¿∏∑Œ ¡˜æ˜, ¡˜π´ ∂«¥¬ µø»£»∏ »∞µø∞˙ √‚≈±ŸøÎµµ µÓ¿∏∑Œ ªÁøÎ«œ¥¬ ∞ÊøÏø° º±≈√.</p>
+                                                <p class="fs12 mt5"><b>Ïù¥Î•úÏûêÎèôÏ∞®ÎûÄ?</b> ÏûêÎèôÏ∞®Í¥ÄÎ¶¨Î≤ïÏÉÅ Ïù¥Î•úÏ∞®Î°ú Î∂ÑÎ•òÎêòÎäî ÏÇºÎ•ú ÎòêÎäî ÏÇ¨Î•úÏùò ÏûêÎèôÏ∞®Î•º Ìè¨Ìï®</p>
+                                                <p class="fs12 mt5"><b>ÏõêÎèôÍ∏∞Ïû•Ïπò ÏûêÏ†ÑÍ±∞ÎûÄ?</b> Ï†ÑÎèôÌÇ•Î≥¥Îìú, Ï†ÑÎèôÏù¥Î•úÌèâÌñâÏ∞®, Ï†ÑÎèôÍ∏∞Ïùò ÎèôÎ†•ÎßåÏúºÎ°ú ÏõÄÏßÅÏùº Ïàò ÏûàÎäî ÏûêÏ†ÑÍ±∞ Îì± Í∞úÏù∏Ìòï Ïù¥ÎèôÏû•ÏπòÎ•º Ìè¨Ìï®(Îã§Îßå, Ï†ÑÎèôÌú†Ï≤¥Ïñ¥, ÏùòÎ£åÏö© Ïä§Ïø†ÌÑ∞ Îì± Î≥¥ÌñâÎ≥¥Ï°∞Ïö© ÏùòÏûêÏ∞®Îäî Ï†úÏô∏.)</p>
+                                                <p class="fs12 mt5">* Í≥ÑÏÜçÏ†ÅÏúºÎ°ú ÏßÅÏóÖ, ÏßÅÎ¨¥ ÎòêÎäî ÎèôÌò∏Ìöå ÌôúÎèôÍ≥º Ï∂úÌá¥Í∑ºÏö©ÎèÑ Îì±ÏúºÎ°ú ÏÇ¨Ïö©ÌïòÎäî Í≤ΩÏö∞Ïóê ÏÑ†ÌÉù.</p>
                                             </td>
                                         </tr>
             
@@ -653,6 +645,41 @@
 				</div>
 			</div>
 		</div>
+		
+		<!-- Ïû•Ïï†Ïù∏ ÏÑ∏Ïï°Í≥µÏ†ú Ïó¨Î∂Ä -->
+		<dl class="box setBorder">
+            <dt>
+                Ïû•Ïï†Ïù∏<br>ÏÑ∏Ïï°Í≥µÏ†úÏó¨Î∂Ä
+            </dt>
+            <dd>
+                <b>[Ïû•Ïï†Ïù∏Ïùº Í≤ΩÏö∞]</b> ÏÑ∏Ïï°Í≥µÏ†ú Ï†ÅÏö© ÌôïÎåÄÎ•º ÏúÑÌï¥ <b>Ïû•Ïï†Ïù∏ Ï†ÑÏö©Î≥¥Ìóò Ï†ÑÌôòÌäπÏïΩ</b>ÏùÑ Ïã†Ï≤≠ÌïòÏãúÍ≤†ÏäµÎãàÍπå?
+                <div class="rdo_type01 custom-label id-gb">
+                    <input type="radio" name="HNDI_APPLY_YN" class="d-radio" value="Y" title="Ïòà">
+                    <span>Ïòà</span>
+                    <input type="radio" name="HNDI_APPLY_YN" class="d-radio" value="N" title="ÏïÑÎãàÏò§">
+                    <span>ÏïÑÎãàÏò§</span>
+                </div>
+            </dd>
+        </dl>
+
+        <dl class="box setBorder">
+            <dt>
+                ÌïÑÏàò,ÏÑ†ÌÉù<br>ÎèôÏùò
+            </dt>
+            <dd>
+                Î≥¥ÌóòÍ∞ÄÏûÖÏùÑ ÏúÑÌïú ÌïÑÏàòÏ†ïÎ≥¥ ÎèôÏùò Î∞è Î∂ÄÍ∞ÄÏÑúÎπÑÏä§Ïóê ÎåÄÌïú ÏÑ†ÌÉù ÎèôÏùòÍ∞Ä ÌïÑÏöîÌï©ÎãàÎã§.
+                <div><a href="page07.jsp" onclick="page07.jsp" class="btn02 middle border" id="PersonInfoAgree_text">ÌôïÏù∏ÌïòÍ∏∞</a></div>
+            </dd>
+        </dl>
+
+        <div class="btn_group tc mt30">
+            <a href="">Ìú¥ÎåÄÌè∞Ïù∏Ï¶ù ÌõÑ Ï†ÄÏû•</a>
+            <a href="">Í≥µÎèôÏù∏Ï¶ù ÌõÑ Ï†ÄÏû•</a>
+        </div>
+		
+	</div>
+		
+		
 	</div>
 
 </body>

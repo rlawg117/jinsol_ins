@@ -1,61 +1,61 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>Ã»¾à Àü ¾È³»»çÇ×</title>
+<meta charset="UTF-8">
+<title>ì²­ì•½ ì „ ì•ˆë‚´ì‚¬í•­</title>
 <link href="../css/page02.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="wrap">
         <div>
-            <h1>Èï±¹»ý¸í ¿Â¶óÀÎº¸Çè Ã»¾à Àü ¾È³»»çÇ×</h1>
+            <h1>í¥êµ­ìƒëª… ì˜¨ë¼ì¸ë³´í—˜ ì²­ì•½ ì „ ì•ˆë‚´ì‚¬í•­</h1>
         </div>
 
         <div class="notice_bar">
-            <a>°¡ÀÔ Àü ÁØºñ»çÇ×À» È®ÀÎÇÏ¼¼¿ä</a>
+            <a>ê°€ìž… ì „ ì¤€ë¹„ì‚¬í•­ì„ í™•ì¸í•˜ì„¸ìš”</a>
         </div>
 
         <div class="subscription_coint">
             <div>
                 <dl>
                     <dt>
-                        º¸¾ÈÇÁ·Î±×·¥ ¼³Ä¡ ¾È³»
+                        ë³´ì•ˆí”„ë¡œê·¸ëž¨ ì„¤ì¹˜ ì•ˆë‚´
                     </dt>
                     <dd>
-                        º¸¾ÈÇÁ·Î±×·¥ ¼³Ä¡µÇÁö ¾ÊÀ» °æ¿ì [¼öµ¿¼³Ä¡] ¹öÆ°À» ¼±ÅÃÇÏ½Ê½Ã¿À.
-                        <a href="../text/magicline4npiz.exe" download>¼öµ¿¼³Ä¡</a>
+                        ë³´ì•ˆí”„ë¡œê·¸ëž¨ ì„¤ì¹˜ë˜ì§€ ì•Šì„ ê²½ìš° [ìˆ˜ë™ì„¤ì¹˜] ë²„íŠ¼ì„ ì„ íƒí•˜ì‹­ì‹œì˜¤.
+                        <a href="../text/magicline4npiz.exe" download>ìˆ˜ë™ì„¤ì¹˜</a>
                     </dd>
                 </dl>
                 <dl>
                     <dt>
                         <a href="">
                             <b>01</b>
-                            º»ÀÎÀÎÁõÀÌ ÇÊ¿äÇÕ´Ï´Ù.
+                            ë³¸ì¸ì¸ì¦ì´ í•„ìš”í•©ë‹ˆë‹¤.
                         </a>
                     </dt>
                     <dd>
-                        <li>º»ÀÎ ¸íÀÇÀÇ °³ÀÎ°øµ¿ÀÎÁõ¼­</li>
-                        <li>½º¸¶Æ®Æù¿¡¼­´Â °øµ¿ÀÎÁõ¼­ ¾îÇÃ¸®ÄÉÀÌ¼Ç(MSign)¿¡ ÀÎÁõ¼­ º¹»ç</li>
+                        <li>ë³¸ì¸ ëª…ì˜ì˜ ê°œì¸ê³µë™ì¸ì¦ì„œ</li>
+                        <li>ìŠ¤ë§ˆíŠ¸í°ì—ì„œëŠ” ê³µë™ì¸ì¦ì„œ ì–´í”Œë¦¬ì¼€ì´ì…˜(MSign)ì— ì¸ì¦ì„œ ë³µì‚¬</li>
                     </dd>
                 </dl>
                 <dl>
                     <dt>
                         <a href="">
                             <b>02</b>
-                            °áÁ¦¹æ¹ýÀ» È®ÀÎÇÏ¼¼¿ä.
+                            ê²°ì œë°©ë²•ì„ í™•ì¸í•˜ì„¸ìš”.
                         </a>
                     </dt>
                     <dd>
                         
                         <li>
-                            ½Ç½Ã°£ÀÌÃ¼
-                            <div><p>ÀÌÃ¼°¡´ÉÀºÇà</p></div>
+                            ì‹¤ì‹œê°„ì´ì²´
+                            <div><p>ì´ì²´ê°€ëŠ¥ì€í–‰</p></div>
                         </li>
                         <li>
-                            ½Å¿ëÄ«µå
-                            <div><p>BCÄ«µå / »ï¼ºÄ«µå / Çö´ëÄ«µå / NH³óÇùÄ«µå / ·Ôµ¥Ä«µå</p></div>
+                            ì‹ ìš©ì¹´ë“œ
+                            <div><p>BCì¹´ë“œ / ì‚¼ì„±ì¹´ë“œ / í˜„ëŒ€ì¹´ë“œ / NHë†í˜‘ì¹´ë“œ / ë¡¯ë°ì¹´ë“œ</p></div>
                         </li>
                     </dd>
                 </dl>
@@ -63,16 +63,16 @@
                     <dt>
                         <a href="">
                             <b>03</b>
-                            ¿Ü±¹ÀÎÀÌ½Ç °æ¿ì È®ÀÎÇØ ÁÖ¼¼¿ä.
+                            ì™¸êµ­ì¸ì´ì‹¤ ê²½ìš° í™•ì¸í•´ ì£¼ì„¸ìš”.
                         </a>
                     </dt>
                     <dd>
                         
                         <li>
-                            ÈÞ´ëÆùÀ¸·Î ÂïÀº ½ÅºÐÁõ »çº»(3MÀÌÇÏ)
+                            íœ´ëŒ€í°ìœ¼ë¡œ ì°ì€ ì‹ ë¶„ì¦ ì‚¬ë³¸(3Mì´í•˜)
                         </li>
                         <li>
-                           ¾î¸°ÀÌ º¸ÇèÀº ÀÚ³à ½ÅºÐÁõ »çº»
+                           ì–´ë¦°ì´ ë³´í—˜ì€ ìžë…€ ì‹ ë¶„ì¦ ì‚¬ë³¸
                         </li>
                     </dd>
                 </dl>
@@ -80,25 +80,25 @@
                     <dt>
                         <a href="">
                             <b>04</b>
-                            º¸Çè°¡ÀÔ À¯ÀÇ»çÇ×
+                            ë³´í—˜ê°€ìž… ìœ ì˜ì‚¬í•­
                         </a>
                     </dt>
                     <dd>
                         
                         <li>
-                            <b>°è¾àÀÚ¿Í ÇÇº¸ÇèÀÚ°¡ µ¿ÀÏÇØ¾ßÇÕ´Ï´Ù.(¾î¸°ÀÌ º¸Çè Á¦¿Ü)</b>
+                            <b>ê³„ì•½ìžì™€ í”¼ë³´í—˜ìžê°€ ë™ì¼í•´ì•¼í•©ë‹ˆë‹¤.(ì–´ë¦°ì´ ë³´í—˜ ì œì™¸)</b>
                         </li>
                         <li>
-                            <b>ÃÊÈ¸º¸Çè·á ³³ÀÔ</b>
+                            <b>ì´ˆíšŒë³´í—˜ë£Œ ë‚©ìž…</b>
                             <div>
-                                <span>-ÃÊÈ¸º¸Çè·á´Â Áï½Ã ³³ÀÔµÇ¸ç, ½Å¿ëÄ«µå´Â Ã¹ 1È¸ º¸Çè·á¸¸ ³³ÀÔÀÌ °¡´ÉÇÕ´Ï´Ù.</span>
-                                <span>-½Ç½Ã°£ÀÌÃ¼ ÀÌ¿ë½Ã ÀÜ°íºÎÁ·, ½Å¿ëÄ«µå ÀÌ¿ë½Ã ÇÑµµÃÊ°úÀÇ °æ¿ì º¸Çè·á°¡ÀÔÀÌ ¿Ï·áµÇÁö ¾Ê½À´Ï´Ù.</span>
+                                <span>-ì´ˆíšŒë³´í—˜ë£ŒëŠ” ì¦‰ì‹œ ë‚©ìž…ë˜ë©°, ì‹ ìš©ì¹´ë“œëŠ” ì²« 1íšŒ ë³´í—˜ë£Œë§Œ ë‚©ìž…ì´ ê°€ëŠ¥í•©ë‹ˆë‹¤.</span>
+                                <span>-ì‹¤ì‹œê°„ì´ì²´ ì´ìš©ì‹œ ìž”ê³ ë¶€ì¡±, ì‹ ìš©ì¹´ë“œ ì´ìš©ì‹œ í•œë„ì´ˆê³¼ì˜ ê²½ìš° ë³´í—˜ë£Œê°€ìž…ì´ ì™„ë£Œë˜ì§€ ì•ŠìŠµë‹ˆë‹¤.</span>
                             </div>
                         </li>
                         <li>
                             <span>
-                                º¸Çè°¡ÀÔ ºÒ°¡ ½Ã°£ : 
-                                <b>ÀºÇàÁ¡°Ë½Ã°£(23:00~01:00)</b>
+                                ë³´í—˜ê°€ìž… ë¶ˆê°€ ì‹œê°„ : 
+                                <b>ì€í–‰ì ê²€ì‹œê°„(23:00~01:00)</b>
                             </span>
                         </li>
                     </dd>
@@ -107,7 +107,7 @@
         </div>
         
         <div>
-            <a href="page06.jsp">¹Ù·Î °¡ÀÔÇÏ±â</a>
+            <a href="page06.jsp">ë°”ë¡œ ê°€ìž…í•˜ê¸°</a>
         </div>
         
 

@@ -1,59 +1,59 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>¸ÞÀÏº¸³»±â</title>
+<meta charset="UTF-8">
+<title>ë©”ì¼ë³´ë‚´ê¸°</title>
 <link href="../css/page02.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
 <div id="page4" class="setBorder emailbox">
-        <h2>¸ÞÀÏ º¸³»±â</h2>
-        <h4>º¸Çè°¡ÀÔ¼³°è¿¡ ´ëÇÑ »ó¼¼³»¿ë°ú °¡ÀÔÁ¦¾È¼­¸¦ ¸ÞÀÏ·Î ¹Þ¾Æº¸½Ç ¼ö ÀÖ½À´Ï´Ù.</h4>
+        <h2>ë©”ì¼ ë³´ë‚´ê¸°</h2>
+        <h4>ë³´í—˜ê°€ìž…ì„¤ê³„ì— ëŒ€í•œ ìƒì„¸ë‚´ìš©ê³¼ ê°€ìž…ì œì•ˆì„œë¥¼ ë©”ì¼ë¡œ ë°›ì•„ë³´ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.</h4>
         <div>
-           <span>ÀÌ¸ÞÀÏ</span>
-           <input type="text" class="setBorder" id="email1" title="ÀÌ¸ÞÀÏ ÁÖ¼Ò ÀÔ·Â" value>
+           <span>ì´ë©”ì¼</span>
+           <input type="text" class="setBorder" id="email1" title="ì´ë©”ì¼ ì£¼ì†Œ ìž…ë ¥" value>
             @
-           <input type="text" class="setBorder" id="email2" title="ÀÌ¸ÞÀÏ µµ¸ÞÀÎ ÁÖ¼Ò ÀÔ·Â" value>
+           <input type="text" class="setBorder" id="email2" title="ì´ë©”ì¼ ë„ë©”ì¸ ì£¼ì†Œ ìž…ë ¥" value>
         </div>
 
         <div>
             <div class="title setBorder">
-                <p>°³ÀÎ(½Å¿ë)Á¤º¸ ¼öÁý ¹× ÀÌ¿ëµ¿ÀÇ</p>
+                <p>ê°œì¸(ì‹ ìš©)ì •ë³´ ìˆ˜ì§‘ ë° ì´ìš©ë™ì˜</p>
                 <div class="agree">
-                    <input type="radio" name="agreeyn" class="i-radio" value="1" title="µ¿ÀÇ">
-                    <span>µ¿ÀÇ</span>
-                    <input type="radio" name="agreeyn" class="i-radio" value="2" title="ºñµ¿ÀÇ">
-                    <span>ºñµ¿ÀÇ</span>
+                    <input type="radio" name="agreeyn" class="i-radio" value="1" title="ë™ì˜">
+                    <span>ë™ì˜</span>
+                    <input type="radio" name="agreeyn" class="i-radio" value="2" title="ë¹„ë™ì˜">
+                    <span>ë¹„ë™ì˜</span>
                 </div>
             </div>
 
             <div>
                 <ul>
                     <li>
-                        <span>1.¼öÁý ¹× ÀÌ¿ë ¸ñÀû</span>
-                        <p>º¸Çè»óÇ° ¼³°è³»¿ë ¹× °¡ÀÔÁ¦¾È¼­ ¹ß¼Û</p>
+                        <span>1.ìˆ˜ì§‘ ë° ì´ìš© ëª©ì </span>
+                        <p>ë³´í—˜ìƒí’ˆ ì„¤ê³„ë‚´ìš© ë° ê°€ìž…ì œì•ˆì„œ ë°œì†¡</p>
                     </li>
                     <li>
-                        <span>2. ¼öÁýÇÏ´Â °³ÀÎÁ¤º¸ÀÇ Ç×¸ñ</span>
-                        <p>ÀÌ¸ÞÀÏÁÖ¼Ò</p>
+                        <span>2. ìˆ˜ì§‘í•˜ëŠ” ê°œì¸ì •ë³´ì˜ í•­ëª©</span>
+                        <p>ì´ë©”ì¼ì£¼ì†Œ</p>
                     </li>
                     <li>
-                        <span>3. º¸À¯±â°£ ¹× ÀÌ¿ë½Ã°£</span>
-                        <p>ÀÌ¸ÞÀÏ ¹ß¼Û Á÷ÈÄ Áï½Ã ÆÄ±â</p>
+                        <span>3. ë³´ìœ ê¸°ê°„ ë° ì´ìš©ì‹œê°„</span>
+                        <p>ì´ë©”ì¼ ë°œì†¡ ì§í›„ ì¦‰ì‹œ íŒŒê¸°</p>
                     </li>
                 </ul>
                 <p>
-                    °í°´´Ô²²¼­´Â µ¿ÀÇ¸¦ °ÅºÎÇÒ ¼ö ÀÖ½À´Ï´Ù. ´Ù¸¸, µ¿ÀÇ °ÅºÎ ½Ã¿¡´Â ÇØ´ç ¼­ºñ½º ÀÌ¿ëÀÌ Á¦ÇÑµË´Ï´Ù. À§ »çÇ×¿¡ µ¿ÀÇ ÇÏ½Ê´Ï±î?
+                    ê³ ê°ë‹˜ê»˜ì„œëŠ” ë™ì˜ë¥¼ ê±°ë¶€í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ë‹¤ë§Œ, ë™ì˜ ê±°ë¶€ ì‹œì—ëŠ” í•´ë‹¹ ì„œë¹„ìŠ¤ ì´ìš©ì´ ì œí•œë©ë‹ˆë‹¤. ìœ„ ì‚¬í•­ì— ë™ì˜ í•˜ì‹­ë‹ˆê¹Œ?
                 </p>
             </div>
         </div>
 
         <div class="btn_wrap">
-            <a href="" onclick="">ÀÌ¸ÞÀÏº¸³»±â</a>
-            <a href="" onclick="">´Ý±â</a>
+            <a href="" onclick="">ì´ë©”ì¼ë³´ë‚´ê¸°</a>
+            <a href="" onclick="">ë‹«ê¸°</a>
         </div>
 
     </div>

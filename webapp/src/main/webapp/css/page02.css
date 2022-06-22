@@ -1,10 +1,10 @@
-@charset "EUC-KR";
+@charset "UTF-8";
 
 body{
 	width:90%;
 	margin : 0 auto;
 	margin-top: 5%;
-	margin-bottom: 5%;
+	margin-bottom: 8%;
 }
 
 .box{
@@ -27,8 +27,8 @@ body{
 
 .compare{
 	position: relative;
-    width: 810px;
-    padding-left: 160px;
+/*     width: 810px;
+    padding-left: 160px; */
     box-sizing: border-box
 }
 
@@ -47,5 +47,14 @@ table{
 	box-sizing: border-box;
 	text-indent: inherit;
 	text-align : center;
+
 	
+}
+
+.tdright{
+	text-align: start
+}
+
+.fs12{
+	    font-size: 12px !important;
 }

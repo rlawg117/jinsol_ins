@@ -1,35 +1,35 @@
 <%@page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+    pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>√π∆‰¿Ã¡ˆ</title>
+<meta charset="UTF-8">
+<title>Ï≤´ÌéòÏù¥ÏßÄ</title>
 <link href="../css/page02.css" rel="stylesheet" type="text/css">
 </head>
 <body>
  <div>
         <div class="setBorder">
-            <h3>(π´)»Ô±πª˝∏Ì ø¬∂Û¿Œ</h3>
-            <h2>¡§±‚∫∏«Ë</h2>
-            <h4>øÏ∏Æ∞°¡∑¿« πÃ∑°¥¬ ¡§±‚∫∏«Ë¿∏∑Œ æ»Ω…!</h4>
+            <h3>(Î¨¥)Ìù•Íµ≠ÏÉùÎ™Ö Ïò®ÎùºÏù∏</h3>
+            <h2>Ï†ïÍ∏∞Î≥¥Ìóò</h2>
+            <h4>Ïö∞Î¶¨Í∞ÄÏ°±Ïùò ÎØ∏ÎûòÎäî Ï†ïÍ∏∞Î≥¥ÌóòÏúºÎ°ú ÏïàÏã¨!</h4>
         </div>
        
-<!-- ¡§±‚ ∫∏«Ë ∞°¿‘«œ∑Ø∞°±‚ πˆ∆∞ -->
+<!-- Ï†ïÍ∏∞ Î≥¥Ìóò Í∞ÄÏûÖÌïòÎü¨Í∞ÄÍ∏∞ Î≤ÑÌäº -->
     <div class="example MENU3" style="display:block ;" >
         
 
             <div class="setBorder">
                 <h4>
-                    <b>¡§±‚∫∏«Ë</b>
-                    "∫∏«Ë∑· æÀæ∆∫∏±‚"
+                    <b>Ï†ïÍ∏∞Î≥¥Ìóò</b>
+                    "Î≥¥ÌóòÎ£å ÏïåÏïÑÎ≥¥Í∏∞"
                 </h4>
                 <div class="input_field">
                 
                 <form action="page02.jsp" method="post">
-                    <table width="100%" summary=""¡§±‚∫∏«Ë ∫∏«Ë∑· ∞ËªÍ¿ª ¿ß«ÿ ¡§∫∏¿‘∑¬>
-                        <!-- ¡§±‚∫∏«Ë -->
+                    <table width="100%" summary=""Ï†ïÍ∏∞Î≥¥Ìóò Î≥¥ÌóòÎ£å Í≥ÑÏÇ∞ÏùÑ ÏúÑÌï¥ Ï†ïÎ≥¥ÏûÖÎ†•>
+                        <!-- Ï†ïÍ∏∞Î≥¥Ìóò -->
                         <colgroup>
                             <col width="110">
                             <col width=""*>
@@ -37,46 +37,46 @@
                         <tbody>
                             <tr>
                                 <th>
-                                    ª˝≥‚ø˘¿œ
-                                    <span class="insurance_age">∫∏«Ë≥™¿Ã</span>
+                                    ÏÉùÎÖÑÏõîÏùº
+                                    <span class="insurance_age">Î≥¥ÌóòÎÇòÏù¥</span>
                                 </th>
                                 <td style="border-right:none;">
-                                    <input type="text" id="custBirth_MENU3" name="custBirth_MENU3" maxlength="6" class="s-input number w100" placeholder="øπΩ√)720322" title="ª˝≥‚ø˘¿œ ¿‘∑¬">
+                                    <input type="text" id="custBirth_MENU3" name="custBirth_MENU3" maxlength="6" class="s-input number w100" placeholder="ÏòàÏãú)720322" title="ÏÉùÎÖÑÏõîÏùº ÏûÖÎ†•">
                                 </td>
                             </tr>
                             <tr>
-                                <th>º∫∫∞</th>
+                                <th>ÏÑ±Î≥Ñ</th>
                                 <td style="border-right:none;">
                                     <div class="rdo_type01 custom-label">
                                         <label class="dad">
-                                            <input type="radio" name="custGnder_MENU3" class="d-radio" value="1" title="≥≤¿⁄ º±≈√">
+                                            <input type="radio" name="custGnder_MENU3" class="d-radio" value="1" title="ÎÇ®Ïûê ÏÑ†ÌÉù">
                                             <span>
-                                                ≥≤¿⁄
+                                                ÎÇ®Ïûê
                                             </span>
                                         </label>
                                         <label class="mam">
-                                            <input type="radio" name="custGnder_MENU3" class="d-radio" value="2" title="ø©¿⁄ º±≈√">
+                                            <input type="radio" name="custGnder_MENU3" class="d-radio" value="2" title="Ïó¨Ïûê ÏÑ†ÌÉù">
                                             <span>
-                                                ø©¿⁄
+                                                Ïó¨Ïûê
                                             </span>
                                         </label>
                                     </div>
                                 </td>
                             </tr>
                             <tr>
-                                <td>»Ìø¨ø©∫Œ</td>
+                                <td>Ìù°Ïó∞Ïó¨Î∂Ä</td>
                                 <td style="border-right:none;">
                                     <div class="rdo_type01 custom-labe">
                                         <label class="smoke_y">
-                                            <input type="radio" name="smoke_yn" value="1" title="»Ìø¨ º±≈√"  class="radio">
+                                            <input type="radio" name="smoke_yn" value="1" title="Ìù°Ïó∞ ÏÑ†ÌÉù"  class="radio">
                                             <span>
-                                                »Ìø¨
+                                                Ìù°Ïó∞
                                             </span>
                                         </label>
                                         <label class="smoke_n">
-                                            <input type="radio" name="smoke_yn" value="2" title="∫Ò»Ìø¨ º±≈√"  class="radio">
+                                            <input type="radio" name="smoke_yn" value="2" title="ÎπÑÌù°Ïó∞ ÏÑ†ÌÉù"  class="radio">
                                             <span>
-                                                ∫Ò»Ìø¨
+                                                ÎπÑÌù°Ïó∞
                                             </span>
                                         </label>
                                     </div>
@@ -85,7 +85,7 @@
                         </tbody>
                     </table>
                 </div>
-           	<input type="submit" value="∫∏«Ë∑·∞ËªÍ">
+           	<input type="submit" value="Î≥¥ÌóòÎ£åÍ≥ÑÏÇ∞">
             </a>
             </form>
             </div>

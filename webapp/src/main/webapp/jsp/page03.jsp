@@ -1,28 +1,28 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
-<title>º¸Çè ºñ±³</title>
+<meta charset="UTF-8">
+<title>ë³´í—˜ ë¹„êµ</title>
 <link href="../css/page02.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
 	 <div id="page3" class="setBorder">
-        <h2>(¹«)Èï±¹»ý¸í ¿Â¶óÀÎÁ¤±âº¸Çè</h2>
+        <h2>(ë¬´)í¥êµ­ìƒëª… ì˜¨ë¼ì¸ì •ê¸°ë³´í—˜</h2>
         <div>
             <div class="contents">
                 <ul class="box compare">
                     <li class="setBorder">
-                        <span>¿ù º¸Çè·á</span>
-                        <span>3,000¿ø</span>
-                        <p>10³â ¸¸±â(°»½ÅÇü) / 10³â³³ / 24¼¼, ¿©ÀÚ</p>
+                        <span>ì›” ë³´í—˜ë£Œ</span>
+                        <span>3,000ì›</span>
+                        <p>10ë…„ ë§Œê¸°(ê°±ì‹ í˜•) / 10ë…„ë‚© / 24ì„¸, ì—¬ìž</p>
                     </li>
                     <li class="setBorder">
-                        <span>¿ù º¸Çè·á</span>
-                        <span>20,000¿ø</span>
-                        <p>60¼¼ ¸¸±â / 10³â ³³ÀÔ / 24¼¼, ¿©ÀÚ</p>
+                        <span>ì›” ë³´í—˜ë£Œ</span>
+                        <span>20,000ì›</span>
+                        <p>60ì„¸ ë§Œê¸° / 10ë…„ ë‚©ìž… / 24ì„¸, ì—¬ìž</p>
                     </li>
                 </ul>
             </div>
@@ -37,25 +37,30 @@
                     </colgroup>
                     <thead>
                         <tr>
-                            <th>º¸Àå³»¿ë</th>
-                            <th scope="col" colspan="2">º¸Àå±Ý¾×</th>
+                            <th>ë³´ìž¥ë‚´ìš©</th>
+                            <th scope="col" colspan="2">ë³´ìž¥ê¸ˆì•¡</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>ÀçÇØ»ç¸Áº¸Çè±Ý</td>
-                            <td>20,000¸¸¿ø</td>
-                            <td>20,0000¸¸¿ø</td>
+                            <td>ìž¬í•´ì‚¬ë§ë³´í—˜ê¸ˆ</td>
+                            <td>20,000ë§Œì›</td>
+                            <td>20,0000ë§Œì›</td>
                         </tr>
                         <tr>
-                            <td>ÀÏ¹Ý»ç¸Áº¸Çè±Ý</td>
-                            <td>10,000¸¸¿ø</td>
-                            <td>10,0000¸¸¿ø</td>
+                            <td>ì¼ë°˜ì‚¬ë§ë³´í—˜ê¸ˆ</td>
+                            <td>10,000ë§Œì›</td>
+                            <td>10,0000ë§Œì›</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
+        
+        <!-- <a>
+        <script type="text/javascript"> window.history.back();</script>
+        	<span>í™•ì¸</span>
+        </a> -->
 
     </div>
 
