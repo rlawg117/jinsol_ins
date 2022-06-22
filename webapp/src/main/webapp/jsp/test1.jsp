@@ -56,7 +56,7 @@
                 <tr>
                    <th> 보험나이</th> 
                    <span>
-                   <% 
+                   <input type="text" value="<% 
                    String age = request.getParameter("custBirth");
                    int year = Integer.parseInt(age.substring(0, 2));
                    int month = Integer.parseInt(age.substring(2, 4));
@@ -84,7 +84,8 @@
                 	   manAge-=1900;
                    }
                    out.print(manAge);
-                   %>세
+                   %>세" name="manAge1">
+                 
                    </span>
                    
                    <td>

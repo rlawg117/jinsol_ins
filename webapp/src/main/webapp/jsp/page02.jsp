@@ -7,6 +7,9 @@
 <meta charset="UTF-8">
 <title>보험계산</title>
 <link href="../css/page02.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../js/page02.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
  <% request.setCharacterEncoding("UTF-8");
@@ -120,28 +123,28 @@
                 <tbody>
                     <tr>
                         <th> 보험기간 </th>
-                        <td>
+                       <td>
                             <span>
                                 <label>
-                                    <input type="radio" class="d-radio" name="manYear">
+                                    <input type="radio" name="payMoney" value="10y" id="10y" onchange="setDisplay()">
                                     <span>10년만기(갱신형)</span>
                                 </label>
                             </span>
                             <span>
                                 <label>
-                                    <input type="radio" class="d-radio" name="manYear">
-                                    <span>20년</span> 
+                                    <input type="radio" name="payMoney" value="20y" id="20y" onchange="setDisplay()">
+                                    <span>20년</span>
                                 </label>
                             </span>
                             <span>
                                 <label>
-                                    <input type="radio" class="d-radio" name="manYear">
+                                    <input type="radio" name="payMoney" value="60y" id="60y" onchange="setDisplay()">
                                     <span>60세</span>
                                 </label>
                             </span>
                             <span>
                                 <label>
-                                    <input type="radio" class="d-radio" name="manYear">
+                                    <input type="radio" name="payMoney" value="80y" id="80y" onchange="setDisplay()">
                                     <span>80세</span>
                                 </label>
                             </span>
@@ -156,32 +159,32 @@
                 </colgroup>
                 <tbody>
                     <th>납입기간</th>
-                    <td>
+                    <td id="open" style="display:none;">
                         <span>
                             <label>
-                                <input type="radio">
+                                <input type="radio" name="payYear" id="10year">
                                 <span>10년납</span>
                             </label>
                         </span>
                         <span>
                             <label>
-                                <input type="radio">
+                                <input type="radio" name="payYear" id="20year">
                                 <span>20년납</span>
                             </label>
                         </span>
                         <span>
                             <label>
-                                <input type="radio">
+                                <input type="radio" name="payYear" id="60year">
                                 <span>60세납</span>
                             </label>
                         </span>
                         <span>
                             <label>
-                                <input type="radio">
+                                <input type="radio" name="payYear" id="80year">
                                 <span>80세납</span>
                             </label>
                         </span>
-
+        
                     </td>
                 </tbody>
             </table>
@@ -211,14 +214,15 @@
                     <th>일반사망보험금</th>
                     <td>
                         <div>
-                            <input type="text" title="보험가입금액입력"value="10,000">
+                            
+                            <input type='button' onclick='count("plus")' value='+'/>
+
+                         
+                            <span id='result'>10000</span>
                             <span>만원</span>
-                            <a href="#n" class="btn btn-plus">
-                                <span>1000만 단위 증감</span>
-                            </a>
-                            <a href="#n" class="btn btn-minus">
-                                <span>1000만 단위 감소</span>
-                            </a>
+                            
+                            <input type='button' onclick='count("minus")' value='-'/>
+
                         </div>
                         <span>
                             <label>

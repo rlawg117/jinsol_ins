@@ -46,10 +46,11 @@ table{
 	display: table;
 	box-sizing: border-box;
 	text-indent: inherit;
-	text-align : center;
-
-	
+	border: 0.3px solid;
+	margin : 2%;
 }
+
+
 
 .tdright{
 	text-align: start
@@ -58,3 +59,19 @@ table{
 .fs12{
 	    font-size: 12px !important;
 }
+
+.rows{
+	width: 20%;
+	text-align: center;
+}
+
+tr {
+	border: 0.3px solid black;
+}
+
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0lax{text-align:left;vertical-align:top}

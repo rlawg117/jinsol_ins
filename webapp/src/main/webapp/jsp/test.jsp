@@ -1,3 +1,4 @@
+<%@page import="java.time.LocalDate"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -9,6 +10,8 @@
 <link href="/webapp/css/page02.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+
+        
 
   <div>
         <div class="setBorder">
@@ -34,7 +37,7 @@
             </colgroup>
             <tbody>
                 <tr>
-                   <th> 보험나이 24세 </th> 
+                   <th> 보험나이</th> 
                    <td>
                         <span>
                             <input type="text" id="custBirth" name="custBirth" maxlength="6" class="input number" placeholder="예시)720322" title="생년월일 입력">

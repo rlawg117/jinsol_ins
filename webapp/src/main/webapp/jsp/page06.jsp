@@ -6,6 +6,9 @@
 <meta charset="UTF-8">
 <title>개인정보입력 페이지</title>
 <link href="../css/page02.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../js/page06.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
  <div class="subscription_wrap">
@@ -66,7 +69,7 @@
                                             <th>성명</th>
                                             <td class="tdright">
                                                 <input type="text" class="input" style="width:239px" id="CUST_NM" name="CUST_NM" title="이름 입력" alt="이름을 입력하세요." maxlength="50" hname="이름" required="required" npkencrypt="off">
-                                                <label class="foreign_check ml10"><input type="checkbox" class="checkbox" title="외국인 여부 선택" name="FORN_YN" id="FORN_YN"> 
+                                                <label class="foreign_check ml10"><input type="checkbox" class="checkbox" title="외국인 여부 선택" name="FORN_YN" id="FORN_YN" onchange="checkForn()"> 
                                                 <span class="fs12">외국인일 경우 체크해 주세요.</span>
                                                 </label>
                                                 
@@ -82,14 +85,14 @@
                                                 </span>
                                             </td>
                                         </tr>
-                                        <tr class="color id-card-title">
+                                        <tr class="color id-card-title" id="idcard">
                                             <th>신분증 확인</th>
                                             <td class="tdright">
                                                 <div class="rdo_type01">
-                                                    <label><input type="radio" class="d-radio" name="ID_GB" value="1" hname="신분증 확인 방법" title="주민등록증 선택" id="juminclick">
+                                                    <label><input type="radio" class="d-radio" name="ID_GB" value="1" hname="신분증 확인 방법" title="주민등록증 선택" id="juminclick" onchange="checkIdcard()">
                                                         <span>주민등록증</span>
                                                     </label>
-                                                    <label><input type="radio" class="d-radio" name="ID_GB" value="2" hname="신분증 확인 방법" title="운전면허증 선택" id="licenceclick">
+                                                    <label><input type="radio" class="d-radio" name="ID_GB" value="2" hname="신분증 확인 방법" title="운전면허증 선택" id="licenceclick" onchange="checkIdcard()">
                                                         <span>운전면허증</span>
                                                     </label>
                                                 </div>
@@ -98,7 +101,9 @@
                                         <tr class="color id-card-wrap id-input">
                                             <th></th>
                                             <td class="tdright">
-                                                <div class="inputs-psnl">
+                                            
+                                            <!-- 주민등록증 -->
+                                                <div class="inputs-psnl" style="display:none ;">
                                                     <div style="margin-top:10px;">
                                                         <span>
                                                             <b>발급일자</b>
@@ -138,7 +143,7 @@
                                                 <!-- //주민등록증 -->
             
                                                 <!-- 운전면허증 -->
-                                                <div class="inputs-drv-license">
+                                                <div class="inputs-drv-license"  style="display:none ;">
                                                         <div>
                                                         <span>
                                                             <b>면허번호</b>
@@ -184,8 +189,9 @@
                                                         <input type="text" name="DRV_NO2" id="DRV_NO2" maxlength="6" class="i-text number tl" title="운전면허 두번째 자리 번호 입력" hname="운전면허증 일련번호 두번째 자리" style="width: 100px; text-align: right;" npkencrypt="off" pattern="[0-9]*"> 
                                                         <input type="text" name="DRV_NO3" id="DRV_NO3" maxlength="2" class="i-text number tl" title="운전면허 세번째 자리 번호 입력" hname="운전면허증 일련번호 세번째 자리" style="width: 50px; text-align: right;" npkencrypt="off" pattern="[0-9]*">
                                                         
-                                                    </div>		 
-                                                    <!--
+                                                    </div>
+                                                    		 
+                                                    
                                                     <div>
                                                     <span>
                                                         <b>일련번호</b>
@@ -193,21 +199,24 @@
                                                     <input type="password" name="DRV_SEQ"  id="DRV_SEQ" maxlength="6" class="i-text" title="운전면허증 일련번호 입력"/>
                                                     
                                                        
-                                                    </div> -->
-                                                    <!-- 
+                                                    </div>
+                                                    
                                                     <p>발급일자
 
                                                     </span> 
                                                         <input type="i-text number" name="DRV_ISUE_YMD"  id="DRV_ISUE_YMD" maxlength="8" class="i-text" title="운전면허증  발급일자" />
                                                     </p>
-                                                     -->
+                                                     
                                                 
                                                 </div>
                                                 <!-- //운전면허증 -->
+                                                
                                             </td>
-                                        </tr>							
+                                        </tr>			
+                                        
+                                        				
                                         <!-- 외국인일 경우 노출영역 -->
-                                        <!-- <tr class="foreigner_input" style="display:none;">
+                                        <tr class="foreigner_input" style="display:none;">
                                             <th class="vt">신분증사본</th>
                                             <td class="tdright">
                                                 <span class="input_file" id="cont_send_fileName_text">
@@ -220,7 +229,7 @@
                                                 <p class="fs12 mt5">신분증 사진 또는 스캔하여 등록(3MB 이하, tif / jpg / gif / bmp 등)</p>
                                             </td>
                                         </tr>
-                                        <tr class="foreigner_input">
+                                        <tr class="foreigner_input" style="display:none;">
                                             <th class="vt">국적</th>
                                             <td class="nation_search tdright">
                                                 <div class="rdo_type01 custom-label" id="nf-nations-favoirte-table">
@@ -267,10 +276,11 @@
                                                 국가명 검색결과
                                                 <span class="rdo_type01" id="nf-nations-table">
                                                 </span>
-                                                //국가명 검색결과
+                                                <!-- 국가명 검색결과 -->
             
                                             </td>
                                         </tr>
+                                        
                                         
                                         <tr class="foreigner_input" style="display:none;">
                                             <th>영문성명</th>
@@ -280,7 +290,7 @@
                                                 <input type="text" class="input" name="CUST_ENG_NM3" id="CUST_ENG_NM3" title="Maiden Name 입력" maxlength="15" placeholder="Maiden Name">
                                             </td>
                                         </tr>
-                                        <tr class="foreigner_input">
+                                        <tr class="foreigner_input" style="display:none;">
                                             <th>비자등급</th>
                                             <td class="tdright">
                                                 <select class="sbox" title="비자등급 선택" name="VISA_KND">
@@ -324,7 +334,7 @@
                                                     <option value="H-2">방문취업</option>
                                                 </select>
                                             </td>
-                                        </tr> -->
+                                        </tr>
                                         <!-- //외국인일 경우 노출영역 -->
             
                                         <tr>
@@ -343,7 +353,8 @@
                                                 </span>
                                             </td>
                                         </tr>
-                                        <tr class="low_item first">
+                                        
+                                        <!-- <tr class="low_item first">
                                             <th>이름</th>
                                             <td class="tdright">
                                                 <input type="text" class="input" title="이름 입력" id="REAL_OWN_NM" name="REAL_OWN_NM" maxlength="50">
@@ -363,7 +374,7 @@
                                             </td>
                                         </tr>
 
-                                        <!-- <tr class="low_item last">
+                                         <tr class="low_item last">
                                             <th>국적</th>
                                             <td class="tdright">
                                                 <p class="mt5 mb5">
@@ -375,9 +386,10 @@
                                                 <span class="rdo_type01 custom-label auto_label line_label" id="nf-nations-table-real">
                                                 </span>
                                              </td>
-                                        </tr>
+                                        </tr> -->
             
-             -->
+            
+         
                                         <tr>
                                             <th class="vt">이메일</th>
                                             <td class="tdright">
@@ -526,8 +538,7 @@
                                             </tr>
                                             <tr>
                                                 <th>
-                                            
-                                                    									
+	                                            	일반금융소비자로 대우 변경
                                                 </th>
                                                 <td class="tdright">
                                                     <span class="rdo_type01 custom-label">
@@ -547,18 +558,18 @@
                                             <td class="tdright">
                                                 <span class="rdo_type01 custom-label radio-driverYn">
                                                     <label class="">
-                                                        <input type="radio" class="d-radio" name="DRY_YN" value="N" hname="운전여부" title="운전안함 선택">
+                                                        <input type="radio" class="d-radio" name="DRY_YN" value="N" hname="운전여부" title="운전안함 선택" id="undrive" onchange="checkDrive()">
                                                         <span class="bg_white">운전안함</span>
                                                     </label>
                                                     <label class="">
-                                                        <input type="radio" class="d-radio" name="DRY_YN" value="Y" hname="운전여부" title="운전함 선택">
+                                                        <input type="radio" class="d-radio" name="DRY_YN" value="Y" hname="운전여부" title="운전함 선택" id="drive" onchange="checkDrive()">
                                                         <span class="bg_white">운전함</span>
                                                     </label>
                                                     
                                                 </span>
-                                              <!--   <span class="fs12 vm">운전하는 차량을 모두 선택해 주세요.</span>
+                                               <span class="fs12 vm">운전하는 차량을 모두 선택해 주세요.</span>
             
-                                                <div class="box_car box" name="radio_driverY">
+                                                <div class="box_car box" name="radio_driverY" style="display:none;" id="carBox" >
                                                     <dl>
                                                         <dt><b>승용차</b></dt>
                                                         <dd>
@@ -613,7 +624,7 @@
                                                     </dl>
                                                     
                                                     
-                                                </div> -->
+                                                </div>
 
                                             </td>
                                         </tr>
@@ -647,40 +658,53 @@
 		</div>
 		
 		<!-- 장애인 세액공제 여부 -->
-		<dl class="box setBorder">
-            <dt>
-                장애인<br>세액공제여부
-            </dt>
-            <dd>
-                <b>[장애인일 경우]</b> 세액공제 적용 확대를 위해 <b>장애인 전용보험 전환특약</b>을 신청하시겠습니까?
-                <div class="rdo_type01 custom-label id-gb">
-                    <input type="radio" name="HNDI_APPLY_YN" class="d-radio" value="Y" title="예">
-                    <span>예</span>
-                    <input type="radio" name="HNDI_APPLY_YN" class="d-radio" value="N" title="아니오">
-                    <span>아니오</span>
-                </div>
-            </dd>
-        </dl>
+   <div class="subscrip2 setBorder">
+            <dl>
+                <dd>
+                    <table>
+                        <tbody>
 
-        <dl class="box setBorder">
-            <dt>
-                필수,선택<br>동의
-            </dt>
-            <dd>
-                보험가입을 위한 필수정보 동의 및 부가서비스에 대한 선택 동의가 필요합니다.
-                <div><a href="page07.jsp" onclick="page07.jsp" class="btn02 middle border" id="PersonInfoAgree_text">확인하기</a></div>
-            </dd>
-        </dl>
+                            <tr>
+                                <th>
+                                    장애인<br>세액공제여부
+                                </th>
+                                <td>
+                                    <b>[장애인일 경우]</b> 세액공제 적용 확대를 위해 <b>장애인 전용보험 전환특약</b>을 신청하시겠습니까?
+                                    <div class="rdo_type01 custom-label id-gb">
+                                        <input type="radio" name="HNDI_APPLY_YN" class="d-radio" value="Y" title="예">
+                                        <span>예</span>
+                                        <input type="radio" name="HNDI_APPLY_YN" class="d-radio" value="N" title="아니오">
+                                        <span>아니오</span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>
+                                     필수, 선택<br>동의
+                                </th> 
+                                <td>
+                                    <p>보험가입을 위한 필수정보 동의 및 부가서비스에 대한 선택 동의가 필요합니다.</p> 
+                                    <a href="page07.jsp" onclick="page07.jsp" class="btn02 middle border" id="PersonInfoAgree_text">확인하기</a>        
+                                </td>
+                            </tr> 
+                        </tbody>
+                    </table>
+                </dd>
+            </dl>
+        
+    </div>
+        
 
         <div class="btn_group tc mt30">
             <a href="">휴대폰인증 후 저장</a>
             <a href="">공동인증 후 저장</a>
         </div>
+    </div>
+       
 		
-	</div>
 		
-		
-	</div>
+
 
 </body>
 </html>
