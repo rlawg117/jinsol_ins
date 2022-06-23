@@ -23,7 +23,7 @@
                 <div class="plan_data box setBorder" >
                     <dl class="type">
                         <dt>구분</dt>
-                        <dd id="p_item_cont1"><b>(흡연)2종(갱신형)</b></dd>
+                        <dd id="p_item_cont1"><b>(비흡연)2종(갱신형)</b></dd>
                     </dl>
                     <dl class="period1">
                         <dt>보험기간</dt>
@@ -35,11 +35,11 @@
                     </dl>
                     <dl class="money1">
                         <dt>가입금액</dt>
-                        <dd id="p_item_cont6"><b>     100,000,000원</b></dd>
+                        <dd id="p_item_cont6"><b>100,000,000원</b></dd>
                     </dl>
                     <dl>
                         <dt>월 보험료</dt>
-                        <dd id="p_item_cont5"><b>          20,000원</b></dd>
+                        <dd id="p_item_cont5"><b>3,000원</b></dd>
                     </dl>
                 </div>
                 <div class="subscription_cont">
