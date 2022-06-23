@@ -33,3 +33,7 @@ function setDisplay(){
         $('#80year').hide();
     }
 }
+
+$("#many").click(function(){
+   $("#result").text("10000");
+});

@@ -5,12 +5,13 @@
 <head>
 <meta charset="UTF-8">
 <title>건강검진 대상안내</title>
+<link href="../css/page02.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-    <div>
-        <h2>건강검진 대상안내</h2>
-        <div>
+    <div class="wrap">
+        <h2 class="txtcenter">건강검진 대상안내</h2>
+        <div class="agreephone">
             <p>고객님, 청약 진행시 심사단계에서 건강검진이 요청 될 수도 있습니다.</p>
             <p>건강검진이 필요한 경우 진단 서비스 제공 업체에서 고객님께 방문진단 예약 전화를 드린 후 건강검진을 진행하게 됩니다. 해당 내용 참고하시어 가입 진행해주시기 바랍니다.</p>
         </div>
@@ -69,7 +70,10 @@
             </table>
 
 
-            <button><a href="page11.jsp">확인</a></button>
+			<div class="txtcenter">
+				<button><a href="page11.jsp">확인</a></button>
+			</div>
+            
 
     </div>
 

@@ -10,10 +10,10 @@
 <body>
 
 	 <div id="page3" class="setBorder">
-        <h2>(무)흥국생명 온라인정기보험</h2>
+        <h2 class="sub">(무)흥국생명 온라인정기보험</h2>
         <div>
             <div class="contents">
-                <ul class="box compare">
+                <ul class="box2 compare">
                     <li class="setBorder">
                         <span>월 보험료</span>
                         <span>3,000원</span>
@@ -29,7 +29,7 @@
         </div>
 
         <div>
-            <div class="tbl setBorder">
+            <div class="tbl">
                 <table>
                     <colgroup>
                         <col style="width: 160px;">

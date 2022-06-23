@@ -159,28 +159,28 @@
                 </colgroup>
                 <tbody>
                     <th>납입기간</th>
-                    <td id="open" style="display:none;">
+                    <td id="open">
                         <span>
                             <label>
-                                <input type="radio" name="payYear" id="10year">
+                                <input type="radio" name="payYear" id="10year" style="display:none;" >
                                 <span>10년납</span>
                             </label>
                         </span>
                         <span>
                             <label>
-                                <input type="radio" name="payYear" id="20year">
+                                <input type="radio" name="payYear" id="20year" style="display:none;" >
                                 <span>20년납</span>
                             </label>
                         </span>
                         <span>
                             <label>
-                                <input type="radio" name="payYear" id="60year">
-                                <span>60세납</span>
+                                <input type="radio" name="payYear" id="60year" style="display:none;" >
+                               	<span>60세납</span>
                             </label>
                         </span>
                         <span>
                             <label>
-                                <input type="radio" name="payYear" id="80year">
+                                <input type="radio" name="payYear" id="80year" style="display:none;" >
                                 <span>80세납</span>
                             </label>
                         </span>
@@ -218,7 +218,7 @@
                             <input type='button' onclick='count("plus")' value='+'/>
 
                          
-                            <span id='result'>10000</span>
+                            <span id='result'>20000</span>
                             <span>만원</span>
                             
                             <input type='button' onclick='count("minus")' value='-'/>
@@ -226,25 +226,25 @@
                         </div>
                         <span>
                             <label>
-                                <input type="radio">
+                                <input type="radio" name="money">
                                 <span>2억</span>
                             </label>
                         </span>
                         <span>
                             <label>
-                                <input type="radio">
+                                <input type="radio" name="money">
                                 <span>1억5천만</span>
                             </label>
                         </span>
                         <span>
                             <label>
-                                <input type="radio">
+                                <input type="radio" name="money">
                                 <span>1억</span>
                             </label>
                         </span>
                         <span>
                             <label>
-                                <input type="radio">
+                                <input type="radio" name="money">
                                 <span>5천만</span>
                             </label>
                         </span>
@@ -256,7 +256,7 @@
             <div>
                 <span>
                     <label>
-                        <input type="checkbox">
+                        <input type="checkbox" name="many" id="many">
                         <span>
                             가장 많이 가입하는 설계
                         </span>
@@ -264,7 +264,7 @@
                 </span>
                 <a>
                     <span>
-                        보험료계산
+                        <h4 class="sub">보험료계산</h4> 
                     </span>
                 </a>
             </div>
@@ -275,14 +275,14 @@
 
     <div>
         <div class="setBorder">
-            <h2>보험료 계산결과</h2>
-            <h3>설계 내역을 선택한 후 [보장내용 비교] 버튼을 클릭 시 보장 내용을 비교하여 확인할 수 있습니다.</h3>
-            <a href="page03.jsp">보장내용 비교</a>
+            <h3 class="sub">보험료 계산결과</h3>
+            <h4 class="sub">설계 내역을 선택한 후 [보장내용 비교] 버튼을 클릭 시 보장 내용을 비교하여 확인할 수 있습니다.</h4>
+            <a href="page03.jsp" class="sub" style="margin-bottom: 1%">보장내용 비교</a>
 
         </div>
 
-        <div class="clickBox setBorder">
-            <ul class="box">
+        <div class="clickBox setBorder manypp" >
+            <ul class="box2">
                 <li class="contentBox setBorder">
                     <div>
                         <span>나의 설계</span>
@@ -390,7 +390,7 @@
         </div>
 
         <div class="setBorder">
-            <div>
+            <div class="sub" >
                 <p> 10년 만기(갱신형) / 10년납 / 재해사망 추가보장 / 비흡연 / 24세 / 여자 </p>
                 <span>
                     <a>수정</a>
@@ -398,14 +398,13 @@
                     <a href="page04.jsp">메일발송</a>
                 </span>
             </div>
-
-            <div class="setBorder">
+            <div style="border-top:0.3px solid black ">
                 <dl>
-                    <dt>
-                        <a href=""> 보장내용 </a>
+                    <dt class="sub">
+                        <a> 보장내용 </a>
                     </dt>
                     <dd>
-                        <a href="">
+                        <a>
                             <div>
                                 <table class="setBorder">
                                     <colgroup>
@@ -441,13 +440,13 @@
                 </dl>
             </div>
 
-            <div class="setBorder">
+            <div style="border-top:0.3px solid black ">
                 <dl>
-                    <dt>
-                        <a href=""> 해지환급금 예시표(단위 : 원,%) </a>
+                    <dt class="sub">
+                        <a> 해지환급금 예시표(단위 : 원,%) </a>
                     </dt>
                     <dd>
-                        <a href="">
+                        <a>
                             <div>
                                 <table class="setBorder">
                                     <colgroup>

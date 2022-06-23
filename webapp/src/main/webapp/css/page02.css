@@ -12,10 +12,19 @@ body{
     flex-direction: row;
     justify-content: space-around;
     width:95%;
+    margin:2%;
+}
+.box2{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:95%;
 }
 
 .setBorder{
 	border: 0.5px solid black;
+	width: 95%;
+    margin: 2%;
 }
 
 #page3, #page4{
@@ -24,6 +33,9 @@ body{
 	margin-top: 5%;
 	margin-bottom: 5%;
    
+}
+.page4{	
+    margin: 3%;
 }
 
 .compare{
@@ -43,12 +55,12 @@ thead{
 }
 
 table{
-	width:100%;
+	width:95%;
 	display: table;
 	box-sizing: border-box;
 	text-indent: inherit;
 	border: 0.3px solid;
-	
+	margin:2%;
 }
 
 
@@ -70,9 +82,46 @@ tr {
 	border: 0.3px solid black;
 }
 
+.payMoney{
+	text-align: center;
+}
+
+.page1{
+	text-align: center;
+}
+.sub{
+	margin: 2%;
+}
+
+ul, li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn_wrap ,.divcenter{
+	text-align: center;
+}
+
+.wrap{
+	padding: 2%;
+	border: 0.5px solid black;
+	width: 95%;
+}
+.txtcenter{
+	text-align: center;
+}
+
+.agreephone{
+	padding: 0% 0% 0% 2%
+}
+
+
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0lax{text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top;padding: 2%;}

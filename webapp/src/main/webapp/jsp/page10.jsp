@@ -13,14 +13,15 @@
 <body>
 
  
-    <div class="tel">
+    <div class="tel wrap">
         <div>
-            <h2>휴대폰인증</h2>
+            <h2 class="agreephone txtcenter">휴대폰인증</h2>
         </div>
         <div>
             <div>
+                <div  class="agreephone" >
                 <div>
-                    <h4>약관동의</h4>
+                     <h4>약관동의</h4>
                     <input name="checkbox" id="allcheck" type="checkbox" class="checkbox" value="all" onclick='selectAll(this)'>
                     전체동의
                 </div>
@@ -353,11 +354,12 @@
                         </ul>
                     </dd>
                 </dl>
+                </div>
 
-                <h4>본인인증 정보</h4>
+                <h4 class="txtcenter">본인인증 정보</h4>
                 <form >
                     <div>
-                        <table>
+                        <table class="wrap">
                             <colgroup>
                                 <col style="width: 122px; ;">
                                 <col>
@@ -397,18 +399,18 @@
                                             <option value="019">019</option>
                                         </select>
                                         <input type="text">
+                                        <button>인증번호 발송</button>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td><button>인증번호 발송</button></td>
-                                </tr>
+                                
                                 <tr>
                                     <th>인증번호</th>
-                                    <td><input type="text"></td>
+                                    <td>
+                                    <input type="text">
+                                    <button><a href="page08.jsp">확인</a></button>
+                                    </td>
                                 </tr>
-                                <tr>
-                                    <td><button><a href="page08.jsp">확인</a></button></td>
-                                </tr>
+                                
                             </tbody>
                         </table>
                         

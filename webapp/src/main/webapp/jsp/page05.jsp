@@ -8,16 +8,16 @@
 <link href="../css/page02.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="wrap">
-        <div>
+<div class="wrap setBorder ">
+        <div class="txtcenter">
             <h1>흥국생명 온라인보험 청약 전 안내사항</h1>
         </div>
 
-        <div class="notice_bar">
+        <div class="notice_bar txtcenter" style="padding: 2%">
             <a>가입 전 준비사항을 확인하세요</a>
         </div>
 
-        <div class="subscription_coint">
+        <div class="subscription_coint wrap">
             <div>
                 <dl>
                     <dt>
@@ -30,7 +30,7 @@
                 </dl>
                 <dl>
                     <dt>
-                        <a href="">
+                        <a>
                             <b>01</b>
                             본인인증이 필요합니다.
                         </a>
@@ -42,7 +42,7 @@
                 </dl>
                 <dl>
                     <dt>
-                        <a href="">
+                        <a>
                             <b>02</b>
                             결제방법을 확인하세요.
                         </a>
@@ -61,7 +61,7 @@
                 </dl>
                 <dl>
                     <dt>
-                        <a href="">
+                        <a>
                             <b>03</b>
                             외국인이실 경우 확인해 주세요.
                         </a>
@@ -78,7 +78,7 @@
                 </dl>
                 <dl>
                     <dt>
-                        <a href="">
+                        <a>
                             <b>04</b>
                             보험가입 유의사항
                         </a>
@@ -106,7 +106,7 @@
             </div>
         </div>
         
-        <div>
+        <div class="divcenter" style="padding: 2%">
             <a href="page06.jsp">바로 가입하기</a>
         </div>
         

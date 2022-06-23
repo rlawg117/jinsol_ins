@@ -23,7 +23,7 @@
                 <div class="plan_data box setBorder" >
                     <dl class="type">
                         <dt>구분</dt>
-                        <dd id="p_item_cont1"><b>(흡연)2종(갱신형)</b></dd>
+                        <dd id="p_item_cont1"><b>(비흡연)2종(갱신형)</b></dd>
                     </dl>
                     <dl class="period1">
                         <dt>보험기간</dt>
@@ -39,7 +39,7 @@
                     </dl>
                     <dl>
                         <dt>월 보험료</dt>
-                        <dd id="p_item_cont5"><b>          20,000원</b></dd>
+                        <dd id="p_item_cont5"><b>          3,000원</b></dd>
                     </dl>
                 </div>
                 <div class="subscription_cont">
@@ -47,7 +47,7 @@
                     <!-- 청약 1단계 -->
                     <div class="subscription_01">
             
-                        <div class="box_guide setBorder">
+                        <div class="box_guide setBorder txtcenter" style="padding: 2% 0% 2% 0%">
                             <b class="fs16 c333">개인정보를 입력하는 단계입니다.</b> 
                             계약자님의 정보를 입력하고, 정보처리에 동의하는 단계입니다.
                         </div>
@@ -57,9 +57,9 @@
                            <!--  <dt class="person">개인정보</dt> -->
             
             
-                            <dd class="step1">
-                                <table class="input_field">
-                                    <caption>개인정보</caption>
+                            <dd class="step1" style="padding: 2% 0% 2% 0%">
+                                <table class="input_field" style="padding: 2% 0% 2% 0%">
+                                    <caption style="padding: 0% 0% 2% 0%">개인정보</caption>
                                     <colgroup>
                                         <col width="153">
                                         <col width="*">
@@ -696,8 +696,8 @@
     </div>
         
 
-        <div class="btn_group tc mt30">
-            <a href="page10.sp">휴대폰인증 후 저장</a>
+        <div class="btn_group tc mt30 txtcenter">
+            <a href="page10.jsp">휴대폰인증 후 저장</a>
         </div>
     </div>
        

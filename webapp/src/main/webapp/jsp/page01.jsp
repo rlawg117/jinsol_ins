@@ -9,7 +9,7 @@
 <link href="../css/page02.css" rel="stylesheet" type="text/css">
 </head>
 <body>
- <div>
+ <div class="page1">
         <div class="setBorder">
             <h3>(무)흥국생명 온라인</h3>
             <h2>정기보험</h2>
@@ -85,7 +85,7 @@
                         </tbody>
                     </table>
                 </div>
-           	<input type="submit" value="보험료계산">
+           	<input type="submit" value="보험료계산" class="sub">
             </a>
             </form>
             </div>
