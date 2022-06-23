@@ -697,8 +697,7 @@
         
 
         <div class="btn_group tc mt30">
-            <a href="">휴대폰인증 후 저장</a>
-            <a href="">공동인증 후 저장</a>
+            <a href="page10.sp">휴대폰인증 후 저장</a>
         </div>
     </div>
        

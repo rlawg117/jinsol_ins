@@ -33,6 +33,5 @@ function checkDrive(){
     }else if ($('input:radio[id=undrive]').is(":checked")) {
         $('#carBox').hide();
     }
-}/**
- * 
- */
+}
+
