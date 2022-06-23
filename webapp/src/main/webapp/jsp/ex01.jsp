@@ -7,6 +7,9 @@
 <meta charset="UTF-8">
 <title>첫페이지</title>
 <link href="../css/page02.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../js/page02.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
  <div class="page1">
@@ -27,7 +30,7 @@
                 </h4>
                 <div class="input_field">
                 
-                <form action="page02.jsp" method="post">
+                <form action="ex02.jsp" method="post">
                     <table width="100%" summary=""정기보험 보험료 계산을 위해 정보입력>
                         <!-- 정기보험 -->
                         <colgroup>
@@ -90,7 +93,13 @@
             </form>
             </div>
 
+           
     </div>
+
+
+
+ 
+
 
     </div>
 </div>

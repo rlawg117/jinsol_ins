@@ -1,3 +1,4 @@
+<%@page import="java.time.LocalDate"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -8,6 +9,7 @@
 <link href="../css/page02.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+
 <% 
 	request.setCharacterEncoding("UTF-8");
 	String manAge = request.getParameter("manAge");
@@ -17,7 +19,7 @@
 	
 %>
 
-<form action="page06.jsp" method="post">
+<form action="ex06.jsp" method="post">
 <div class="wrap setBorder ">
         <div class="txtcenter">
             <h1>흥국생명 온라인보험 청약 전 안내사항</h1>
@@ -27,13 +29,21 @@
             <a>가입 전 준비사항을 확인하세요</a>
         </div>
         
-        <div style="display: none;">
-        	<input type="hidden" name="smoke_yn" value="<%=smoke_yn %>">
-	        <input type="hidden" name="manAge" value="<%=manAge %>">
-	        <input type="hidden" name="custGnder_MENU3" value="<%=custGnder_MENU3 %>">
-			<input type="hidden" name="custBirth_MENU3" value="<%=request.getParameter("custBirth_MENU3") %>">
-	        
+        <div>
+        
+        <input type="hidden" name="smoke_yn" value="<%=smoke_yn %>">
+        <input type="hidden" name="manAge" value="<%=manAge %>">
+        <input type="hidden" name="custGnder_MENU3" value="<%=custGnder_MENU3 %>">
+		<input type="hidden" name="custBirth_MENU3" value="<%=request.getParameter("custBirth_MENU3") %>">
+        
+
+
+        	<p><%=custGnder_MENU3 %></p>
+        	<p><%=manAge %></p>
+        	<p><%=smoke_yn %></p>
+        	<p><%=custBirth_MENU3 %></p>
         </div>
+        
 
         <div class="subscription_coint wrap">
             <div>
@@ -125,9 +135,12 @@
         </div>
         
         <div class="divcenter" style="padding: 2%">
-        <button type="submit"><a>바로 가입하기</a></button> 
+            <button type="submit"><a>바로 가입하기</a></button> 
         </div>
+        
+
     </div>
-</form>
+    
+    </form>
 </body>
 </html>

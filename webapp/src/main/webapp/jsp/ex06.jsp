@@ -1,3 +1,4 @@
+<%@page import="java.time.LocalDate"%>
 <%@page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -20,16 +21,25 @@
 	
 %>
 
-<form action="">
 
- 		<input type="hidden" name="smoke_yn" value="<%=smoke_yn %>">
+ <input type="hidden" name="smoke_yn" value="<%=smoke_yn %>">
         <input type="hidden" name="manAge" value="<%=manAge %>">
         <input type="hidden" name="custGnder_MENU3" value="<%=custGnder_MENU3 %>">
 		<input type="hidden" name="custBirth_MENU3" value="<%=request.getParameter("custBirth_MENU3") %>">
-		
-		
+        
+        
  <div class="subscription_wrap">
         <div class="top">
+        
+        <div>
+        	<p><%=custGnder_MENU3 %></p>
+        	<p><%=manAge %></p>
+        	<p><%=smoke_yn %></p>
+        	<p><%=custBirth_MENU3 %></p>
+        	
+        </div>
+        
+        
             <div class="top">
                 <h1>
                     <b>(무)흥국생명온라인 
@@ -718,7 +728,7 @@
         </div>
     </div>
        
-</form>		
+		
 		
 
 

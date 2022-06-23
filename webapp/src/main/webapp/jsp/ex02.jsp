@@ -62,7 +62,9 @@
  	   manAge-=1900;
     }
  %>
-<form action="page05.jsp" method="post">                   
+               
+              
+<form action="ex05.jsp" method="post">                 
    <div class="input_area setBorder">
         <table class="input_tbl">
             <!-- 보험료 계산 영역 = 생년월일, 성별, 흡연여부 -->
@@ -77,14 +79,14 @@
                    <%=manAge%>세
                    </span>
                    </th> 
-                   
-               	<div style="display: none;">
+
+<div>
                 <input type="hidden" value="<%=smoking%>" name="smoking">
                 <input type="hidden" value="<%=manAge%>" name="manAge">
                 <input type="hidden" value="<%=gender %>" name="gender">
                 <input type="hidden" name="custBirth_MENU3" value="<%=request.getParameter("custBirth_MENU3") %>">
-				</div>
-                   
+</div>
+               
                    
                    <td>
                         <span>
@@ -210,7 +212,7 @@
                     <td>
                         <span>
                             <label>
-                                <input type="radio" checked>
+                                <input type="radio">
                                 <span>예</span>
                             </label>
                         </span>
@@ -290,6 +292,8 @@
             <h3 class="sub">보험료 계산결과</h3>
             <h4 class="sub">설계 내역을 선택한 후 [보장내용 비교] 버튼을 클릭 시 보장 내용을 비교하여 확인할 수 있습니다.</h4>
             <a href="page03.jsp" class="sub" style="padding: 2% 0% 2% 0%">보장내용 비교</a>
+            
+
 
         </div>
 
@@ -299,7 +303,7 @@
                     <div>
                         <span>나의 설계</span>
                         <span>
-                            <input type="checkbox" title="나의 설계">
+                            <input type="checkbox" title="나의 설계" checked>
                         </span>
                     </div>
                     <div>
@@ -317,7 +321,7 @@
                                 <span>1억원</span>
                             </li>
                         </ul>
-                       <button type="submit"> <a>가입하기</a> </button>
+                        <button type="submit"> <a>가입하기</a> </button>
                     </div>
                 </li>
 
@@ -343,7 +347,7 @@
                                 <span>2억원</span>
                             </li>
                         </ul>
-						<button type="submit"> <a>가입하기</a> </button>
+                         <button type="submit"> <a>가입하기</a> </button>
                     </div>
                 </li>
 
@@ -369,7 +373,7 @@
                                 <span>1억원</span>
                             </li>
                         </ul>
-                       <button type="submit"> <a>가입하기</a> </button>
+                         <button type="submit"> <a>가입하기</a> </button>
                     </div>
                 </li>
 
@@ -395,7 +399,7 @@
                                 <span>1억원</span>
                             </li>
                         </ul>
-                        <button type="submit"> <a>가입하기</a> </button>
+                         <button type="submit"> <a>가입하기</a> </button>
                     </div>
                 </li>
             </ul>
@@ -404,6 +408,7 @@
         <div class="setBorder">
             <div class="sub" >
                 <p> 10년 만기(갱신형) / 10년납 / 재해사망 추가보장 / <%=smoking %> /<%=manAge%>세/<%=gender %></p>
+
 
                 <p> </p>
                 <span>
@@ -590,6 +595,5 @@
     </div>
     
 </form>
-   
 </body>
 </html>

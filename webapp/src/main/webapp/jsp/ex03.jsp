@@ -57,6 +57,8 @@
             </div>
         </div>
         
+        <button>돌아가기</button>
+        
         <!-- <a>
         <script type="text/javascript"> window.history.back();</script>
         	<span>확인</span>
