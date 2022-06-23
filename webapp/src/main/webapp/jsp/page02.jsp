@@ -218,7 +218,7 @@
                             <input type='button' onclick='count("plus")' value='+'/>
 
                          
-                            <span id='result'>20000</span>
+                            <span id='result'>10000</span>
                             <span>만원</span>
                             
                             <input type='button' onclick='count("minus")' value='-'/>
@@ -264,7 +264,7 @@
                 </span>
                 <a>
                     <span>
-                        <h4 class="sub">보험료계산</h4> 
+                        <h4 class="sub"  >보험료계산</h4> 
                     </span>
                 </a>
             </div>
@@ -277,7 +277,7 @@
         <div class="setBorder">
             <h3 class="sub">보험료 계산결과</h3>
             <h4 class="sub">설계 내역을 선택한 후 [보장내용 비교] 버튼을 클릭 시 보장 내용을 비교하여 확인할 수 있습니다.</h4>
-            <a href="page03.jsp" class="sub" style="margin-bottom: 1%">보장내용 비교</a>
+            <a href="page03.jsp" class="sub" style="padding: 2% 0% 2% 0%">보장내용 비교</a>
 
         </div>
 
