@@ -12,6 +12,7 @@
 </head>
 <body>
 <% 
+request.setCharacterEncoding("UTF-8");
 	int manage = (Integer)session.getAttribute("manage");
 	String birth = (String)session.getAttribute("birth");
 	int num1 = (Integer)session.getAttribute("num1");
@@ -20,6 +21,10 @@
 	String paymoney = (String) session.getAttribute("paymoney");
 	String gang = (String) session.getAttribute("gang");
 	String remoney =(String) session.getAttribute("remoney");
+	String myname = (String) session.getAttribute("myname");
+	String email1 = (String) session.getAttribute("email1");
+	String email2 = (String) session.getAttribute("email2");
+	String call = (String) session.getAttribute("call");
 		
 %>
 
@@ -77,7 +82,7 @@
                                         <tbody>
                                             <tr>
                                                 <td class="tg-0lax">첫 1회 보험료</td>
-                                                <td class="tg-0lax">6,000원</td>
+                                                <td class="tg-0lax"><%=num1 %>원</td>
                                               </tr>
                                           <tr>
                                             <td class="tg-0lax">2회 이후 보험료 납입 희망일</td>

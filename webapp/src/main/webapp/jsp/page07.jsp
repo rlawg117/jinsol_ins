@@ -16,8 +16,8 @@
 
 	request.setCharacterEncoding("UTF-8");
 
-	String name = request.getParameter("CUST_NM");
-	session.setAttribute("name", name);
+	String myname = request.getParameter("CUST_NM");
+	session.setAttribute("myname", myname);
 	
 	String email1 =request.getParameter("MAIL_ID");
 	session.setAttribute("email1", email1);
@@ -32,8 +32,10 @@
 %>
 
 <form action="page10.jsp" method="post">
+
  <div class="wrap_content wrap" >
         <div>
+
             <h2 class="txtcenter">필수동의, 선택 동의</h2>
         </div>
 

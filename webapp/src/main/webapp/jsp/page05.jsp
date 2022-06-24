@@ -9,7 +9,7 @@
 </head>
 <body>
 <%
-
+request.setCharacterEncoding("UTF-8");
 	/* 만나이, 생년월일, 월보험료, 흡연여부, 성별 */
 	int manage = (Integer)session.getAttribute("manage");
 	String birth = (String)session.getAttribute("birth");

@@ -12,6 +12,7 @@
 </head>
 <body>
 <%
+request.setCharacterEncoding("UTF-8");
 int manage = (Integer)session.getAttribute("manage");
 String birth = (String)session.getAttribute("birth");
 int num1 = (Integer)session.getAttribute("num1");
@@ -21,7 +22,7 @@ String gender = (String) session.getAttribute("gender");
 String paymoney = (String) session.getAttribute("paymoney");
 String gang = (String) session.getAttribute("gang");
 String remoney = (String) session.getAttribute("remoney");
-String name = (String) session.getAttribute("name");
+String myname = (String) session.getAttribute("myname");
 String email1 = (String) session.getAttribute("email1");
 String email2 = (String) session.getAttribute("email2");
 String call = (String) session.getAttribute("call");
@@ -383,12 +384,12 @@ String call = (String) session.getAttribute("call");
                             <tbody>
                                 <tr>
                                     <th>성명</th> 
-                                    <td><input type="text" value="<%=name%>"></td>
+                                    <td><%=myname %></td>
                                 </tr>
                                 <tr>
                                     <th>생년월일</th> 
                                     <td>
-                                        <input type="text">
+                                        <%=birth %>
                                         <input type="radio" name="y-radio" value="0"> <span>남자</span>
                                         <input type="radio" name="y-radio" value="1"> <span>여자</span>
                                     </td>
@@ -406,15 +407,8 @@ String call = (String) session.getAttribute("call");
                                             <option value="05">KT 알뜰폰</option>
                                             <option value="06">LG U+ 알뜰폰</option>
                                         </select>
-                                        <select class="numsel" id="">
-                                            <option value="010">010</option>
-                                            <option value="011">011</option>
-                                            <option value="016">016</option>
-                                            <option value="017">017</option>
-                                            <option value="018">018</option>
-                                            <option value="019">019</option>
-                                        </select>
-                                        <input type="text">
+                                        
+                                        <%=call %>
                                         <button>인증번호 발송</button>
                                     </td>
                                 </tr>

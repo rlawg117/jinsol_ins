@@ -11,6 +11,7 @@
 </head>
 <body>
 <% 
+request.setCharacterEncoding("UTF-8");
 	int manage = (Integer)session.getAttribute("manage");
 	String birth = (String)session.getAttribute("birth");
 	int num1 = (Integer)session.getAttribute("num1");
@@ -19,6 +20,11 @@
 	String paymoney = (String) session.getAttribute("paymoney");
 	String gang = (String) session.getAttribute("gang");
 	String remoney =(String) session.getAttribute("remoney");
+	String myname = (String) session.getAttribute("myname");
+	String email1 = (String) session.getAttribute("email1");
+	String email2 = (String) session.getAttribute("email2");
+	String call = (String) session.getAttribute("call");
+
 		
 %>
 
@@ -61,7 +67,7 @@
         <table class="tg">
             <thead>
               <tr>
-                <td class="tg-0lax"> 000님의 건강상태를 입력하는 단계입니다.<br>피보험자에 관한 다음 사항은 회가사 보험계약의 청약을 심사하고 인수하는데 필요한 자료이므로 보험계약자 및 피보험자는 아래 질문들에 대해 사실대로 알려야 하며 직접 작성하시기 바랍니다.<br>만약 아래 질문들에 대하여 사실대로 알리지 않거나 사실과 다르게 알린 경우에는 보험가입이 거절될 수 있으며, 특히 아래 질병 및 장해 관련 질문에 대하여 알린 내용이 [중요한사항]에 해당하는 경우 회사는 보험약관에 따라 이 보험계약을 일방적으로 해지할 수 있고 이미 보험사고가 발생하였더라고 보험금 지급을 거절하는 등 보장이 제한될 수 있습니다.<br>* 부활(효력회복)시에는 계약전 알릴의무 대상기간을 최초 계약 해당일(또는 직전 부활(효력회복)일) 이후부터 부활(효력회복)을 청약한 날까지의 기간과 계약전 알릴의무 대상기간(아래 질문의 최근 3개월, 1년, 5년)중 짧은 기간으로 합니다.<br>* 다음 사항을 보험설계사 등에게 구두로 알린 경우레는 보험회사에 알리지 않은 것으로 간주되므로 청약서에 서면으로 알리시기 바랍니다.</td>
+                <td class="tg-0lax"><%=myname %>님의 건강상태를 입력하는 단계입니다.<br>피보험자에 관한 다음 사항은 회가사 보험계약의 청약을 심사하고 인수하는데 필요한 자료이므로 보험계약자 및 피보험자는 아래 질문들에 대해 사실대로 알려야 하며 직접 작성하시기 바랍니다.<br>만약 아래 질문들에 대하여 사실대로 알리지 않거나 사실과 다르게 알린 경우에는 보험가입이 거절될 수 있으며, 특히 아래 질병 및 장해 관련 질문에 대하여 알린 내용이 [중요한사항]에 해당하는 경우 회사는 보험약관에 따라 이 보험계약을 일방적으로 해지할 수 있고 이미 보험사고가 발생하였더라고 보험금 지급을 거절하는 등 보장이 제한될 수 있습니다.<br>* 부활(효력회복)시에는 계약전 알릴의무 대상기간을 최초 계약 해당일(또는 직전 부활(효력회복)일) 이후부터 부활(효력회복)을 청약한 날까지의 기간과 계약전 알릴의무 대상기간(아래 질문의 최근 3개월, 1년, 5년)중 짧은 기간으로 합니다.<br>* 다음 사항을 보험설계사 등에게 구두로 알린 경우레는 보험회사에 알리지 않은 것으로 간주되므로 청약서에 서면으로 알리시기 바랍니다.</td>
               </tr>
             </thead>
         </table>

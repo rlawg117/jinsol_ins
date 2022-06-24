@@ -10,7 +10,7 @@
 </head>
 <body>
  <div class="page1">
-        <div class="setBorder">
+        <div class="setBorder setting">
             <h3>(무)흥국생명 온라인</h3>
             <h2>정기보험</h2>
             <h4>우리가족의 미래는 정기보험으로 안심!</h4>
@@ -20,7 +20,7 @@
     <div class="example MENU3" style="display:block ;" >
         
 
-            <div class="setBorder">
+            <div class="setBorder setting">
                 <h4>
                     <b>정기보험</b>
                     "보험료 알아보기"
@@ -28,11 +28,11 @@
                 <div class="input_field">
                 
                 <form action="page02.jsp" method="post">
-                    <table width="100%" summary=""정기보험 보험료 계산을 위해 정보입력>
+                    <table width="100%" summary="정기보험 보험료 계산을 위해 정보입력" class="setting">
                         <!-- 정기보험 -->
                         <colgroup>
                             <col width="110">
-                            <col width=""*>
+                            <col width="">
                         </colgroup>
                         <tbody>
                             <tr>
@@ -63,7 +63,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>흡연여부</td>
+                                <th>흡연여부</th>
                                 <td style="border-right:none;">
                                     <div class="rdo_type01 custom-labe">
                                         <label class="smoke_y">

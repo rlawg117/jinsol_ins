@@ -12,6 +12,7 @@
 </head>
 <body>
 <% 
+request.setCharacterEncoding("UTF-8");
 	int manage = (Integer)session.getAttribute("manage");
 	String birth = (String)session.getAttribute("birth");
 	int num1 = (Integer)session.getAttribute("num1");
@@ -83,7 +84,7 @@
                                         <tr>
                                             <th>성명</th>
                                             <td class="tdright">
-                                                <input type="text" class="input" style="width:239px" id="CUST_NM" name="CUST_NM" title="이름 입력" alt="이름을 입력하세요." maxlength="50" hname="이름" required="required" npkencrypt="off">
+                                                <input type="text" class="input" style="width:239px" id="CUST_NM" name="CUST_NM" title="이름 입력" alt="이름을 입력하세요." maxlength="50">
                                                 <label class="foreign_check ml10"><input type="checkbox" class="checkbox" title="외국인 여부 선택" name="FORN_YN" id="FORN_YN" onchange="checkForn()"> 
                                                 <span class="fs12">외국인일 경우 체크해 주세요.</span>
                                                 </label>

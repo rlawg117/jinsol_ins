@@ -179,7 +179,7 @@
 	<h2 class="txtcenter">(무)흥국생명 온라인정기보험</h4>
 </div>
                 
-   <div class="input_area setBorder">
+   <div class="input_area setBorder setting2">
         <table class="input_tbl">
             <!-- 보험료 계산 영역 = 생년월일, 성별, 흡연여부 -->
             <colgroup>
@@ -398,7 +398,7 @@
 
             </table>
 
-            <div>
+            <div style="text-align: center;">
                 <span>
                     <label>
                         <input type="checkbox" name="many" id="many" onclick="setDisplay2()">
@@ -419,22 +419,23 @@
     </div>
 
     <div>
-        <div class="setBorder">
+        <div class="setBorder setting2" style="text-align: center;">
             <h3 class="sub">보험료 계산결과</h3>
             <h4 class="sub">설계 내역을 선택한 후 [보장내용 비교] 버튼을 클릭 시 보장 내용을 비교하여 확인할 수 있습니다.</h4>
             <button type="button"><a href="page03.jsp" class="sub" style="padding: 2% 0% 2% 0%">보장내용 비교</a> </button>
         </div>
 
-        <div class="clickBox setBorder manypp" >
+        <div class="clickBox setBorder manypp setting2" >
             <ul class="box2">
                 <li class="contentBox setBorder">
-                    <div>
+                <div class="setting2 txtcenter">
+                 <div  class="setting2" > 
                         <span>나의 설계</span>
                         <span>
                             <input type="checkbox" title="나의 설계" checked>
                         </span>
                     </div>
-                    <div>
+                    <div  class="setting2">
                         <ul>
                             <li>
                                 <span>월 보험료</span>
@@ -453,10 +454,14 @@
                         </ul>
                         <button type="submit"> <a>가입하기</a> </button>
                     </div>
+                </div>
+                   
                 </li>
 
                 <li class="contentBox setBorder">
-                    <div>
+                
+                <div class="setting2 txtcenter">
+                 <div  class="setting2" > 
                         <span>최대보장</span>
                         <span>
                             <input type="checkbox" title="최대보장">
@@ -466,7 +471,7 @@
                         <ul>
                             <li>
                                 <span>월 보험료</span>
-                                <span>84,000원</span>
+                                <span><%=num2 %></span>
                             </li>
                             <li>
                                 <span>재해사망보험금</span>
@@ -479,10 +484,13 @@
                         </ul>
                          <button type="submit"> <a>가입하기</a> </button>
                     </div>
+                </div>
+                    
                 </li>
 
                 <li class="contentBox setBorder">
-                    <div>
+                <div class="setting2 txtcenter">
+                 <div  class="setting2" > 
                         <span>일반보장</span>
                         <span>
                             <input type="checkbox" title="일반보장">
@@ -492,7 +500,7 @@
                         <ul>
                             <li>
                                 <span>월 보험료</span>
-                                <span>20,000원</span>
+                                <span><%=num3 %></span>
                             </li>
                             <li>
                                 <span>재해사망보험금</span>
@@ -505,10 +513,13 @@
                         </ul>
                          <button type="submit"> <a>가입하기</a> </button>
                     </div>
+                </div>
+                    
                 </li>
 
                 <li class="contentBox setBorder">
-                    <div>
+               <div class="setting2 txtcenter">
+                 <div  class="setting2" > 
                         <span>최저가격</span>
                         <span>
                             <input type="checkbox" title="최저가격">
@@ -518,7 +529,7 @@
                         <ul>
                             <li>
                                 <span>월 보험료</span>
-                                <span>3,000원</span>
+                                <span><%=num4 %></span>
                             </li>
                             <li>
                                 <span>재해사망보험금</span>
@@ -531,6 +542,8 @@
                         </ul>
                          <button type="submit"> <a>가입하기</a> </button>
                     </div>
+                </div>
+                    
                 </li>
             </ul>
         </div>
