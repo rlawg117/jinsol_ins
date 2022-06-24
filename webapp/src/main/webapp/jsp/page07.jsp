@@ -6,28 +6,51 @@
 <meta charset="UTF-8">
 <title>필수 선택 동의</title>
 <link href="../css/page02.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../js/page07.js"></script>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
 
- <div class="wrap_content">
+<%
+
+	request.setCharacterEncoding("UTF-8");
+
+	String name = request.getParameter("CUST_NM");
+	session.setAttribute("name", name);
+	
+	String email1 =request.getParameter("MAIL_ID");
+	session.setAttribute("email1", email1);
+	
+	String email2 = request.getParameter("MAIL_POTAL_NAME");
+	session.setAttribute("email2", email2);
+	
+	String call = request.getParameter("T_CMMU_VAL");
+	session.setAttribute("call", call);
+
+
+%>
+
+<form action="page10.jsp" method="post">
+ <div class="wrap_content wrap" >
         <div>
-            <h2>필수동의, 선택 동의</h2>
+            <h2 class="txtcenter">필수동의, 선택 동의</h2>
         </div>
 
         <div class="contents">
-            <div id="agree1" class="tab_cont">
+            <div id="agree1" class="tab_cont wrap" style="margin-bottom: 2%">
                 <h4>소비자권익보호에 관한 사항</h4>
                 <p>본 동의를 거부하시는 경우에는 보험계약 체결 / 이행 등이 불가능하며 본 동의서에 의한 개인(신용)정보 조회는 귀하의 신용등급에 영향을 주지 않습니다.</p>
 
                 <label class="all_click">
-                    <input type="checkbox" class="checkbox"><b>전체 동의</b>
+                    <input type="checkbox" class="checkbox" id="allck" name="checkbox" onclick='selectAll(this)'><b>전체 동의</b>
                 </label>
                 <dl>
                     <dt>
-                        <input type="checkbox" class="checkbox" title="개인(신용)정보 수집 및 이용에 관한 사항">
+                        <input type="checkbox" class="checkbox" id="ck1" title="개인(신용)정보 수집 및 이용에 관한 사항" onchange="checks01()">
                         <a>개인(신용)정보 수집 및 이용에 관한 사항</a>
                     </dt>
-                    <dd>
+                    <dd id="s01" style="display:none ;">
                         <div class="table_wrap2">
                             <table>
                                 <thead>
@@ -102,11 +125,11 @@
 
                 <dl>
                     <dt>
-                        <input type="checkbox" class="checkbox" title="개인(신용)정보 제공에 관한 사항">
+                        <input type="checkbox" class="checkbox" id="ck2" title="개인(신용)정보 제공에 관한 사항" onchange="checks01()">
                         <a>개인(신용)정보의 제공에 관한 사항</a>
                     </dt>
                 
-                    <dd>
+                    <dd  id="s02" style="display:none ;">
                         <table>
                             <thead>
                             <tr>
@@ -210,11 +233,11 @@
 
                 <dl>
                     <dt>
-                        <input type="checkbox" class="checkbox" title="개인(신용)정보 조회에 관한 사항">
+                        <input type="checkbox" class="checkbox" id="ck3" title="개인(신용)정보 조회에 관한 사항" onchange="checks01()">
                         <a>개인(신용)정보의 조회에 관한 사항</a>
                     </dt>
         
-                    <dd>
+                    <dd  id="s03" style="display:none ;">
                         <table>
                             <thead>
                               <tr>
@@ -297,30 +320,30 @@
 
                 <dl>
                     <dt>
-                        <input type="checkbox" class="checkbox" title="예금보험관계 설명제도에 관한 사항">
+                        <input type="checkbox" class="checkbox" id="ck4" title="예금보험관계 설명제도에 관한 사항" onchange="checks01()">
                         <a>예금보험관계 설명제도에 관한 사항</a>
                     </dt>
-                    <dd>
+                    <dd  id="s04" style="display:none ;">
                         <p>본인이 가입하는 금융상품은 예금자보호법에 따라 해약환급금(또는 만기 시 보험금이나 사고보험금)에 기타 지급금을 합하여 1인당 5천만원까지 보호됩니다. 이에 대하여 이해하였습니까?</p>
                     </dd>
                 </dl>
 
                 <dl>
                     <dt>
-                        <input type="checkbox" class="checkbox" title="전자적 방법에 의한 청약문서 수령 동의에 관한 사항">
+                        <input type="checkbox" class="checkbox" id="ck5" title="전자적 방법에 의한 청약문서 수령 동의에 관한 사항" onchange="checks01()">
                         <a>전자적 방법에 의한 청약문서 수령 동의에 관한 사항</a>
                     </dt>
-                    <dd>
+                    <dd  id="s05" style="display:none ;">
                         <p>보험계약청약서, 상품설명서, 약관 등 보험계약자료를 전자적 방법으로 수령하는것에 동의합니다.</p>
                     </dd>
                 </dl>
 
                 <dl>
                     <dt>
-                        <input type="checkbox" class="checkbox" title="출금이체 및 송금에 관한 사항">
+                        <input type="checkbox" class="checkbox" id="ck6" title="출금이체 및 송금에 관한 사항" onchange="checks01()">
                         <a>출금이체 및 송금에 관한 사항</a>
                     </dt>
-                    <dd>
+                    <dd  id="s06" style="display:none ;">
                         <p>출금이체 동의는 보험회사가 고객님(예금주)의 은행계좌로 부터 보험료를 출금하는 경우에 해당 고객(예금주)님으로부터 의무적으로 사전에 서면 또는 전자서명으로 동의를 얻도록 하는 제도입니다. 이는 ‘전자금융거래법’에 의거 전자금융거래의 안정성과 신뢰성을 확보하여 전자금융 소비자를 보호하기 위함입니다. 본 신청인은 전자금융거래법 출금이체에 대한 상세내용을 인지하고, 예금주가 동의한 상기 계좌를 이용하여 위 계약에 대한 보험료 출금이체 및 송금에 동의합니다.</p>
                         <p> <b>- 출금이체 동의여부 및 해지사실 통지안내 -</b> </p>
                         <p>은행 등 금융회사 및 금융결제원은 (지로/CMS/펌뱅킹/실시간출금)제도의 안정적 운영을 위하여 고객의(은행 등 금융회사 및 이용기관 보유) 연락처 정보를 활용하여 문자메세지, 유선 등으로 고객의 출금이체 동의여부 및 해지사실을 통지할 수 있습니다.</p>
@@ -329,15 +352,15 @@
             </div>
 
 
-            <div id="agree2" class="tab_cont">
+            <div id="agree2" class="tab_cont wrap">
                 <h4>소비자권익보호에 관한 사항</h4>
 
                 <dl>
                     <dt>
-                        <input type="checkbox" class="checkbox" title="개인[신용]정보의 수집·이용에 관한 사항(선택)">
+                        <input type="checkbox" class="checkbox" id="ck7" title="개인[신용]정보의 수집·이용에 관한 사항(선택)" onchange="checks01()">
                         <a>개인[신용]정보의 수집·이용에 관한 사항(선택)</a>
                     </dt>
-                    <dd>
+                    <dd  id="s07" style="display:none ;">
                         <table>
                             <thead>
                               <tr>
@@ -412,10 +435,10 @@
 
                 <dl>
                     <dt>
-                        <input type="checkbox" class="checkbox" title="개인[신용]정보의 제공에 관한 사항(선택)">
+                        <input type="checkbox" class="checkbox" id="ck8" title="개인[신용]정보의 제공에 관한 사항(선택)" onchange="checks01()">
                         <a>개인[신용]정보의 제공에 관한 사항(선택)</a>
                     </dt>
-                    <dd>
+                    <dd  id="s08" style="display:none ;">
                         <table>
                             <thead>
                               <tr>
@@ -468,10 +491,10 @@
 
                 <dl>
                     <dt>
-                        <input type="checkbox" class="checkbox" title="이벤트 참여를 위한 동의">
+                        <input type="checkbox" class="checkbox" id="ck9" title="이벤트 참여를 위한 동의" onchange="checks01()" >
                         <a>이벤트 참여를 위한 동의</a>
                     </dt>
-                    <dd>
+                    <dd  id="s09" style="display:none ;" >
                         <p>이벤트 참여를 위해서는 아래 사항에 대한 동의가 필요합니다. <br> 이에 대한 동의가 없는 경우 이벤트 참여가 불가능함을 알려드립니다.</p>
                         □ 개인(신용)정보를 제공받는 자 
                         <table>
@@ -509,12 +532,12 @@
                 </dl>
             </div>
 
-            <div>
-               <a href="page06.jsp">확인</a> 
+            <div class="txtcenter" style="margin: 2%">
+              <button type="submit">확인</button>
             </div>
         </div>
     </div>
     
-
+</form>
 </body>
 </html>

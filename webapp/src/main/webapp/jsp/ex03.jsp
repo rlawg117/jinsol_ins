@@ -10,63 +10,53 @@
 </head>
 <body>
 
- <% request.setCharacterEncoding("UTF-8");
- 	String custBirth_MENU3 = request.getParameter("custBirth_MENU3");
+<%
 
- 	String custGnder_MENU3 = request.getParameter("custGnder_MENU3");
- 	String gender="성별";
- 	if(custGnder_MENU3.equals("1")){
- 		gender="남자";
- 	}else if(custGnder_MENU3.equals("2")){
- 		gender="여자";
- 	}
- 	
- 	String smoke_yn = request.getParameter("smoke_yn");
- 	String smoking = "담배";
- 	if(smoke_yn.equals("1")){
- 		smoking="흡연";	
- 	}else if(smoke_yn.equals("2")){
- 		smoking="비흡연";	
- 	}
- 	
- 	int num1 = 3000;
- 	
- %>
- 
- <% 
-    String age = custBirth_MENU3;
-    int years = Integer.parseInt(age.substring(0, 2));
-    int months = Integer.parseInt(age.substring(2, 4));
-    int days = Integer.parseInt(age.substring(4, 6));
-    
-    
-    LocalDate today = LocalDate.now();
-    int todayYear = today.getYear();
-    int todayMonth = today.getMonthValue();
-    int todayDay= today.getDayOfMonth();
-    
-    int manAge = todayYear - years;
-    
-    if(months>todayMonth){
- 	   manAge--;
-    }else if(months == todayMonth){
- 	   if(days > todayDay){
- 		   manAge--;
- 	   }
-    }
-    
-    if(manAge>2000){
- 	   manAge-=2000;
-    }else if(manAge<2000){
- 	   manAge-=1900;
-    }
- %>
+	/* 만나이, 생년월일, 월보험료, 흡연여부, 성별 */
+	int manage = (Integer)session.getAttribute("manage");
+	int birth = (Integer)session.getAttribute("birth");
+	int num1 = (Integer)session.getAttribute("num1");
+	String smoking = (String) session.getAttribute("smoking");
+	String gender = (String) session.getAttribute("gender");
+
+	/* 보험기간 */
+	String payMoney = request.getParameter("payMoney");
+	String paymoney = "보험기간";
+	if(payMoney.equals("10y")){
+		paymoney = "10년 만기(갱신형)";
+	}else if(payMoney.equals("20y")){
+		paymoney = "20년 만기";
+	}else if(payMoney.equals("60y")){
+		paymoney = "60세 만기";
+	}else if(payMoney.equals("80y")){
+		paymoney = "80세 만기";
+	}
+	
+	String money = request.getParameter("money");
+	String remoney = "가입금액";
+	if(money.equals("20milion")){
+		remoney = "200,000,000원";
+	}else if(money.equals("15milion")){
+		remoney = "150,000,000원";
+	}else if(money.equals("10milion")){
+		remoney = "100,000,000원";
+	}else if(money.equals("05milion")){
+		remoney = "50,000,000원";
+	}
+	
+	
+	
+	session.setAttribute("paymoney", paymoney);
+	session.setAttribute("remoney", remoney);
+	
+%>
+
+
+
  
   <div>
- 	<span><%=manAge%>세</span>
- 	<span><%=smoking%></span>
- 	<span><%=gender %></span>
- 	<span><%=custBirth_MENU3 %></span>
+  <span>  <%=manage%> </span>
+
  </div>
  
  	 <div id="page3" class="setBorder">

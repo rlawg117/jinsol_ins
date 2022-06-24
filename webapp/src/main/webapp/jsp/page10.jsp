@@ -11,7 +11,23 @@
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
+<%
+int manage = (Integer)session.getAttribute("manage");
+String birth = (String)session.getAttribute("birth");
+int num1 = (Integer)session.getAttribute("num1");
+String smoking = (String) session.getAttribute("smoking");
+String gender = (String) session.getAttribute("gender");
 
+String paymoney = (String) session.getAttribute("paymoney");
+String gang = (String) session.getAttribute("gang");
+String remoney = (String) session.getAttribute("remoney");
+String name = (String) session.getAttribute("name");
+String email1 = (String) session.getAttribute("email1");
+String email2 = (String) session.getAttribute("email2");
+String call = (String) session.getAttribute("call");
+
+
+%>
  
     <div class="tel wrap">
         <div>
@@ -367,7 +383,7 @@
                             <tbody>
                                 <tr>
                                     <th>성명</th> 
-                                    <td><input type="text"></td>
+                                    <td><input type="text" value="<%=name%>"></td>
                                 </tr>
                                 <tr>
                                     <th>생년월일</th> 

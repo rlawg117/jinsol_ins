@@ -71,27 +71,45 @@
  int num2 = 0;
  int num3 = 0;
  int num4 = 0;
-	if(manAge<=30 && custGnder_MENU3.equals("1") && smoke_yn.equals("2")){
+	if(manAge<30 && custGnder_MENU3.equals("1") && smoke_yn.equals("2")){
 		num1 = 5000;
+		num2 = 142000;
+		num3 = 35000;
+		num4 = 2000;
+	}else if(manAge<30 && custGnder_MENU3.equals("1") && smoke_yn.equals("1")){
+		num1 = 6000;
+		num2 = 154000;
+		num3 = 41000;
+		num4 = 2500;
+	}else if(manAge<30 && custGnder_MENU3.equals("2") && smoke_yn.equals("2")){
+		num1 = 3000;
+		num2 = 78000;
+		num3 = 19000;
+		num4 = 1500;
+	}else if(manAge<30 && custGnder_MENU3.equals("2") && smoke_yn.equals("1")){
+		num1 = 3000;
+		num2 = 80000;
+		num3 = 20000;
+		num4 = 1500;
 	}
 	
 	
-	else if(manAge<=40 && custGnder_MENU3.equals("1") && smoke_yn.equals("2")){
+	else if(manAge<40 && custGnder_MENU3.equals("1") && smoke_yn.equals("2")){
 		num1 = 11000;
 		num2 = 202000;
 		num3 = 37000;
 		num4 = 4500;
-	}else if(manAge<=40 && custGnder_MENU3.equals("1") && smoke_yn.equals("1")){
+	}else if(manAge<40 && custGnder_MENU3.equals("1") && smoke_yn.equals("1")){
 		num1 = 13000;
 		num2 = 218000;
 		num3 = 42000;
 		num4 = 5500;
-	}else if(manAge<=40 && custGnder_MENU3.equals("2") && smoke_yn.equals("2")){
+	}else if(manAge<40 && custGnder_MENU3.equals("2") && smoke_yn.equals("2")){
 		num1 = 6000;
 		num2 = 108000;
 		num3 = 18000;
 		num4 = 3000;
-	}else if(manAge<=40 && custGnder_MENU3.equals("2") && smoke_yn.equals("1")){
+	}else if(manAge<40 && custGnder_MENU3.equals("2") && smoke_yn.equals("1")){
 		num1 = 7000;
 		num2 = 112000;
 		num3 = 19000;
@@ -99,32 +117,63 @@
 	}
 	
 	
-	else if(manAge<=50 && custGnder_MENU3.equals("1") && smoke_yn.equals("2")){
+	else if(manAge<50 && custGnder_MENU3.equals("1") && smoke_yn.equals("2")){
 		num1 = 27000;
 		num2 = 242000;
 		num3 = 31000;
 		num4 = 1200;
-	}else if(manAge<=50 && custGnder_MENU3.equals("1") && smoke_yn.equals("1")){
+	}else if(manAge<50 && custGnder_MENU3.equals("1") && smoke_yn.equals("1")){
 		num1 = 31000;
 		num2 = 262000;
 		num3 = 36000;
 		num4 = 14000;
-	}else if(manAge<=50 && custGnder_MENU3.equals("2") && smoke_yn.equals("2")){
+	}else if(manAge<50 && custGnder_MENU3.equals("2") && smoke_yn.equals("2")){
 		num1 = 12000;
 		num2 = 126000;
 		num3 = 14000;
 		num4 = 6000;
-	}else if(manAge<=50 && custGnder_MENU3.equals("2") && smoke_yn.equals("1")){
-		num1 = 7000;
-		num2 = 112000;
-		num3 = 19000;
-		num4 = 3500;
+	}else if(manAge<50 && custGnder_MENU3.equals("2") && smoke_yn.equals("1")){
+		num1 = 12000;
+		num2 = 130000;
+		num3 = 14000;
+		num4 = 6000;
 	}
+	
+	else if(manAge>=50 && custGnder_MENU3.equals("1") && smoke_yn.equals("2")){
+		num1 = 32000;
+		num2 = 252000;
+		num3 = 100000;
+		num4 = 14000;
+	}else if(manAge>=50 && custGnder_MENU3.equals("1") && smoke_yn.equals("1")){
+		num1 = 37000;
+		num2 = 272000;
+		num3 = 108000;
+		num4 = 16500;
+	}else if(manAge>=50 && custGnder_MENU3.equals("2") && smoke_yn.equals("2")){
+		num1 = 14000;
+		num2 = 130000;
+		num3 = 51000;
+		num4 = 7000;
+	}else if(manAge>=50 && custGnder_MENU3.equals("2") && smoke_yn.equals("1")){
+		num1 = 14000;
+		num2 = 134000;
+		num3 = 52000;
+		num4 = 7000;
+	}
+	
+	String birth = request.getParameter("custBirth_MENU3");
+	
+	session.setAttribute("manage", manAge);
+	session.setAttribute("num1", num1);
+	session.setAttribute("smoking", smoking);
+	session.setAttribute("gender", gender);
+	session.setAttribute("birth", birth);
 	 	
+	
  %>
                
               
-<form action="ex05.jsp" method="post"> 
+<form action="page05.jsp" method="post"> 
 
 <div>
 	<h2 class="txtcenter">(무)흥국생명 온라인정기보험</h4>
@@ -144,13 +193,6 @@
                    <%=manAge%>세
                    </span>
                    </th> 
-
-<div>
-                <input type="hidden" value="<%=smoking%>" name="smoking">
-                <input type="hidden" value="<%=manAge%>" name="manAge">
-                <input type="hidden" value="<%=gender %>" name="gender">
-                <input type="hidden" name="custBirth_MENU3" value="<%=request.getParameter("custBirth_MENU3") %>">
-</div>
                
                    
                    <td>
@@ -581,92 +623,92 @@
                                         <tr>
                                             <th>3개월</th>
                                             <th><%=manAge%>세</th>
-                                            <th><%=num1*3 %></th>
-                                            <th>0</th>
+                                            <th><% int num7=num1*3; %><%=num7 %></th>
+                                            <th><%=num7/100*0.0%></th>
                                             <th>0.0</th>
                                         </tr>
                                         <tr>
                                             <th>6개월</th>
                                             <th><%=manAge%>세</th>
-                                            <th><%=num1*6 %></th>
-                                            <th>0</th>
+                                            <th><% num7 =num1*6; %><%=num7 %></th>
+                                            <th><%=num7/100*1.3%></th>
                                             <th>0.0</th>
                                         </tr>
                                         <tr>
                                             <th>9개월</th>
                                             <th><%=manAge%>세</th>
-                                            <th><%=num1*9 %></th>
-                                            <th>0</th>
+                                            <th><% num7 =num1*9; %><%=num7 %></th>
+                                            <th><%=num7/100*1.3%></th>
                                             <th>0.0</th>
                                         </tr>
                                         <tr>
                                             <th>1년</th>
                                             <th><%=manAge+1%>세</th>
-                                            <th><%=num1*12 %></th>
-                                            <th>0</th>
+                                            <th><% num7 =num1*(12*1); %><%=num7 %></th>
+                                            <th><%=num7/100*1.3%></th>
                                             <th>0.0</th>
                                         </tr>
                                         <tr>
                                             <th>2년</th>
                                             <th><%=manAge+2%>세</th>
-                                            <th><%=num1*(12*2) %></th>
-                                            <th>0</th>
+                                            <th><% num7 =num1*(12*2); %><%=num7 %></th>
+                                            <th><%=num7/100*1.3%></th>
                                             <th>0.0</th>
                                         </tr>
                                         <tr>
                                             <th>3년</th>
                                             <th><%=manAge+3%>세</th>
-                                            <th><%=num1*(12*3) %></th>
-                                            <th>1,446</th>
+                                            <th><% num7 =num1*(12*3); %><%=num7 %></th>
+                                            <th><%=num7/100*1.3%></th>
                                             <th>1.3</th>
                                         </tr>
                                         <tr>
                                             <th>4년</th>
                                             <th><%=manAge+4%>세</th>
-                                            <th><%=num1*(12*4) %></th>
-                                            <th>6,084</th>
+                                            <th><% num7 =num1*(12*4); %><%=num7 %></th>
+                                            <th><%=num7/100*4.2%></th>
                                             <th>4.2</th>
                                         </tr>
                                         <tr>
                                             <th>5년</th>
                                             <th><%=manAge+5%>세</th>
-                                            <th><%=num1*(12*5) %></th>
-                                            <th>10,723</th>
+                                            <th><% num7 =num1*(12*5); %><%=num7 %></th>
+                                            <th><%=num7/100*15.9%></th>
                                             <th>5.9</th>
                                         </tr>
                                         <tr>
                                             <th>6년</th>
                                             <th><%=manAge+6%>세</th>
-                                            <th><%=num1*(12*6) %></th>
-                                            <th>12,361</th>
+ 											<th><% num7 =num1*(12*6); %><%=num7 %></th>
+                                            <th><%=num7/100*5.7%></th>
                                             <th>5.7</th>
                                         </tr>
                                         <tr>
                                             <th>7년</th>
                                             <th><%=manAge+7%>세</th>
-                                            <th><%=num1*(12*7) %></th>
-                                            <th>15,000</th>
+                                             <th><% num7 =num1*(12*7); %><%=num7 %></th>
+                                            <th><%=num7/100*5.9%></th>
                                             <th>5.9</th>
                                         </tr>
                                         <tr>
                                             <th>8년</th>
                                             <th><%=manAge+8%>세</th>
-                                            <th><%=num1*(12*8) %></th>
-                                            <th>11,000</th>
+                                             <th><% num7 =num1*(12*8); %><%=num7 %></th>
+                                            <th><%=num7/100*3.8%></th>
                                             <th>3.8</th>
                                         </tr>
                                         <tr>
                                             <th>9년</th>
                                             <th><%=manAge+9%>세</th>
-                                            <th><%=num1*(12*9) %></th>
-                                            <th>7,000</th>
+                                             <th><% num7 =num1*(12*9); %><%=num7 %></th>
+                                            <th><%=num7/100*2.1%></th>
                                             <th>2.1</th>
                                         </tr>
                                         <tr>
                                             <th>10년</th>
                                             <th><%=manAge+10%>세</th>
-                                            <th><%=num1*(12*10) %></th>
-                                            <th>0</th>
+                                             <th><% num7 =num1*(12*10); %><%=num7 %></th>
+                                            <th><%=num7/100*0.0%></th>
                                             <th>0.0</th>
                                         </tr>
 

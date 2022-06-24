@@ -63,6 +63,8 @@
     }else if(manAge<2000){
  	   manAge-=1900;
     }
+    
+    
  %>
  
  <%
@@ -120,6 +122,14 @@
 		num3 = 19000;
 		num4 = 3500;
 	}
+	
+	String birth = request.getParameter("custBirth_MENU3");
+	
+	session.setAttribute("manage", manAge);
+	session.setAttribute("num1", num1);
+	session.setAttribute("smoking", smoking);
+	session.setAttribute("gender", gender);
+	session.setAttribute("birth", birth);
 	 	
  %>
                
@@ -375,7 +385,7 @@
         <div class="setBorder">
             <h3 class="sub">보험료 계산결과</h3>
             <h4 class="sub">설계 내역을 선택한 후 [보장내용 비교] 버튼을 클릭 시 보장 내용을 비교하여 확인할 수 있습니다.</h4>
-            <button type="button"><a href="page03.jsp" class="sub" style="padding: 2% 0% 2% 0%">보장내용 비교</a> </button>
+            <button type="button"><a href="ex03.jsp" class="sub" style="padding: 2% 0% 2% 0%">보장내용 비교</a> </button>
         </div>
 
         <div class="clickBox setBorder manypp" >
@@ -576,7 +586,7 @@
                                         <tr>
                                             <th>3개월</th>
                                             <th><%=manAge%>세</th>
-                                            <th><%=num1*3 %></th>
+                                            <th><%=num3 %><%num3=num1*3; %></th>
                                             <th>0</th>
                                             <th>0.0</th>
                                         </tr>

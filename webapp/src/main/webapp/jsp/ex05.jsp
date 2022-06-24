@@ -9,15 +9,54 @@
 <link href="../css/page02.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+<%
 
-<% 
-	request.setCharacterEncoding("UTF-8");
-	String manAge = request.getParameter("manAge");
-	String custGnder_MENU3 = request.getParameter("custGnder_MENU3");
-	String smoke_yn = request.getParameter("smoke_yn");
-	String custBirth_MENU3 = request.getParameter("custBirth_MENU3");
+	/* 만나이, 생년월일, 월보험료, 흡연여부, 성별 */
+	int manage = (Integer)session.getAttribute("manage");
+	String birth = (String)session.getAttribute("birth");
+	int num1 = (Integer)session.getAttribute("num1");
+	String smoking = (String) session.getAttribute("smoking");
+	String gender = (String) session.getAttribute("gender");
+
+	/* 보험기간 */
+	String payMoney = request.getParameter("payMoney");
+	String paymoney = "보험기간";
+	String gang = "갱신여부";
+	if(payMoney.equals("10y")){
+		paymoney = "10년";
+		gang ="(갱신형)";
+	}else if(payMoney.equals("20y")){
+		paymoney = "20년";
+		gang ="(일반형)";
+	}else if(payMoney.equals("60y")){
+		paymoney = "60세";
+		gang ="(일반형)";
+	}else if(payMoney.equals("80y")){
+		paymoney = "80세";
+		gang ="(일반형)";
+	}
+	
+	String money = request.getParameter("money");
+	String remoney = "가입금액";
+	if(money.equals("20milion")){
+		remoney = "200,000,000원";
+	}else if(money.equals("15milion")){
+		remoney = "150,000,000원";
+	}else if(money.equals("10milion")){
+		remoney = "100,000,000원";
+	}else if(money.equals("05milion")){
+		remoney = "50,000,000원";
+	}
+	
+	
+	
+	session.setAttribute("paymoney", paymoney);
+	session.setAttribute("gang", gang);
+	session.setAttribute("remoney", remoney);
 	
 %>
+ 
+
 
 <form action="ex06.jsp" method="post">
 <div class="wrap setBorder ">
@@ -31,17 +70,8 @@
         
         <div>
         
-        <input type="hidden" name="smoke_yn" value="<%=smoke_yn %>">
-        <input type="hidden" name="manAge" value="<%=manAge %>">
-        <input type="hidden" name="custGnder_MENU3" value="<%=custGnder_MENU3 %>">
-		<input type="hidden" name="custBirth_MENU3" value="<%=request.getParameter("custBirth_MENU3") %>">
-        
-
-
-        	<p><%=custGnder_MENU3 %></p>
-        	<p><%=manAge %></p>
-        	<p><%=smoke_yn %></p>
-        	<p><%=custBirth_MENU3 %></p>
+     
+    
         </div>
         
 

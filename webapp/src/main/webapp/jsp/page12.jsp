@@ -1,4 +1,3 @@
-<%@page import="java.time.LocalDate"%>
 <%@page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -13,38 +12,22 @@
 </head>
 <body>
 <% 
-int manage = (Integer)session.getAttribute("manage");
-String birth = (String)session.getAttribute("birth");
-int num1 = (Integer)session.getAttribute("num1");
-String smoking = (String) session.getAttribute("smoking");
-String gender = (String) session.getAttribute("gender");
-String paymoney = (String) session.getAttribute("paymoney");
-String gang = (String) session.getAttribute("gang");
-String remoney =(String) session.getAttribute("remoney");
-
-	
+	int manage = (Integer)session.getAttribute("manage");
+	String birth = (String)session.getAttribute("birth");
+	int num1 = (Integer)session.getAttribute("num1");
+	String smoking = (String) session.getAttribute("smoking");
+	String gender = (String) session.getAttribute("gender");
+	String paymoney = (String) session.getAttribute("paymoney");
+	String gang = (String) session.getAttribute("gang");
+	String remoney =(String) session.getAttribute("remoney");
+		
 %>
 
-<form action="page07.jsp" method="post">
-        
-        
+<form action="page08.jsp" method="post">
+
+		
  <div class="subscription_wrap">
         <div class="top">
-        
-<div>
-<p> <%=manage %></p>
-<p> <%=birth %></p>
-<p> <%=num1 %></p>
-<p> <%=smoking %></p>
-<p> <%=gender %></p>
-<p> <%=paymoney %></p>
-<p> <%=gang %></p>
-<p> <%=remoney %></p>
-
-
-</div>
-        
-        
             <div class="top">
                 <h1>
                     <b>(무)흥국생명온라인 
@@ -257,8 +240,6 @@ String remoney =(String) session.getAttribute("remoney");
                                                     <em id="cont_send_fileName_em">
                                                     </em>
                                                 </span>
-                                                <a href="" class="btn02 middle border ml5" name="main_file_upload" onclick="">파일찾기</a>
-                                                <a href="" class="btn02 middle border ml5" name="main_file_upload" onclick="">파일등록</a>
                                                 <p class="fs12 mt5">신분증 사진 또는 스캔하여 등록(3MB 이하, tif / jpg / gif / bmp 등)</p>
                                             </td>
                                         </tr>
@@ -387,13 +368,13 @@ String remoney =(String) session.getAttribute("remoney");
                                             </td>
                                         </tr>
                                         
-                                        <!-- <tr class="low_item first" style="display:none;">
+                                        <!-- <tr class="low_item first">
                                             <th>이름</th>
                                             <td class="tdright">
                                                 <input type="text" class="input" title="이름 입력" id="REAL_OWN_NM" name="REAL_OWN_NM" maxlength="50">
                                             </td>
                                         </tr>
-                                        <tr class="low_item" style="display:none;">
+                                        <tr class="low_item">
                                             <th>주민번호</th>
                                             <td class="tdright">
                                                 <input type="text" class="input number tl" hname="실소유주의 주민번호 앞 6자리" title="실소유주의 주민번호 앞 6자리 입력" name="REAL_OWN_SSN1" maxlength="6"pattern="[0-9]*"> -
@@ -407,7 +388,7 @@ String remoney =(String) session.getAttribute("remoney");
                                             </td>
                                         </tr>
 
-                                         <tr class="low_item last" style="display:none;">
+                                         <tr class="low_item last">
                                             <th>국적</th>
                                             <td class="tdright">
                                                 <p class="mt5 mb5">
@@ -470,14 +451,9 @@ String remoney =(String) session.getAttribute("remoney");
                                                         <input type="radio" class="d-radio" name="P_PST_RCVA" value="20" title="직장주소 입력 팝업창이 바로 열립니다.">
                                                         <span class="vt">직장</span>
                                                     </label>
-                                                    <a class="btn02 middle border ml5" name="postNoFind" title="우편번호 찾기 화면이 팝업 됩니다.">주소찾기</a>
+                                                    <input type="text" name="address" placeholder="선택하신 수령지의 주소를 입력헤주세요">
                                                 </span>
-                                                <input type="text" class="input mt5 nppfs-npk" id="POST_ADDR_TEXT" name="POST_ADDR_TEXT" title="우편물수령지 주소 입력" >
-                                                <input type="hidden" class="input fs12 mt5 w100" id="POST_ADDR" name="POST_ADDR" title="우편물수령지 주소 입력">
-                                                <input type="hidden" id="POST_NO" name="POST_NO" class="input" hname="우편번호" title="우편번호 입력" >
-                                                <input type="hidden" id="ADDR_DTL" name="ADDR_DTL" class="input" hname="상세주소" title="상세주소" >
-                                                <input type="hidden" id="ETC_ADDR" name="ETC_ADDR" class="input" hname="상세주소2" title="상세주소2">
-                                                <input type="hidden" id="BLDG_MGNT_NO" name="BLDG_MGNT_NO">
+                                                
                                             </td>
                                         </tr>
                                         <tr>
@@ -537,9 +513,6 @@ String remoney =(String) session.getAttribute("remoney");
                                             <th class="vt">직업</th>
                                             <td class="tdright">
                                                 <span class="rdo_type01 custom-label jobbtn">
-            
-                
-                
                                                     <label class="job01">
                                                         <input type="radio" class="d-radio" name="job_dummy"  ><span class="vt">사무직</span>
                                                     </label>
@@ -553,6 +526,13 @@ String remoney =(String) session.getAttribute("remoney");
                                                         <input type="radio" class="d-radio" name="job_dummy"><span class="vt">기타</span>
                                                     </label>
                                                 </span>
+                                                <br>
+                                                <span>
+                                                <input type="text" class="company1" placeholder="회사명">
+                                                <input type="text" class="company2" placeholder="직종">
+                                                <input type="text" class="company3" placeholder="월급여">
+                                                </span>
+                                                
                                             </td>
                                         </tr>
                                         <tr>
@@ -718,7 +698,7 @@ String remoney =(String) session.getAttribute("remoney");
                                 </th> 
                                 <td>
                                     <p>보험가입을 위한 필수정보 동의 및 부가서비스에 대한 선택 동의가 필요합니다.</p> 
-                                    <a href="page07.jsp" onclick="page07.jsp" class="btn02 middle border" id="PersonInfoAgree_text">확인하기</a>        
+                                    <button type="submit"> 확인하기 </button>       
                                 </td>
                             </tr> 
                         </tbody>
@@ -734,9 +714,9 @@ String remoney =(String) session.getAttribute("remoney");
         </div>
     </div>
        
+</form>		
 		
-		
-</form>
+
 
 </body>
 </html>

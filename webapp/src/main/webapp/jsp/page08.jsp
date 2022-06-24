@@ -6,8 +6,22 @@
 <meta charset="UTF-8">
 <title>건강상태 체크</title>
 <link href="../css/page02.css" rel="stylesheet" type="text/css">
+<script src="jquery-3.6.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
+<% 
+	int manage = (Integer)session.getAttribute("manage");
+	String birth = (String)session.getAttribute("birth");
+	int num1 = (Integer)session.getAttribute("num1");
+	String smoking = (String) session.getAttribute("smoking");
+	String gender = (String) session.getAttribute("gender");
+	String paymoney = (String) session.getAttribute("paymoney");
+	String gang = (String) session.getAttribute("gang");
+	String remoney =(String) session.getAttribute("remoney");
+		
+%>
+
 <div class="healthy_wrap">
         <div class="top">
             <div class="top">
@@ -17,14 +31,14 @@
                     </b> 가입하기
                 </h1>
                 
-                <div class="plan_data box setBorder" >
+                 <div class="plan_data box setBorder" >
                     <dl class="type">
                         <dt>구분</dt>
-                        <dd id="p_item_cont1"><b>(비흡연)2종(갱신형)</b></dd>
+                        <dd id="p_item_cont1"><b><span>(<%=smoking %>)2종<%=gang %></span></b></dd>
                     </dl>
                     <dl class="period1">
                         <dt>보험기간</dt>
-                        <dd id="p_item_cont2"><b><b>10</b>년</b></dd>
+                        <dd id="p_item_cont2"><b><%=paymoney %></b></dd>
                     </dl>
                     <dl class="period2">
                         <dt>납입기간</dt>
@@ -32,11 +46,11 @@
                     </dl>
                     <dl class="money1">
                         <dt>가입금액</dt>
-                        <dd id="p_item_cont6"><b>     100,000,000원</b></dd>
+                        <dd id="p_item_cont6"><b><%=remoney %></b></dd>
                     </dl>
                     <dl>
                         <dt>월 보험료</dt>
-                        <dd id="p_item_cont5"><b>          3,000원</b></dd>
+                        <dd id="p_item_cont5"><b><%=num1 %>원</b></dd>
                     </dl>
                 </div>
                 <div class="subscription_cont">

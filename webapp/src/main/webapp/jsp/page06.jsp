@@ -12,21 +12,19 @@
 </head>
 <body>
 <% 
-	request.setCharacterEncoding("UTF-8");
-	String manAge = request.getParameter("manAge");
-	String custGnder_MENU3 = request.getParameter("custGnder_MENU3");
-	String smoke_yn = request.getParameter("smoke_yn");
-	String custBirth_MENU3 = request.getParameter("custBirth_MENU3");
-	
+	int manage = (Integer)session.getAttribute("manage");
+	String birth = (String)session.getAttribute("birth");
+	int num1 = (Integer)session.getAttribute("num1");
+	String smoking = (String) session.getAttribute("smoking");
+	String gender = (String) session.getAttribute("gender");
+	String paymoney = (String) session.getAttribute("paymoney");
+	String gang = (String) session.getAttribute("gang");
+	String remoney =(String) session.getAttribute("remoney");
+		
 %>
 
-<form action="">
+<form action="page07.jsp" method="post">
 
- 		<input type="hidden" name="smoke_yn" value="<%=smoke_yn %>">
-        <input type="hidden" name="manAge" value="<%=manAge %>">
-        <input type="hidden" name="custGnder_MENU3" value="<%=custGnder_MENU3 %>">
-		<input type="hidden" name="custBirth_MENU3" value="<%=request.getParameter("custBirth_MENU3") %>">
-		
 		
  <div class="subscription_wrap">
         <div class="top">
@@ -40,11 +38,11 @@
                 <div class="plan_data box setBorder" >
                     <dl class="type">
                         <dt>구분</dt>
-                        <dd id="p_item_cont1"><b>(비흡연)2종(갱신형)</b></dd>
+                        <dd id="p_item_cont1"><b><span>(<%=smoking %>)2종<%=gang %></span></b></dd>
                     </dl>
                     <dl class="period1">
                         <dt>보험기간</dt>
-                        <dd id="p_item_cont2"><b><b>10</b>년</b></dd>
+                        <dd id="p_item_cont2"><b><%=paymoney %></b></dd>
                     </dl>
                     <dl class="period2">
                         <dt>납입기간</dt>
@@ -52,11 +50,11 @@
                     </dl>
                     <dl class="money1">
                         <dt>가입금액</dt>
-                        <dd id="p_item_cont6"><b>     100,000,000원</b></dd>
+                        <dd id="p_item_cont6"><b><%=remoney %></b></dd>
                     </dl>
                     <dl>
                         <dt>월 보험료</dt>
-                        <dd id="p_item_cont5"><b>          3,000원</b></dd>
+                        <dd id="p_item_cont5"><b><%=num1 %>원</b></dd>
                     </dl>
                 </div>
                 <div class="subscription_cont">
@@ -95,6 +93,7 @@
                                         <tr>
                                             <th id="juminno_text">주민번호</th>
                                             <td class="tdright">
+                                            <span><%=birth %>-</span>
                                                 <input type="password" id="PSNL_ID" name="PSNL_ID" required="required" class="input" maxlength="7" hname="주민번호뒷자리" title="주민번호 뒷자리 또는 외국인인 경우 외국인등록번호 뒷자리 입력">
                                                 <span class="rdo_type01 ">
                                                     <label class="drvtype">
@@ -241,8 +240,6 @@
                                                     <em id="cont_send_fileName_em">
                                                     </em>
                                                 </span>
-                                                <a href="" class="btn02 middle border ml5" name="main_file_upload" onclick="">파일찾기</a>
-                                                <a href="" class="btn02 middle border ml5" name="main_file_upload" onclick="">파일등록</a>
                                                 <p class="fs12 mt5">신분증 사진 또는 스캔하여 등록(3MB 이하, tif / jpg / gif / bmp 등)</p>
                                             </td>
                                         </tr>
@@ -411,17 +408,8 @@
                                             <th class="vt">이메일</th>
                                             <td class="tdright">
                                                 <input type="text" class="input" id="MAIL_ID" name="MAIL_ID" hname="이메일아이디" title="이메일 아이디 입력" maxlength="30" > @ 
-                                                <input type="text" class="input" id="MAIL_POTAL_NAME" name="MAIL_POTAL_NAME" hname="이메일포탈주소" title="도메인 직접입력" maxlength="30">
-                                                <select class="sbox" title="이메일 선택"  name="SetMailGubun">
-                                                    <option value="">직접입력</option>
-                                                    <option value="naver.com">네이버</option>
-                                                    <option value="daum.net">다음</option>
-                                                    <option value="hanmail.net">한메일</option>
-                                                    <option value="nate.com">네이트</option>
-                                                    <option value="gmail.com">지메일</option>
-                                                    <option value="hotmail.com">핫메일</option>
-            
-                                                </select>
+                                                <input type="text" class="input" id="MAIL_POTAL_NAME" name="MAIL_POTAL_NAME" hname="이메일포탈주소" title="도메인 직접입력" maxlength="30" placeholder="도메인 주소를 직접 입력해주세요.">
+                                                
                                                 <p class="fs12 mt5">입력하신 이메일로 청약 관련 서류를 보내드리니 꼭~한번 더 확인해주세요.</p>
                                                 <input type="hidden" id="E_CMMU_VAL" name="E_CMMU_VAL" value="">
                                             </td>
@@ -429,17 +417,8 @@
                                         <tr>
                                             <th>휴대폰번호</th>
                                             <td  class="tdright">
-                                                <select class="sbox" title="휴대폰번호 앞자리 선택"id="T_CMMU_VAL_DDD" name="T_CMMU_VAL_DDD">
-                                                    <option value="010">010</option>
-                                                    <option value="011">011</option>
-                                                    <option value="016">016</option>
-                                                    <option value="017">017</option>
-                                                    <option value="019">019</option>
-                                                </select>
-                                                -
-                                                <input type="text" class="input number tl" title="휴대폰번호 나머지 자리 입력" placeholder="-없이 입력" id="T_CMMU_VAL" name="T_CMMU_VAL" required="required" maxlength="8" hname="휴대폰번호" pattern="[0-9]*">
-                                                <input type="hidden" name="T_CMMU_VAL_GUK" id="T_CMMU_VAL_GUK">
-                                                <input type="hidden" name="T_CMMU_VAL_NO" id="T_CMMU_VAL_NO">
+                                                <input type="text" class="input number tl" title="휴대폰번호" placeholder="-없이 입력" id="T_CMMU_VAL" name="T_CMMU_VAL" required="required" maxlength="11" hname="휴대폰번호" pattern="[0-9]*">
+                                                
                                             </td>
                                         </tr>
                                         <tr>
@@ -454,14 +433,9 @@
                                                         <input type="radio" class="d-radio" name="P_PST_RCVA" value="20" title="직장주소 입력 팝업창이 바로 열립니다.">
                                                         <span class="vt">직장</span>
                                                     </label>
-                                                    <a class="btn02 middle border ml5" name="postNoFind" title="우편번호 찾기 화면이 팝업 됩니다.">주소찾기</a>
+                                                    <input type="text" name="address" placeholder="주소를 입력헤주세요">
                                                 </span>
-                                                <input type="text" class="input mt5 nppfs-npk" id="POST_ADDR_TEXT" name="POST_ADDR_TEXT" title="우편물수령지 주소 입력" >
-                                                <input type="hidden" class="input fs12 mt5 w100" id="POST_ADDR" name="POST_ADDR" title="우편물수령지 주소 입력">
-                                                <input type="hidden" id="POST_NO" name="POST_NO" class="input" hname="우편번호" title="우편번호 입력" >
-                                                <input type="hidden" id="ADDR_DTL" name="ADDR_DTL" class="input" hname="상세주소" title="상세주소" >
-                                                <input type="hidden" id="ETC_ADDR" name="ETC_ADDR" class="input" hname="상세주소2" title="상세주소2">
-                                                <input type="hidden" id="BLDG_MGNT_NO" name="BLDG_MGNT_NO">
+                                                
                                             </td>
                                         </tr>
                                         <tr>
@@ -521,9 +495,6 @@
                                             <th class="vt">직업</th>
                                             <td class="tdright">
                                                 <span class="rdo_type01 custom-label jobbtn">
-            
-                
-                
                                                     <label class="job01">
                                                         <input type="radio" class="d-radio" name="job_dummy"  ><span class="vt">사무직</span>
                                                     </label>
@@ -537,6 +508,13 @@
                                                         <input type="radio" class="d-radio" name="job_dummy"><span class="vt">기타</span>
                                                     </label>
                                                 </span>
+                                                <br>
+                                                <span>
+                                                <input type="text" class="company1" placeholder="회사명">
+                                                <input type="text" class="company2" placeholder="직종">
+                                                <input type="text" class="company3" placeholder="월급여">
+                                                </span>
+                                                
                                             </td>
                                         </tr>
                                         <tr>
@@ -702,7 +680,7 @@
                                 </th> 
                                 <td>
                                     <p>보험가입을 위한 필수정보 동의 및 부가서비스에 대한 선택 동의가 필요합니다.</p> 
-                                    <a href="page07.jsp" onclick="page07.jsp" class="btn02 middle border" id="PersonInfoAgree_text">확인하기</a>        
+                                     <button type="submit"><a href="page07.jsp" onclick="page07.jsp" class="btn02 middle border" id="PersonInfoAgree_text">확인하기</a> </button>        
                                 </td>
                             </tr> 
                         </tbody>
@@ -714,7 +692,7 @@
         
 
         <div class="btn_group tc mt30 txtcenter">
-            <a href="page10.jsp">휴대폰인증 후 저장</a>
+            <button type="submit">휴대폰 인증 후 저장</button>
         </div>
     </div>
        
