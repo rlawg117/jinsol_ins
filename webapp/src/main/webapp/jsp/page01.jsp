@@ -38,7 +38,6 @@
                             <tr>
                                 <th>
                                     생년월일
-                                    <span class="insurance_age">보험나이</span>
                                 </th>
                                 <td style="border-right:none;">
                                     <input type="text" id="custBirth_MENU3" name="custBirth_MENU3" maxlength="6" class="s-input number w100" placeholder="예시)720322" title="생년월일 입력">

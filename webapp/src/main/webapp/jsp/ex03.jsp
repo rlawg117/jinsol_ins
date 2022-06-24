@@ -1,3 +1,4 @@
+<%@page import="java.time.LocalDate"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -9,7 +10,66 @@
 </head>
 <body>
 
-	 <div id="page3" class="setBorder">
+ <% request.setCharacterEncoding("UTF-8");
+ 	String custBirth_MENU3 = request.getParameter("custBirth_MENU3");
+
+ 	String custGnder_MENU3 = request.getParameter("custGnder_MENU3");
+ 	String gender="성별";
+ 	if(custGnder_MENU3.equals("1")){
+ 		gender="남자";
+ 	}else if(custGnder_MENU3.equals("2")){
+ 		gender="여자";
+ 	}
+ 	
+ 	String smoke_yn = request.getParameter("smoke_yn");
+ 	String smoking = "담배";
+ 	if(smoke_yn.equals("1")){
+ 		smoking="흡연";	
+ 	}else if(smoke_yn.equals("2")){
+ 		smoking="비흡연";	
+ 	}
+ 	
+ 	int num1 = 3000;
+ 	
+ %>
+ 
+ <% 
+    String age = custBirth_MENU3;
+    int years = Integer.parseInt(age.substring(0, 2));
+    int months = Integer.parseInt(age.substring(2, 4));
+    int days = Integer.parseInt(age.substring(4, 6));
+    
+    
+    LocalDate today = LocalDate.now();
+    int todayYear = today.getYear();
+    int todayMonth = today.getMonthValue();
+    int todayDay= today.getDayOfMonth();
+    
+    int manAge = todayYear - years;
+    
+    if(months>todayMonth){
+ 	   manAge--;
+    }else if(months == todayMonth){
+ 	   if(days > todayDay){
+ 		   manAge--;
+ 	   }
+    }
+    
+    if(manAge>2000){
+ 	   manAge-=2000;
+    }else if(manAge<2000){
+ 	   manAge-=1900;
+    }
+ %>
+ 
+  <div>
+ 	<span><%=manAge%>세</span>
+ 	<span><%=smoking%></span>
+ 	<span><%=gender %></span>
+ 	<span><%=custBirth_MENU3 %></span>
+ </div>
+ 
+ 	 <div id="page3" class="setBorder">
         <h2 class="">(무)흥국생명 온라인정기보험</h2>
         <div>
             <div class="contents">

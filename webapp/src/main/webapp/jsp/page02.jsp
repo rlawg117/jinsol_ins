@@ -1,3 +1,4 @@
+<%@page import="org.apache.jasper.tagplugins.jstl.core.If"%>
 <%@page import="java.time.LocalDate"%>
 <%@page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="UTF-8"%>
@@ -12,6 +13,7 @@
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
+<!--https://jsfiddle.net/loomio3030/j9c58etd/  -->
  <% request.setCharacterEncoding("UTF-8");
  	String custBirth_MENU3 = request.getParameter("custBirth_MENU3");
 
@@ -31,7 +33,7 @@
  		smoking="비흡연";	
  	}
  	
- 	int num1 = 3000;
+ 
  	
  %>
  <% 
@@ -62,7 +64,72 @@
  	   manAge-=1900;
     }
  %>
-<form action="page05.jsp" method="post">                   
+ 
+ <%
+ 
+ int num1 = 0;
+ int num2 = 0;
+ int num3 = 0;
+ int num4 = 0;
+	if(manAge<=30 && custGnder_MENU3.equals("1") && smoke_yn.equals("2")){
+		num1 = 5000;
+	}
+	
+	
+	else if(manAge<=40 && custGnder_MENU3.equals("1") && smoke_yn.equals("2")){
+		num1 = 11000;
+		num2 = 202000;
+		num3 = 37000;
+		num4 = 4500;
+	}else if(manAge<=40 && custGnder_MENU3.equals("1") && smoke_yn.equals("1")){
+		num1 = 13000;
+		num2 = 218000;
+		num3 = 42000;
+		num4 = 5500;
+	}else if(manAge<=40 && custGnder_MENU3.equals("2") && smoke_yn.equals("2")){
+		num1 = 6000;
+		num2 = 108000;
+		num3 = 18000;
+		num4 = 3000;
+	}else if(manAge<=40 && custGnder_MENU3.equals("2") && smoke_yn.equals("1")){
+		num1 = 7000;
+		num2 = 112000;
+		num3 = 19000;
+		num4 = 3500;
+	}
+	
+	
+	else if(manAge<=50 && custGnder_MENU3.equals("1") && smoke_yn.equals("2")){
+		num1 = 27000;
+		num2 = 242000;
+		num3 = 31000;
+		num4 = 1200;
+	}else if(manAge<=50 && custGnder_MENU3.equals("1") && smoke_yn.equals("1")){
+		num1 = 31000;
+		num2 = 262000;
+		num3 = 36000;
+		num4 = 14000;
+	}else if(manAge<=50 && custGnder_MENU3.equals("2") && smoke_yn.equals("2")){
+		num1 = 12000;
+		num2 = 126000;
+		num3 = 14000;
+		num4 = 6000;
+	}else if(manAge<=50 && custGnder_MENU3.equals("2") && smoke_yn.equals("1")){
+		num1 = 7000;
+		num2 = 112000;
+		num3 = 19000;
+		num4 = 3500;
+	}
+	 	
+ %>
+               
+              
+<form action="ex05.jsp" method="post"> 
+
+<div>
+	<h2 class="txtcenter">(무)흥국생명 온라인정기보험</h4>
+</div>
+                
    <div class="input_area setBorder">
         <table class="input_tbl">
             <!-- 보험료 계산 영역 = 생년월일, 성별, 흡연여부 -->
@@ -77,14 +144,14 @@
                    <%=manAge%>세
                    </span>
                    </th> 
-                   
-               	<div style="display: none;">
+
+<div>
                 <input type="hidden" value="<%=smoking%>" name="smoking">
                 <input type="hidden" value="<%=manAge%>" name="manAge">
                 <input type="hidden" value="<%=gender %>" name="gender">
                 <input type="hidden" name="custBirth_MENU3" value="<%=request.getParameter("custBirth_MENU3") %>">
-				</div>
-                   
+</div>
+               
                    
                    <td>
                         <span>
@@ -210,7 +277,7 @@
                     <td>
                         <span>
                             <label>
-                                <input type="radio" checked>
+                                <input type="radio">
                                 <span>예</span>
                             </label>
                         </span>
@@ -225,41 +292,65 @@
                 <tbody>
                     <th>일반사망보험금</th>
                     <td>
-                        <div>
-                            
-                            <input type='button' onclick='count("plus")' value='+'/>
-
-                         
-                            <span id='result'>10000</span>
-                            <span>만원</span>
-                            
-                            <input type='button' onclick='count("minus")' value='-'/>
-
-                        </div>
+                       
                         <span>
                             <label>
-                                <input type="radio" name="money">
+                                <input type="radio" name="money" id="20milion"  value="20milion" onclick="setDisplay2();setpay()">
                                 <span>2억</span>
                             </label>
                         </span>
                         <span>
                             <label>
-                                <input type="radio" name="money">
+                                <input type="radio" name="money" id="15milion" value="15milion"  onclick="setDisplay2();setpay()">
                                 <span>1억5천만</span>
                             </label>
                         </span>
                         <span>
                             <label>
-                                <input type="radio" name="money">
+                                <input type="radio" name="money" id="10milion" onclick="setDisplay2();setpay()">
                                 <span>1억</span>
                             </label>
                         </span>
                         <span>
                             <label>
-                                <input type="radio" name="money">
+                                <input type="radio" name="money" id="05milion" onclick="setDisplay2();setpay()">
                                 <span>5천만</span>
                             </label>
                         </span>
+                        
+                         <div id="pay" style="display: none;">
+                            <input type='button' onclick='count("plus")' value='+'/>
+                            <span id='result'>20000</span>
+                            <span>만원</span>
+                            <input type='button' onclick='count("minus")' value='-'/>
+
+                        </div>
+                        
+                        <div id="pay2"  style="display: none;">
+                            <input type='button' onclick='count("plus")' value='+'/>
+                            <span id='result'>15000</span>
+                            <span>만원</span>
+                            <input type='button' onclick='count("minus")' value='-'/>
+
+                        </div>
+                        
+                        <div id="pay3">
+                            <input type='button' onclick='count("plus")' value='+'/>
+                            <span id='result'>10000</span>
+                            <span>만원</span>
+                            <input type='button' onclick='count("minus")' value='-'/>
+
+                        </div>
+                        
+                        <div id="pay4"  style="display: none;">
+                            <input type='button' onclick='count("plus")' value='+'/>
+                            <span id='result'>5000</span>
+                            <span>만원</span>
+                            <input type='button' onclick='count("minus")' value='-'/>
+
+                        </div>
+                        
+                        
                     </td>
                 </tbody>
 
@@ -268,7 +359,7 @@
             <div>
                 <span>
                     <label>
-                        <input type="checkbox" name="many" id="many">
+                        <input type="checkbox" name="many" id="many" onclick="setDisplay2()">
                         <span>
                             가장 많이 가입하는 설계
                         </span>
@@ -276,7 +367,7 @@
                 </span>
                 <a>
                     <span>
-                        <h4 class="sub"  >보험료계산</h4> 
+                        <button type="button" id="checkedpay"  onclick='getclick2()'> <h4 class="sub"  >보험료계산</h4>  </button>
                     </span>
                 </a>
             </div>
@@ -289,8 +380,7 @@
         <div class="setBorder">
             <h3 class="sub">보험료 계산결과</h3>
             <h4 class="sub">설계 내역을 선택한 후 [보장내용 비교] 버튼을 클릭 시 보장 내용을 비교하여 확인할 수 있습니다.</h4>
-            <a href="page03.jsp" class="sub" style="padding: 2% 0% 2% 0%">보장내용 비교</a>
-
+            <button type="button"><a href="page03.jsp" class="sub" style="padding: 2% 0% 2% 0%">보장내용 비교</a> </button>
         </div>
 
         <div class="clickBox setBorder manypp" >
@@ -299,7 +389,7 @@
                     <div>
                         <span>나의 설계</span>
                         <span>
-                            <input type="checkbox" title="나의 설계">
+                            <input type="checkbox" title="나의 설계" checked>
                         </span>
                     </div>
                     <div>
@@ -310,14 +400,16 @@
                             </li>
                             <li>
                                 <span>재해사망보험금</span>
-                                <span>2억원</span>
+                                <span class="result2"></span>
+                                <span>억원</span>
                             </li>
                             <li>
                                 <span>일반사망보험금</span>
-                                <span>1억원</span>
+                                <span class="result3"></span>
+                                <span>억원</span>
                             </li>
                         </ul>
-                       <button type="submit"> <a>가입하기</a> </button>
+                        <button type="submit"> <a>가입하기</a> </button>
                     </div>
                 </li>
 
@@ -343,7 +435,7 @@
                                 <span>2억원</span>
                             </li>
                         </ul>
-						<button type="submit"> <a>가입하기</a> </button>
+                         <button type="submit"> <a>가입하기</a> </button>
                     </div>
                 </li>
 
@@ -369,7 +461,7 @@
                                 <span>1억원</span>
                             </li>
                         </ul>
-                       <button type="submit"> <a>가입하기</a> </button>
+                         <button type="submit"> <a>가입하기</a> </button>
                     </div>
                 </li>
 
@@ -395,7 +487,7 @@
                                 <span>1억원</span>
                             </li>
                         </ul>
-                        <button type="submit"> <a>가입하기</a> </button>
+                         <button type="submit"> <a>가입하기</a> </button>
                     </div>
                 </li>
             </ul>
@@ -403,9 +495,15 @@
 
         <div class="setBorder">
             <div class="sub" >
-                <p> 10년 만기(갱신형) / 10년납 / 재해사망 추가보장 / <%=smoking %> /<%=manAge%>세/<%=gender %></p>
+            
+            
 
-                <p> </p>
+            <span id="Y10" style="display: none;"> 10년 만기(갱신형) / 10년납 / </span>
+            <span id="Y20" style="display: none;"> 20년 만기 / 20년납 / </span>
+            <span id="Y60" style="display: none;"> 60세 만기 / 60세납 / </span>
+            <span id="Y80" style="display: none;"> 80세 만기 / 80세납 / </span>
+                <span> 재해사망 추가보장 / <%=smoking %> /<%=manAge%>세/<%=gender %></span>
+	<br>
                 <span>
                     <a>수정</a>
                     <a href="../text/(무)흥국생명 온라인정기보험_인쇄용약관(202107)_공시용.pdf" download>가입제안서</a>
@@ -436,12 +534,12 @@
                                         <tr>
                                             <th>재해사망보험금</th>
                                             <th>재해를 원인으로 사망시</th>
-                                            <th>2억</th>
+                                            <th> <span class="result2"></span> <span>억</span> </th>
                                         </tr>
                                         <tr>
                                             <th>일반사망보험금</th>
                                             <th>재해이외의 원인으로 사망시</th>
-                                            <th>1억</th>
+                                            <th><span class="result3"></span> <span>억</span> </th>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -590,6 +688,5 @@
     </div>
     
 </form>
-   
 </body>
 </html>
