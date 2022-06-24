@@ -47,36 +47,29 @@
                                 <th>성별</th>
                                 <td style="border-right:none;">
                                     <div class="rdo_type01 custom-label">
-                                        <label class="dad">
-                                            <input type="radio" name="custGnder_MENU3" class="d-radio" value="1" title="남자 선택">
-                                            <span>
-                                                남자
-                                            </span>
-                                        </label>
-                                        <label class="mam">
-                                            <input type="radio" name="custGnder_MENU3" class="d-radio" value="2" title="여자 선택">
-                                            <span>
-                                                여자
-                                            </span>
-                                        </label>
+                                        
+                                            <input type="radio" name="custGnder_MENU3" id="sg1" class="d-radio" value="1" title="남자 선택" >
+                                           <label for="sg1">남자</label>
+                                       
+                                        
+                                            <input type="radio" name="custGnder_MENU3" id="sg2" class="d-radio" value="2" title="여자 선택">
+                                            <label for="sg2">여자</label>
+                                        
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <th>흡연여부</th>
                                 <td style="border-right:none;">
-                                    <div class="rdo_type01 custom-labe">
+                                    <div class="rdo_type01 custom-label">
                                         <label class="smoke_y">
-                                            <input type="radio" name="smoke_yn" value="1" title="흡연 선택"  class="radio">
-                                            <span>
-                                                흡연
-                                            </span>
+                                            <input type="radio" name="smoke_yn" id="ss1" value="1" title="흡연 선택"  class="radio">
+                                            <label for="ss1">흡연</label>
+                                           
                                         </label>
                                         <label class="smoke_n">
-                                            <input type="radio" name="smoke_yn" value="2" title="비흡연 선택"  class="radio">
-                                            <span>
-                                                비흡연
-                                            </span>
+                                            <input type="radio" name="smoke_yn" id="ss2" value="2" title="비흡연 선택"  class="radio">
+                                            <label for="ss2">비흡연</label>
                                         </label>
                                     </div>
                                 </td>

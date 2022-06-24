@@ -199,36 +199,38 @@
                         <span>
                         	<input name="custBirth" type="text" value="<%=request.getParameter("custBirth_MENU3") %>">
                         </span>
-                        <span>
-                            <label>
+                       
+                            <span class="custom-label">
                                 <% if(request.getParameter("custGnder_MENU3").equals("1")) {%>
-                                <input type="radio" name="custGnder_MENU3" class="d-radio" value="1" title="남자 선택" checked="checked" >
-                                <span>남자</span>
-                                <input type="radio" name="custGnder_MENU3" class="d-radio" value="2" title="여자 선택">
-                                <span>여자</span>
+                                <input type="radio" name="custGnder_MENU3" id="sg1" class="d-radio" value="1" title="남자 선택" checked="checked" >
+                                <label for="sg1">남자</label>
+                                <input type="radio" name="custGnder_MENU3" id="sg2" class="d-radio" value="2" title="여자 선택">
+                                <label for="sg2">여자</label>
                                 <%}else if(request.getParameter("custGnder_MENU3").equals("2")){%>
-                                <input type="radio" name="custGnder_MENU3" class="d-radio" value="1" title="남자 선택">
-                                <span>남자</span>
-                                <input type="radio" name="custGnder_MENU3" class="d-radio" value="2" title="여자 선택" checked="checked">
-                                <span>여자</span>
+                                <input type="radio" name="custGnder_MENU3" id="sg1" class="d-radio" value="1" title="남자 선택">
+                                <label for="sg1">남자</label>
+                                <input type="radio" name="custGnder_MENU3" id="sg2" class="d-radio" value="2" title="여자 선택" checked="checked">
+                                <label for="sg2">여자</label>
                                 <%} %>
-                            </label>
-                        </span>
-                        <span>
-                            <label>
+                            </span>
+                         
+                       
+                         <span class="custom-label">
+                           
                                 <% if(request.getParameter("smoke_yn").equals("1")) {%>
-                                <input type="radio" name="smoke_yn" value="1" title="흡연 선택"  class="radio" checked="checked">
-                                <span>흡연</span>
-                                <input type="radio" name="smoke_yn" value="2" title="비흡연 선택"  class="radio">
-                                <span>비흡연</span>
+                                <input type="radio" name="smoke_yn" id="ss1" value="1" title="흡연 선택"  class="radio" checked="checked">
+                                <label for="ss1">흡연</label>
+                                <input type="radio" name="smoke_yn" id="ss2" value="2" title="비흡연 선택"  class="radio">
+                               <label for="ss2">비흡연</label>
                                 <%}else if(request.getParameter("custGnder_MENU3").equals("2")){%>
-                                <input type="radio" name="smoke_yn" value="1" title="흡연 선택"  class="radio">
-                                <span>흡연</span>
-                                <input type="radio" name="smoke_yn" value="2" title="비흡연 선택"  class="radio" checked="checked">
-                                <span>비흡연</span>
+                                <input type="radio" name="smoke_yn" id="ss1" value="1" title="흡연 선택"  class="radio">
+                                <label for="ss1">흡연</label>
+                                <input type="radio" name="smoke_yn" id="ss2" value="2" title="비흡연 선택"  class="radio" checked="checked">
+                                <label for="ss2">비흡연</label>
                                 <%} %>
-                            </label>
-                        </span>
+                            
+                            </span>
+                       
                    </td>
                    
                 </tr>
@@ -245,28 +247,28 @@
                     <tr>
                         <th> 보험기간 </th>
                        <td>
-                            <span>
-                                <label>
+                            <span class = "custom-label">
+                                
                                     <input type="radio" name="payMoney" value="10y" id="10y" onchange="setDisplay()">
-                                    <span>10년만기(갱신형)</span>
-                                </label>
+                                    <label for="10y">10년(갱신형)</label>
+                                
                             </span>
-                            <span>
-                                <label>
+                            <span class = "custom-label">
+                                
                                     <input type="radio" name="payMoney" value="20y" id="20y" onchange="setDisplay()">
-                                    <span>20년</span>
-                                </label>
+                                    <label for="20y">20년</label>
+                                
                             </span>
-                            <span>
-                                <label>
+                            <span class = "custom-label">
+                               
                                     <input type="radio" name="payMoney" value="60y" id="60y" onchange="setDisplay()">
-                                    <span>60세</span>
-                                </label>
+                                    <label for="60y">60세</label>
+                               
                             </span>
-                            <span>
+                            <span class = "custom-label">
                                 <label>
                                     <input type="radio" name="payMoney" value="80y" id="80y" onchange="setDisplay()">
-                                    <span>80세</span>
+                                    <label for="80y">80세</label>
                                 </label>
                             </span>
                         </td>
@@ -281,29 +283,21 @@
                 <tbody>
                     <th>납입기간</th>
                     <td id="open">
-                        <span>
-                            <label>
+                        <span class = "custom-label">
                                 <input type="radio" name="payYear" id="10year" style="display:none;" >
-                                <span>10년납</span>
-                            </label>
+                                <label for="10year">10년납</label>
                         </span>
-                        <span>
-                            <label>
+                        <span class = "custom-label">
                                 <input type="radio" name="payYear" id="20year" style="display:none;" >
-                                <span>20년납</span>
-                            </label>
+                                <label for="20year">20년납</label>
                         </span>
-                        <span>
-                            <label>
+                        <span class = "custom-label">
                                 <input type="radio" name="payYear" id="60year" style="display:none;" >
-                               	<span>60세납</span>
-                            </label>
+                                <label for="60year">60세납</label>
                         </span>
-                        <span>
-                            <label>
+                        <span class = "custom-label">
                                 <input type="radio" name="payYear" id="80year" style="display:none;" >
-                                <span>80세납</span>
-                            </label>
+                                <label for="80year">80세납</label>
                         </span>
         
                     </td>
@@ -317,12 +311,10 @@
                 <tbody>
                     <th>재해사망</th>
                     <td>
-                        <span>
-                            <label>
-                                <input type="radio">
-                                <span>예</span>
-                            </label>
-                        </span>
+                        <span class = "custom-label">
+                                <input type="radio" id="yesy" checked="checked">
+                                <label for="yesy">예</label>
+                        </span class = "custom-label">
                     </td>
                 </tbody>
             </table>
